@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Expires" content="0">
+
+		<!-- Links Of CSS File -->
+		<link rel="stylesheet" href="../assets/css/sidebar-menu.css">
+		<link rel="stylesheet" href="../assets/css/simplebar.css">
+		<link rel="stylesheet" href="../assets/css/prism.css">
+        <link rel="stylesheet" href="../assets/css/quill.snow.css">
+        <link rel="stylesheet" href="../assets/css/remixicon.css">
+        <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="../assets/css/jsvectormap.min.css">
+		<link rel="stylesheet" href="../assets/css/style.css">
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="../assets/images/favicon.png">
+        
+		<!-- Title -->
+		<title>Restaurant Cost Control - Reports & Analytics</title>
+    </head>
+    <body class="bg-body-bg">
+        
+        <!-- Start Preloader Area -->
+        <div class="preloader" id="preloader">
+            <div class="preloader">
+                <div class="waviy position-relative">
+                    <span class="d-inline-block">C</span>
+                    <span class="d-inline-block">l</span>
+                    <span class="d-inline-block">o</span>
+                    <span class="d-inline-block">u</span>
+                    <span class="d-inline-block">d</span>
+                    <span class="d-inline-block">i</span>
+                    <span class="d-inline-block">g</span>
+                    <span class="d-inline-block">n</span>
+                    <span class="d-inline-block">i</span>
+                    <span class="d-inline-block">t</span>
+                    <span class="d-inline-block">e</span>
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader Area -->
+
+        <!-- Start Sidebar Area -->
+        <div class="sidebar-area" id="sidebar-area">
+            <div class="logo position-relative d-flex align-items-center justify-content-between">
+                <a href="index.html" class="d-block text-decoration-none position-relative">
+                    <img src="../assets/images/logo-icon.png" alt="logo-icon">
+                    <span class="logo-text text-secondary fw-semibold">Cloudignite</span>
+                </a> 
+                <button class="sidebar-burger-menu-close bg-transparent py-3 border-0 opacity-0 z-n1 position-absolute top-50 end-0 translate-middle-y" id="sidebar-burger-menu-close">
+                    <span class="border-1 d-block for-dark-burger" style="border-bottom: 1px solid #475569; height: 1px; width: 25px; transform: rotate(45deg);"></span>
+                    <span class="border-1 d-block for-dark-burger" style="border-bottom: 1px solid #475569; height: 1px; width: 25px; transform: rotate(-45deg);"></span>
+                </button>
+                <button class="sidebar-burger-menu bg-transparent p-0 border-0" id="sidebar-burger-menu">
+                    <span class="border-1 d-block for-dark-burger" style="border-bottom: 1px solid #475569; height: 1px; width: 25px;"></span>
+                    <span class="border-1 d-block for-dark-burger" style="border-bottom: 1px solid #475569; height: 1px; width: 25px; margin: 6px 0;"></span>
+                    <span class="border-1 d-block for-dark-burger" style="border-bottom: 1px solid #475569; height: 1px; width: 25px;"></span>
+                </button>
+            </div>
+
+            <aside id="layout-menu" class="layout-menu menu-vertical menu active" data-simplebar>
+                <ul class="menu-inner">
+                    <li class="menu-title small text-uppercase">
+                    <span class="menu-title-text">MAIN</span>
+                    </li>
+                    <li class="menu-item" id="nav-owner-view">
+                    <a href="owner-view.html" class="menu-link">
+                    <span class="material-symbols-outlined menu-icon">visibility</span>
+                    <span class="title">Owner View</span>
+                    </a>
+                    </li>
+                    <li class="menu-item">
+                    <a href="index.html" class="menu-link">
+                    <span class="material-symbols-outlined menu-icon">dashboard</span>
+                    <span class="title">Loss Summary</span>
+                    </a>
+                    </li>
+                    <li class="menu-item">
+                    <a href="products-list.html" class="menu-link">
+                    <span class="material-symbols-outlined menu-icon">inventory_2</span>
+                    <span class="title">Inventory Control</span>
+                    </a>
+                    </li>
+                    <li class="menu-item">
+                    <a href="inventory-count.html" class="menu-link">
+                    <span class="material-symbols-outlined menu-icon">fact_check</span>
+                    <span class="title">Weekly Count</span>
+                    </a>
+                    </li>
+                    <li class="menu-item">
+                    <a href="analytics.html" class="menu-link">
+                    <span class="material-symbols-outlined menu-icon">delete</span>
+                    <span class="title">Waste Tracking</span>
+                    </a>
+                    </li>
+                    <li class="menu-item">
+                    <a href="reports.html" class="menu-link">
+                    <span class="material-symbols-outlined menu-icon">groups</span>
+                    <span class="title">Labor Cost Analysis</span>
+                    </a>
+                    </li>
+                    <li class="menu-item">
+                    <a href="products-list.html" class="menu-link">
+                    <span class="material-symbols-outlined menu-icon">restaurant_menu</span>
+                    <span class="title">Menu Profitability</span>
+                    </a>
+                    </li>
+                    <li class="menu-item">
+                    <a href="invoices.html" class="menu-link">
+                    <span class="material-symbols-outlined menu-icon">local_shipping</span>
+                    <span class="title">Suppliers & Invoices</span>
+                    </a>
+                    </li>
+<li class="menu-item">
+                    <a href="analytics.html" class="menu-link">
+                    <span class="material-symbols-outlined menu-icon">task_alt</span>
+                    <span class="title">Action Items</span>
+                    </a>
+                    </li>
+                    <li class="menu-item">
+                    <a href="manual-data-entry.html" class="menu-link">
+                    <span class="material-symbols-outlined menu-icon">edit_note</span>
+                    <span class="title">Manual Data Entry</span>
+                    </a>
+                    </li>
+                    <li class="menu-item">
+                    <a href="reports.html" class="menu-link">
+                    <span class="material-symbols-outlined menu-icon">assessment</span>
+                    <span class="title">Reports & Exports</span>
+                    </a>
+                    </li>
+                    <li class="menu-item">
+                    <a href="alerts.html" class="menu-link">
+                    <span class="material-symbols-outlined menu-icon">notifications</span>
+                    <span class="title">Alerts</span>
+                    </a>
+                    </li>
+                    <li class="menu-title small text-uppercase">
+                    <span class="menu-title-text">SETTINGS</span>
+                    </li>
+                    <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <span class="material-symbols-outlined menu-icon">settings</span>
+                    <span class="title">Settings</span>
+                    </a>
+                    <ul class="menu-sub">
+                    <li class="menu-item">
+                    <a href="account-settings.html" class="menu-link">Account Settings</a>
+                    </li>
+                    <li class="menu-item">
+                    <a href="change-password.html" class="menu-link">Change Password</a>
+                    </li>
+                    <li class="menu-item">
+                    <a href="settings.html" class="menu-link">Restaurant Settings</a>
+                    </li>
+                    </ul>
+                    </li>
+                    <li class="menu-item">
+                    <a href="my-profile.html" class="menu-link">
+                    <span class="material-symbols-outlined menu-icon">account_circle</span>
+                    <span class="title">My Profile</span>
+                    </a>
+                    </li>
+                    <li class="menu-item">
+                    <a href="#" class="menu-link" onclick="if(window.authService){window.authService.logout();} return false;">
+                    <span class="material-symbols-outlined menu-icon">logout</span>
+                    <span class="title">Logout</span>
+                    </a>
+                    </li>
+                    </ul>
+                    
+            </aside>
+        </div>
+        <!-- End Sidebar Area -->
+
+        <!-- Start Main Content Area -->
+        <div class="container-fluid">
+            <div class="main-content d-flex flex-column">
+                <!-- Start Header Area -->
+                <header class="header-area bg-white mb-4 rounded-10 border border-white" id="header-area">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="left-header-content">
+                                <ul class="d-flex align-items-center ps-0 mb-0 list-unstyled justify-content-center justify-content-md-start">
+                                    <li class="d-xl-none">
+                                        <button class="header-burger-menu bg-transparent p-0 border-0 position-relative top-3" id="header-burger-menu">
+                                            <span class="border-1 d-block for-dark-burger" style="border-bottom: 1px solid #475569; height: 1px; width: 25px;"></span>
+                                            <span class="border-1 d-block for-dark-burger" style="border-bottom: 1px solid #475569; height: 1px; width: 25px; margin: 6px 0;"></span>
+                                            <span class="border-1 d-block for-dark-burger" style="border-bottom: 1px solid #475569; height: 1px; width: 25px;"></span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <form class="src-form position-relative">
+                                            <input type="text" class="form-control" placeholder="Search here...">
+                                            <div class="src-btn position-absolute top-50 start-0 translate-middle-y bg-transparent p-0 border-0">
+                                                <span class="material-symbols-outlined">search</span>
+                                            </div>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="right-header-content mt-3 mt-md-0">
+                                <ul class="d-flex align-items-center justify-content-center justify-content-md-end ps-0 mb-0 list-unstyled">
+                                    <li class="header-right-item language-item">
+                                        <div class="dropdown notifications language">
+                                            <button class="btn btn-secondary dropdown-toggle border-0 p-0 position-relative" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="material-symbols-outlined" style="font-size: 19px;">translate</span>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-lg p-0 border-0 dropdown-menu-end">
+                                                <span class="fw-medium fs-16 text-secondary d-block title" style="padding-top: 20px; padding-bottom: 20px;">Choose Language</span>
+                                                <div class="max-h-275" data-simplebar>
+                                                    <div class="notification-menu">
+                                                        <a href="javascript:void(0);" class="dropdown-item">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="flex-shrink-0">
+                                                                    <img src="../assets/images/usa.png" class="wh-30 rounded-circle" alt="usa">
+                                                                </div>
+                                                                <div class="flex-grow-1 ms-10">
+                                                                    <span class="text-secondary fw-medium fs-15">English</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="notification-menu">
+                                                        <a href="javascript:void(0);" class="dropdown-item">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="flex-shrink-0">
+                                                                    <img src="../assets/images/australia.png" class="wh-30 rounded-circle" alt="australia">
+                                                                </div>
+                                                                <div class="flex-grow-1 ms-10">
+                                                                    <span class="text-secondary fw-medium fs-15">Australia</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="notification-menu">
+                                                        <a href="javascript:void(0);" class="dropdown-item">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="flex-shrink-0">
+                                                                    <img src="../assets/images/spain.png" class="wh-30 rounded-circle" alt="spain">
+                                                                </div>
+                                                                <div class="flex-grow-1 ms-10">
+                                                                    <span class="text-secondary fw-medium fs-15">Spanish</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="notification-menu">
+                                                        <a href="javascript:void(0);" class="dropdown-item">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="flex-shrink-0">
+                                                                    <img src="../assets/images/france.png" class="wh-30 rounded-circle" alt="portugal">
+                                                                </div>
+                                                                <div class="flex-grow-1 ms-10">
+                                                                    <span class="text-secondary fw-medium fs-15">France</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="notification-menu mb-0">
+                                                        <a href="javascript:void(0);" class="dropdown-item">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="flex-shrink-0">
+                                                                    <img src="../assets/images/germany.png" class="wh-30 rounded-circle" alt="Germany">
+                                                                </div>
+                                                                <div class="flex-grow-1 ms-10">
+                                                                    <span class="text-secondary fw-medium fs-15">Spain</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header-right-item light-dark-item">
+                                        <div class="light-dark">
+                                            <button class="switch-toggle dark-btn p-0 bg-transparent lh-0 border-0" id="switch-toggle">
+                                                <span class="dark"><i class="material-symbols-outlined">dark_mode</i></span> 
+                                                <span class="light"><i class="material-symbols-outlined">light_mode</i></span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="header-right-item calendar-item">
+                                        <div class="dropdown notifications">
+                                            <a href="blank-page.html" class="btn btn-secondary border-0 p-0 position-relative">
+                                                <span class="material-symbols-outlined" style="font-size: 19px;">calendar_today</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="header-right-item messages-item">
+                                        <div class="dropdown notifications noti messages">
+                                            <button class="btn btn-secondary border-0 p-0 position-relative" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="material-symbols-outlined">mail</span>
+                                                <span class="count bg-primary">5</span>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-lg p-0 border-0 p-0 dropdown-menu-end">
+                                                <div class="d-flex justify-content-between align-items-center title">
+                                                    <span class="fw-medium fs-16 text-secondary">Messages <span class="fw-normal text-body fs-16">(03)</span></span>
+                                                    <button class="p-0 m-0 bg-transparent border-0 fs-15 text-primary fw-medium">Mark all as read</button>
+                                                </div> 
+
+                                                <div style="max-height: 300px;" data-simplebar>
+                                                    <div class="notification-menu unseen">
+                                                        <a href="blank-page.html" class="dropdown-item">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="flex-shrink-0">
+                                                                    <img src="../assets/images/user1.jpg" class="rounded-circle" style="width: 44px; height: 44px;" alt="images">
+                                                                </div>
+                                                                <div class="flex-grow-1 ms-10">
+                                                                    <p class="fs-16 fw-medium text-secondary mb-2">Jacob Liwiski <span class="fs-14 fw-normal text-body ms-2">35 min ago</span></p>
+                                                                    <span class="fs-14-5 fw-medium d-inline-block" style="line-height: 1.4;">Hey Victor! Could you please...</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="notification-menu unseen">
+                                                        <a href="blank-page.html" class="dropdown-item">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="flex-shrink-0">
+                                                                    <img src="../assets/images/user2.jpg" class="rounded-circle" style="width: 44px; height: 44px;" alt="images">
+                                                                </div>
+                                                                <div class="flex-grow-1 ms-10">
+                                                                    <p class="fs-16 fw-medium text-secondary mb-2">Angela Carter <span class="fs-14 fw-normal text-body ms-2">1 day ago</span></p>
+                                                                    <span class="fs-14-5 fw-medium d-inline-block" style="line-height: 1.4;">How are you Angela? Would you please...</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="notification-menu">
+                                                        <a href="blank-page.html" class="dropdown-item">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="flex-shrink-0">
+                                                                    <img src="../assets/images/user3.jpg" class="rounded-circle" style="width: 44px; height: 44px;" alt="images">
+                                                                </div>
+                                                                <div class="flex-grow-1 ms-10">
+                                                                    <p class="fs-16 fw-medium text-secondary mb-2">Brad Traversy <span class="fs-14 fw-normal text-body ms-2">2 days ago</span></p>
+                                                                    <span class="fs-14-5 fw-medium d-inline-block" style="line-height: 1.4;">Hey Brad Traversy! Could you please...</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <a href="blank-page.html" class="dropdown-item text-center text-primary d-block view-all fw-medium rounded-bottom-3">
+                                                    <span>See All Messages</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header-right-item">
+                                        <div class="dropdown notifications noti">
+                                            <button class="btn btn-secondary border-0 p-0 position-relative" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="material-symbols-outlined">notifications</span>
+                                                <span class="count">3</span>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-lg p-0 border-0 p-0 dropdown-menu-end">
+                                                <div class="d-flex justify-content-between align-items-center title">
+                                                    <span class="fw-medium fs-16 text-secondary">Notifications <span class="fw-normal text-body fs-16">(03)</span></span>
+                                                    <button class="p-0 m-0 bg-transparent border-0 fs-15 text-primary fw-medium">Clear All</button>
+                                                </div> 
+
+                                                <div style="max-height: 300px;" data-simplebar>
+                                                    <div class="notification-menu unseen">
+                                                        <a href="notifications.html" class="dropdown-item">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="flex-shrink-0">
+                                                                    <i class="material-symbols-outlined text-primary">sms</i>
+                                                                </div>
+                                                                <div class="flex-grow-1 ms-3">
+                                                                    <p class="fs-16 fw-medium text-secondary">You have requested to withdrawal</p>
+                                                                    <span class="fs-14 fw-medium">2 hrs ago</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="notification-menu unseen">
+                                                        <a href="notifications.html" class="dropdown-item">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="flex-shrink-0">
+                                                                    <i class="material-symbols-outlined text-info">person</i>
+                                                                </div>
+                                                                <div class="flex-grow-1 ms-3">
+                                                                    <p class="fs-16 fw-medium text-secondary">A new user added in Fila</p>
+                                                                    <span class="fs-14 fw-medium">3 hrs ago</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="notification-menu">
+                                                        <a href="notifications.html" class="dropdown-item">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="flex-shrink-0">
+                                                                    <i class="material-symbols-outlined text-success">mark_email_unread</i>
+                                                                </div>
+                                                                <div class="flex-grow-1 ms-3">
+                                                                    <p class="fs-16 fw-medium text-secondary">You have requested to withdrawal</p>
+                                                                    <span class="fs-14 fw-medium">1 day ago</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <a href="notifications.html" class="dropdown-item text-center text-primary d-block view-all fw-medium rounded-bottom-3">
+                                                    <span>See All Notifications </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header-right-item">
+                                        <div class="dropdown admin-profile">
+                                            <div class="d-xxl-flex align-items-center bg-transparent border-0 text-start p-0 cursor dropdown-toggle" data-bs-toggle="dropdown">
+                                                <div class="flex-shrink-0 position-relative">
+                                                    <img class="rounded-circle admin-img-width-for-mobile" style="width: 40px; height: 40px;" src="../assets/images/admin.png" alt="admin">
+                                                    <span class="d-block bg-success-60 border border-2 border-white rounded-circle position-absolute end-0 bottom-0" style="width: 11px; height: 11px;"></span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="dropdown-menu border-0 bg-white dropdown-menu-end">
+                                                <div class="d-flex align-items-center info">
+                                                    <div class="flex-shrink-0">
+                                                        <img class="rounded-circle admin-img-width-for-mobile" style="width: 40px; height: 40px;" src="../assets/images/admin.png" alt="admin">
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-10">
+                                                        <h3 class="fw-medium fs-17 mb-0 user-name">Loading...</h3>
+                                                        <span class="fs-15 fw-medium user-role">Loading...</span>
+                                                    </div>
+                                                </div>
+                                                <ul class="admin-link mb-0 list-unstyled">
+                                                    <li>
+                                                        <a class="dropdown-item admin-item-link d-flex align-items-center text-body" href="my-profile.html">
+                                                            <i class="material-symbols-outlined">person</i>
+                                                            <span class="ms-2">My Profile</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item admin-item-link d-flex align-items-center text-body" href="settings.html">
+                                                            <i class="material-symbols-outlined">settings</i>
+                                                            <span class="ms-2">Settings</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item admin-item-link d-flex align-items-center text-body" href="alerts.html">
+                                                            <i class="material-symbols-outlined">info</i>
+                                                            <span class="ms-2">Support</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item admin-item-link d-flex align-items-center text-body" href="logout.html">
+                                                            <i class="material-symbols-outlined">logout</i>
+                                                            <span class="ms-2">Logout</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <!-- End Header Area -->
+
+                <div class="main-content-container overflow-hidden">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4 mt-1">
+                        <h3 class="mb-0">Reports & Analytics</h3>
+
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb align-items-center mb-0 lh-1">
+                                <li class="breadcrumb-item">
+                                    <a href="index.html" class="d-flex align-items-center text-decoration-none">
+                                        <i class="ri-home-8-line fs-15 text-primary me-1"></i>
+                                        <span class="text-body fs-14 hover">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    <span class="text-secondary">Reports & Exports</span>
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                    
+                    <!-- Report Tabs -->
+                    <ul class="nav nav-tabs mb-4" id="reportsTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="monthly-report-tab" data-bs-toggle="tab" data-bs-target="#monthly-report" type="button" role="tab">
+                                <i class="ri-file-list-3-line me-2"></i>Monthly Profit Report
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="margins-tab" data-bs-toggle="tab" data-bs-target="#margins" type="button" role="tab">
+                                <i class="ri-line-chart-line me-2"></i>Product Margins
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="trends-tab" data-bs-toggle="tab" data-bs-target="#trends" type="button" role="tab">
+                                <i class="ri-bar-chart-line me-2"></i>Trends Analysis
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="suppliers-tab" data-bs-toggle="tab" data-bs-target="#suppliers" type="button" role="tab">
+                                <i class="ri-store-line me-2"></i>Suppliers Ranking
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="compare-tab" data-bs-toggle="tab" data-bs-target="#compare" type="button" role="tab">
+                                <i class="ri-compare-arrows me-2"></i>Period Comparison
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="alerts-tab" data-bs-toggle="tab" data-bs-target="#alerts" type="button" role="tab">
+                                <i class="ri-alarm-warning-line me-2"></i>Alerts
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="reportsTabContent">
+                        <!-- Monthly Profit Report Tab -->
+                        <div class="tab-pane fade show active" id="monthly-report" role="tabpanel">
+                            <div class="card bg-white rounded-10 border border-white mb-4">
+                                <div class="card-header border-0 p-20">
+                                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                        <h4 class="mb-0"><i class="ri-file-list-3-line me-2 text-primary"></i>Cloudignite Monthly Profit Report</h4>
+                                        <div class="d-flex gap-2">
+                                            <select id="monthly-report-year" class="form-select form-select-sm" style="max-width: 110px;"></select>
+                                            <select id="monthly-report-month" class="form-select form-select-sm" style="max-width: 130px;"></select>
+                                            <button class="btn btn-primary btn-sm" id="btn-load-monthly-report">
+                                                <i class="ri-search-line me-1"></i>Load Report
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body p-20">
+                                    <div id="monthly-report-loading" class="text-center py-5 d-none">
+                                        <div class="spinner-border text-primary" role="status"></div>
+                                        <p class="mt-2 text-muted">Generating report...</p>
+                                    </div>
+                                    <div id="monthly-report-content"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Margins Tab -->
+                        <div class="tab-pane fade" id="margins" role="tabpanel">
+                            <div class="card bg-white rounded-10 border border-white mb-4">
+                                <div class="card-header border-0 p-20">
+                                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                        <h4 class="mb-0"><i class="ri-line-chart-line me-2 text-primary"></i>Product Profit Margins</h4>
+                                        <div class="d-flex gap-2">
+                                            <input type="date" id="margins-start-date" class="form-control form-control-sm" style="max-width: 150px;">
+                                            <input type="date" id="margins-end-date" class="form-control form-control-sm" style="max-width: 150px;">
+                                            <button class="btn btn-primary btn-sm" onclick="loadProductMargins()">
+                                                <i class="ri-search-line me-1"></i>Load
+                                            </button>
+                                            <button class="btn btn-success btn-sm" onclick="exportMarginsToCSV()">
+                                                <i class="ri-file-excel-line me-1"></i>Export
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body p-20">
+                                    <div id="margins-summary" class="row mb-4">
+                                        <!-- Summary cards will be loaded here -->
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover" id="margins-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Product</th>
+                                                    <th>Units Sold</th>
+                                                    <th>Revenue</th>
+                                                    <th>Cost</th>
+                                                    <th>Profit</th>
+                                                    <th>Margin %</th>
+                                                    <th>ROI %</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="margins-table-body">
+                                                <tr>
+                                                    <td colspan="7" class="text-center text-muted py-4">
+                                                        <i class="ri-calendar-line me-2"></i>Select date range and click <strong>Load</strong>.
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trends Analysis Tab -->
+                        <div class="tab-pane fade" id="trends" role="tabpanel">
+                            <div class="card bg-white rounded-10 border border-white mb-4">
+                                <div class="card-header border-0 p-20">
+                                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                        <h4 class="mb-0"><i class="ri-bar-chart-line me-2 text-info"></i>Sales & Cost Trends</h4>
+                                        <div class="d-flex gap-2">
+                                            <select id="trends-period-type" class="form-select form-select-sm" style="max-width: 120px;">
+                                                <option value="weekly">Weekly</option>
+                                                <option value="monthly">Monthly</option>
+                                            </select>
+                                            <select id="trends-periods" class="form-select form-select-sm" style="max-width: 100px;">
+                                                <option value="4">4 periods</option>
+                                                <option value="8">8 periods</option>
+                                                <option value="12">12 periods</option>
+                                            </select>
+                                            <button class="btn btn-primary btn-sm" onclick="loadTrends()">
+                                                <i class="ri-search-line me-1"></i>Load
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body p-20">
+                                    <div id="trends-chart-container">
+                                        <div id="trends-chart" style="min-height: 220px;"></div>
+                                    </div>
+                                    <div class="table-responsive mt-4">
+                                        <table class="table table-hover" id="trends-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Period</th>
+                                                    <th>Sales</th>
+                                                    <th>Purchases</th>
+                                                    <th>Waste</th>
+                                                    <th>Profit</th>
+                                                    <th>Food Cost %</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="trends-table-body">
+                                                <tr>
+                                                    <td colspan="6" class="text-center text-muted py-4">
+                                                        <i class="ri-bar-chart-line me-2"></i>Select <strong>Weekly</strong>/<strong>Monthly</strong> and periods, then click <strong>Load</strong>.
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Suppliers Ranking Tab -->
+                        <div class="tab-pane fade" id="suppliers" role="tabpanel">
+                            <div class="card bg-white rounded-10 border border-white mb-4">
+                                <div class="card-header border-0 p-20">
+                                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                        <h4 class="mb-0"><i class="ri-store-line me-2 text-warning"></i>Suppliers Cost Ranking</h4>
+                                        <div class="d-flex gap-2">
+                                            <input type="date" id="suppliers-start-date" class="form-control form-control-sm" style="max-width: 150px;">
+                                            <input type="date" id="suppliers-end-date" class="form-control form-control-sm" style="max-width: 150px;">
+                                            <button class="btn btn-primary btn-sm" onclick="loadSupplierRanking()">
+                                                <i class="ri-search-line me-1"></i>Load
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body p-20">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover" id="suppliers-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Rank</th>
+                                                    <th>Supplier</th>
+                                                    <th>Invoices</th>
+                                                    <th>Total Spent</th>
+                                                    <th>Avg Invoice</th>
+                                                    <th>% of Total</th>
+                                                    <th>First Purchase</th>
+                                                    <th>Last Purchase</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="suppliers-table-body">
+                                                <!-- Suppliers data will be loaded here -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Period Comparison Tab -->
+                        <div class="tab-pane fade" id="compare" role="tabpanel">
+                            <div class="card bg-white rounded-10 border border-white mb-4">
+                                <div class="card-header border-0 p-20">
+                                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                        <h4 class="mb-0"><i class="ri-compare-arrows me-2 text-success"></i>Period Performance Comparison</h4>
+                                        <button class="btn btn-primary btn-sm" onclick="loadPeriodComparison()">
+                                            <i class="ri-search-line me-1"></i>Compare
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-body p-20">
+                                    <div class="row mb-4">
+                                        <div class="col-md-6">
+                                            <h5 class="mb-3">Period 1</h5>
+                                            <div class="row g-2">
+                                                <div class="col-6">
+                                                    <label class="form-label small">Start Date</label>
+                                                    <input type="date" id="compare-period1-start" class="form-control form-control-sm">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label class="form-label small">End Date</label>
+                                                    <input type="date" id="compare-period1-end" class="form-control form-control-sm">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h5 class="mb-3">Period 2</h5>
+                                            <div class="row g-2">
+                                                <div class="col-6">
+                                                    <label class="form-label small">Start Date</label>
+                                                    <input type="date" id="compare-period2-start" class="form-control form-control-sm">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label class="form-label small">End Date</label>
+                                                    <input type="date" id="compare-period2-end" class="form-control form-control-sm">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="comparison-results">
+                                        <div class="alert alert-info">
+                                            <i class="ri-information-line me-2"></i>Select two periods and click "Compare" to see the analysis.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Alerts Tab -->
+                        <div class="tab-pane fade" id="alerts" role="tabpanel">
+                            <div class="card bg-white rounded-10 border border-white mb-4">
+                                <div class="card-header border-0 p-20">
+                                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                        <h4 class="mb-0"><i class="ri-alarm-warning-line me-2 text-danger"></i>Expiring Items Alerts</h4>
+                                        <div class="d-flex gap-2">
+                                            <select id="alerts-days" class="form-select form-select-sm" style="max-width: 150px;">
+                                                <option value="3">Next 3 days</option>
+                                                <option value="7" selected>Next 7 days</option>
+                                                <option value="14">Next 14 days</option>
+                                                <option value="30">Next 30 days</option>
+                                            </select>
+                                            <button class="btn btn-primary btn-sm" onclick="loadAlerts()">
+                                                <i class="ri-refresh-line me-1"></i>Refresh
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body p-20">
+                                    <div id="alerts-summary" class="mb-4">
+                                        <!-- Alerts summary will be loaded here -->
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover" id="alerts-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Item Name</th>
+                                                    <th>Quantity</th>
+                                                    <th>Category</th>
+                                                    <th>Expiry Date</th>
+                                                    <th>Days Until Expiry</th>
+                                                    <th>Value at Risk</th>
+                                                    <th>Status</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="alerts-table-body">
+                                                <tr>
+                                                    <td colspan="8" class="text-center text-muted py-4">
+                                                        <i class="ri-alarm-warning-line me-2"></i>Select &quot;Next X days&quot; and click <strong>Refresh</strong>.
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-grow-1"></div>
+
+                <!-- Start Footer Area -->
+                <footer class="footer-area bg-white text-center rounded-10 rounded-bottom-0">
+                    <p class="fs-16 text-body">© Cloudignite</p>
+                </footer>
+                <!-- End Footer Area -->
+            </div>
+        </div>
+        <!-- Start Main Content Area -->
+
+        <!-- Start Theme Setting Area -->
+        <button class="btn btn-primary theme-settings-btn p-0 position-fixed z-2 text-center rounded-circle" style="bottom: 24px; right: 24px; width: 56px; height: 56px; line-height: 54px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+            <i class="text-white ri-settings-3-fill fs-28" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Click On Theme Settings"></i>
+        </button>
+
+        <!-- Start Theme Setting Area -->
+        <div class="offcanvas offcanvas-end bg-white border-0" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel" style="box-shadow: 0 4px 20px #2f8fe812 !important; max-width: 300px;">
+            <div class="offcanvas-header bg-light p-20">
+                <h5 class="offcanvas-title fs-18 fw-medium" id="offcanvasScrollingLabel">Configuration Panel</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body p-0 overflow-hidden">
+                <div class="last-child-none" style="max-height: 858px;" data-simplebar>
+                    <div class="p-20 border-bottom child">
+                        <h4 class="fs-15 fw-medium mb-12">RTL Mode</h4>
+                        <div class="rtl-btn">
+                            <label id="switch">
+                                <input type="checkbox" onchange="toggleTheme()" class="toggle-switch rtl-switch" id="slider">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="p-20 border-bottom child">
+                        <h4 class="fs-15 fw-medium mb-12">Only Sidebar Dark</h4>
+                        <div class="sidebar-light-dark" id="sidebar-light-dark">
+                            <input type="checkbox" class="toggle-switch sidebar-dark-switch">
+                        </div>
+                    </div>
+                    <div class="p-20 border-bottom child">
+                        <h4 class="fs-15 fw-medium mb-12">Only Header Dark</h4>
+                        <div class="header-light-dark" id="header-light-dark">
+                            <input type="checkbox" class="toggle-switch header-dark-switch">
+                        </div>
+                    </div>
+                    <div class="p-20 border-bottom child">
+                        <h4 class="fs-15 fw-medium mb-12">Right Sidebar</h4>
+                        <div class="right-sidebar" id="right-sidebar">
+                            <input type="checkbox" class="toggle-switch right-sidebar-switch">
+                        </div>
+                    </div>
+                    <div class="p-20 border-bottom child">
+                        <h4 class="fs-15 fw-medium mb-12">Hide Sidebar</h4>
+                        <div class="icon-sidebar" id="icon-sidebar">
+                            <input type="checkbox" class="toggle-switch icon-sidebar-switch">
+                        </div>
+                    </div>
+                    <div class="p-20 border-bottom child">
+                        <h4 class="fs-15 fw-medium mb-12">Bordered Card</h4>
+                        <div class="card-border" id="card-border">
+                            <input type="checkbox" class="toggle-switch border-switch">
+                        </div>
+                    </div>
+                    <div class="p-20 border-bottom child">
+                        <h4 class="fs-15 fw-medium mb-12">Card Border Radius</h4>
+                        <div class="card-radius-square" id="card-radius-square">
+                            <input type="checkbox" class="toggle-switch border-radius-switch">
+                        </div>
+                    </div>
+                    
+                    <div class="p-20 border-bottom child">
+                        <a href="#" class="btn btn-primary text-white">
+                            Buy Fila
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Theme Setting Area -->
+     
+        <!-- Link Of JS File -->
+        <script src="../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/sidebar-menu.js"></script>
+        <script src="../assets/js/quill.min.js"></script>
+        <script src="../assets/js/data-table.js"></script>
+        <script src="../assets/js/prism.js"></script>
+        <script src="../assets/js/clipboard.min.js"></script>
+        <script src="../assets/js/simplebar.min.js"></script>
+        <script src="../assets/js/apexcharts.min.js"></script>
+        <script src="../assets/js/echarts.min.js"></script>
+        <script src="../assets/js/swiper-bundle.min.js"></script>
+        <script src="../assets/js/fullcalendar.main.js"></script>
+        <script src="../assets/js/jsvectormap.min.js"></script>
+        <script src="../assets/js/world-merc.js"></script>
+        <script src="../assets/js/custom/apexcharts.js"></script>
+        <script src="../assets/js/custom/echarts.js"></script>
+        <script src="../assets/js/custom/maps.js"></script>
+        
+        <script src="../assets/js/auth/authService.js"></script>
+        <script src="../assets/js/auth/authHelper.js"></script>
+        <script src="../assets/js/sidebar/sidebarService.js"></script>
+        <script src="../assets/js/api/apiService.js"></script>
+        <script src="../assets/js/custom/custom.js"></script>
+        <script>
+            (function() {
+                const yearSelect = document.getElementById('monthly-report-year');
+                const monthSelect = document.getElementById('monthly-report-month');
+                const btn = document.getElementById('btn-load-monthly-report');
+                const loading = document.getElementById('monthly-report-loading');
+                const content = document.getElementById('monthly-report-content');
+
+                const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+                const now = new Date();
+                for (let y = now.getFullYear(); y >= now.getFullYear() - 2; y--) {
+                    const o = document.createElement('option');
+                    o.value = y;
+                    o.textContent = y;
+                    if (y === now.getFullYear()) o.selected = true;
+                    yearSelect.appendChild(o);
+                }
+                months.forEach(function(m, i) {
+                    const o = document.createElement('option');
+                    o.value = i + 1;
+                    o.textContent = m;
+                    if (i === now.getMonth()) o.selected = true;
+                    monthSelect.appendChild(o);
+                });
+
+                function renderReport(r) {
+                    const exec = r.executiveSummary || {};
+                    const rev = r.revenueHealth || {};
+                    const leaks = r.profitLeakage || [];
+                    const menu = r.menuPerformance || {};
+                    const blind = r.blindSpots || [];
+                    const plan = r.actionPlan || [];
+                    const pos = r.posOnlyInsights || {};
+
+                    let html = '<div class="monthly-report">';
+                    html += '<h5 class="mb-4">' + (r.period?.monthLabel || '') + ' &ndash; Performance Report</h5>';
+
+                    html += '<div class="row mb-4"><div class="col-12"><div class="card bg-light"><div class="card-body"><h6 class="text-primary mb-3">1. Executive Summary</h6>';
+                    html += '<div class="row"><div class="col-md-4"><p class="mb-1 text-muted small">Total Sales</p><p class="fw-bold mb-0">$' + (exec.totalSales || 0).toLocaleString(undefined,{minimumFractionDigits:2}) + '</p></div>';
+                    html += '<div class="col-md-4"><p class="mb-1 text-muted small">Daily Average</p><p class="fw-bold mb-0">$' + (exec.dailyAverage || 0).toLocaleString(undefined,{minimumFractionDigits:2}) + '</p></div>';
+                    html += '<div class="col-md-4"><p class="mb-1 text-muted small">Sales vs Prev Month</p><p class="fw-bold mb-0">' + (exec.salesGrowthPercent || 0) + '%</p></div></div>';
+                    if (exec.goodNews && exec.goodNews.length) {
+                        html += '<p class="mb-1 mt-2 small"><strong>Good news:</strong></p><ul class="small mb-0">';
+                        exec.goodNews.forEach(function(n){ html += '<li>' + n + '</li>'; });
+                        html += '</ul>';
+                    }
+                    if (exec.warningSigns && exec.warningSigns.length) {
+                        html += '<p class="mb-1 mt-2 small text-danger"><strong>Warning signs:</strong></p><ul class="small mb-0">';
+                        exec.warningSigns.forEach(function(n){ html += '<li>' + n + '</li>'; });
+                        html += '</ul>';
+                    }
+                    html += '</div></div></div></div>';
+
+                    html += '<div class="row mb-4"><div class="col-12"><div class="card"><div class="card-body"><h6 class="text-primary mb-3">2. Revenue & Cost Overview</h6>';
+                    html += '<div class="row g-2">';
+                    html += '<div class="col-md-2"><div class="p-2 rounded bg-white border"><small class="text-muted">Total Sales</small><div class="fw-bold">$' + (rev.totalSales || 0).toLocaleString(undefined,{minimumFractionDigits:2}) + '</div></div></div>';
+                    html += '<div class="col-md-2"><div class="p-2 rounded bg-white border"><small class="text-muted">Purchases</small><div class="fw-bold">$' + (rev.totalPurchases || 0).toLocaleString(undefined,{minimumFractionDigits:2}) + '</div></div></div>';
+                    html += '<div class="col-md-2"><div class="p-2 rounded bg-white border"><small class="text-muted">Food Cost %</small><div class="fw-bold">' + (rev.foodCostPct || 0) + '%</div></div></div>';
+                    html += '<div class="col-md-2"><div class="p-2 rounded bg-white border"><small class="text-muted">Labor Cost %</small><div class="fw-bold">' + (rev.laborCostPct || 0) + '%</div></div></div>';
+                    html += '<div class="col-md-2"><div class="p-2 rounded bg-white border"><small class="text-muted">Prime Cost</small><div class="fw-bold">' + (rev.primeCostPct || 0) + '%</div></div></div>';
+                    html += '<div class="col-md-2"><div class="p-2 rounded bg-white border"><small class="text-muted">Opportunity Loss</small><div class="fw-bold text-danger">$' + (rev.opportunityLoss || 0).toLocaleString(undefined,{minimumFractionDigits:2}) + '</div></div></div>';
+                    html += '</div></div></div></div></div>';
+
+                    html += '<div class="row mb-4"><div class="col-12"><div class="card"><div class="card-body"><h6 class="text-primary mb-3">3. Top 5 Profit Leaks</h6>';
+                    html += '<table class="table table-sm table-hover"><thead><tr><th>#</th><th>Issue</th><th>Amount</th><th>Action</th></tr></thead><tbody>';
+                    leaks.forEach(function(l){
+                        html += '<tr><td>' + (l.rank||'') + '</td><td>' + (l.name||'') + '</td><td class="text-danger">-$' + (l.amount||0).toLocaleString(undefined,{minimumFractionDigits:2}) + '</td><td class="small">' + (l.action||'') + '</td></tr>';
+                    });
+                    html += '</tbody></table>';
+                    html += '<p class="mb-0 small text-muted">Total preventable loss: <strong class="text-danger">$' + (r.totalPreventableLoss || 0).toLocaleString(undefined,{minimumFractionDigits:2}) + '</strong></p>';
+                    html += '</div></div></div></div>';
+
+                    if ((pos.topItems && pos.topItems.length) || (menu.stars && menu.stars.length)) {
+                        html += '<div class="row mb-4">';
+                        if (pos.topItems && pos.topItems.length) {
+                            html += '<div class="col-md-6"><div class="card h-100"><div class="card-body"><h6 class="text-primary mb-3">Top Selling Items (POS)</h6><ul class="list-unstyled mb-0">';
+                            pos.topItems.slice(0,5).forEach(function(i){ html += '<li class="d-flex justify-content-between py-1"><span>' + (i.name||'') + '</span><span>$' + (i.revenue||0).toLocaleString(undefined,{minimumFractionDigits:2}) + '</span></li>'; });
+                            html += '</ul></div></div></div>';
+                        }
+                        if (menu.stars && menu.stars.length) {
+                            html += '<div class="col-md-6"><div class="card h-100"><div class="card-body"><h6 class="text-success mb-3">Stars (high sales, high margin)</h6><ul class="list-unstyled mb-0">';
+                            menu.stars.slice(0,5).forEach(function(i){ html += '<li class="d-flex justify-content-between py-1"><span>' + (i.name||'') + '</span><span>' + (i.margin||0).toFixed(1) + '% margin</span></li>'; });
+                            html += '</ul></div></div></div>';
+                        }
+                        html += '</div>';
+                    }
+
+                    if (blind.length) {
+                        html += '<div class="row mb-4"><div class="col-12"><div class="alert alert-warning"><h6 class="alert-heading">POS-only blind spots</h6><p class="mb-2 small">Upload invoices and track waste for accurate food cost and profit.</p><ul class="mb-0 small">';
+                        blind.forEach(function(b){ html += '<li><strong>' + (b.title||'') + ':</strong> ' + (b.detail||'') + ' &rarr; ' + (b.impact||'') + '</li>'; });
+                        html += '</ul></div></div></div>';
+                    }
+
+                    html += '<div class="row mb-4"><div class="col-12"><div class="card"><div class="card-body"><h6 class="text-primary mb-3">4. Four-Week Action Plan</h6><div class="row">';
+                    plan.forEach(function(w){
+                        html += '<div class="col-md-6 col-lg-3 mb-3"><div class="card bg-light h-100"><div class="card-body py-2"><strong>Week ' + (w.week||'') + ': ' + (w.focus||'') + '</strong><ul class="small mb-0 ps-3">';
+                        (w.actions||[]).forEach(function(a){ html += '<li>' + a + '</li>'; });
+                        html += '</ul></div></div></div>';
+                    });
+                    html += '</div></div></div></div></div>';
+
+                    html += '</div>';
+                    content.innerHTML = html;
+                    content.classList.remove('d-none');
+                }
+
+                if (btn && content && loading) {
+                    btn.addEventListener('click', async function() {
+                        const year = parseInt(yearSelect.value, 10);
+                        const month = parseInt(monthSelect.value, 10);
+                        content.classList.add('d-none');
+                        loading.classList.remove('d-none');
+                        try {
+                            const res = await window.apiService.getMonthlyReport(year, month);
+                            const data = res.data || res;
+                            renderReport(data);
+                        } catch (e) {
+                            content.classList.remove('d-none');
+                            content.innerHTML = '<div class="alert alert-danger">Failed to load report. ' + (e.message || '') + ' Ensure the backend is running.</div>';
+                        } finally {
+                            loading.classList.add('d-none');
+                        }
+                    });
+                }
+            })();
+
+            window._lastMarginsData = null;
+
+            window.loadProductMargins = async function() {
+                const startEl = document.getElementById('margins-start-date');
+                const endEl = document.getElementById('margins-end-date');
+                const summaryEl = document.getElementById('margins-summary');
+                const tbody = document.getElementById('margins-table-body');
+                if (!startEl || !endEl || !tbody) return;
+                const startDate = startEl.value || new Date(Date.now() - 30 * 86400000).toISOString().slice(0, 10);
+                const endDate = endEl.value || new Date().toISOString().slice(0, 10);
+                if (!startDate || !endDate) { tbody.innerHTML = '<tr><td colspan="7" class="text-center text-muted py-4">Select start and end dates.</td></tr>'; return; }
+                startEl.value = startDate;
+                endEl.value = endDate;
+                tbody.innerHTML = '<tr><td colspan="7" class="text-center py-4"><div class="spinner-border spinner-border-sm text-primary me-2"></div>Loading...</td></tr>';
+                summaryEl.innerHTML = '';
+                try {
+                    const res = await window.apiService.getProductMargins(startDate, endDate);
+                    const d = res.data || res;
+                    window._lastMarginsData = d;
+                    const items = Array.isArray(d.items) ? d.items : [];
+                    const totalRevenue = d.totalRevenue || 0;
+                    const totalCost = d.totalCost || 0;
+                    const totalProfit = d.totalProfit || 0;
+                    const avgMargin = d.averageMargin != null ? d.averageMargin : (items.length ? items.reduce(function(s, i) { return s + (i.marginPercentage || 0); }, 0) / items.length : 0);
+                    summaryEl.innerHTML = '<div class="col-md-3"><div class="card border-0 bg-primary bg-opacity-10"><div class="card-body py-3"><div class="text-muted small">Total Revenue</div><div class="fw-bold">$' + totalRevenue.toLocaleString(undefined, { minimumFractionDigits: 2 }) + '</div></div></div></div>' +
+                        '<div class="col-md-3"><div class="card border-0 bg-secondary bg-opacity-10"><div class="card-body py-3"><div class="text-muted small">Total Cost</div><div class="fw-bold">$' + totalCost.toLocaleString(undefined, { minimumFractionDigits: 2 }) + '</div></div></div></div>' +
+                        '<div class="col-md-3"><div class="card border-0 bg-success bg-opacity-10"><div class="card-body py-3"><div class="text-muted small">Total Profit</div><div class="fw-bold text-success">$' + totalProfit.toLocaleString(undefined, { minimumFractionDigits: 2 }) + '</div></div></div></div>' +
+                        '<div class="col-md-3"><div class="card border-0 bg-info bg-opacity-10"><div class="card-body py-3"><div class="text-muted small">Avg Margin %</div><div class="fw-bold">' + Number(avgMargin).toFixed(1) + '%</div></div></div></div>';
+                    if (items.length === 0) {
+                        tbody.innerHTML = '<tr><td colspan="7" class="text-center text-muted py-4">No product margin data for this period. Upload invoices and add POS sales.</td></tr>';
+                    } else {
+                        tbody.innerHTML = items.map(function(i) {
+                            return '<tr><td>' + (i.itemName || '-') + '</td><td>' + (i.unitsSold ?? '-') + '</td><td>$' + (i.revenue || 0).toLocaleString(undefined, { minimumFractionDigits: 2 }) + '</td><td>$' + (i.cost || 0).toLocaleString(undefined, { minimumFractionDigits: 2 }) + '</td><td>$' + (i.profit || 0).toLocaleString(undefined, { minimumFractionDigits: 2 }) + '</td><td>' + (i.marginPercentage != null ? Number(i.marginPercentage).toFixed(1) : '-') + '%</td><td>' + (i.roiPercentage != null ? Number(i.roiPercentage).toFixed(1) : '-') + '%</td></tr>';
+                        }).join('');
+                    }
+                } catch (e) {
+                    window._lastMarginsData = null;
+                    tbody.innerHTML = '<tr><td colspan="7" class="text-center text-danger py-4">Failed to load: ' + (e.message || 'Unknown error') + '. Ensure the backend is running.</td></tr>';
+                }
+            };
+
+            window.exportMarginsToCSV = function() {
+                const d = window._lastMarginsData;
+                if (!d || !Array.isArray(d.items) || !d.items.length) {
+                    alert('Load product margins first, then export.');
+                    return;
+                }
+                const headers = ['Product', 'Units Sold', 'Revenue', 'Cost', 'Profit', 'Margin %', 'ROI %'];
+                const rows = d.items.map(function(i) {
+                    return [i.itemName || '', i.unitsSold ?? '', i.revenue ?? 0, i.cost ?? 0, i.profit ?? 0, i.marginPercentage != null ? i.marginPercentage : '', i.roiPercentage != null ? i.roiPercentage : ''];
+                });
+                const csv = [headers.join(',')].concat(rows.map(function(r) { return r.map(function(c) { return '"' + String(c).replace(/"/g, '""') + '"'; }).join(','); })).join('\n');
+                const a = document.createElement('a');
+                a.href = 'data:text/csv;charset=utf-8,' + encodeURIComponent(csv);
+                a.download = 'product-margins-' + (d.period && d.period.startDate ? d.period.startDate + '_to_' + (d.period.endDate || '') : 'export') + '.csv';
+                a.click();
+            };
+
+            document.addEventListener('DOMContentLoaded', function() {
+                var e = new Date();
+                var start = document.getElementById('margins-start-date');
+                var end = document.getElementById('margins-end-date');
+                if (start && end && !start.value) {
+                    var s = new Date(e);
+                    s.setDate(s.getDate() - 30);
+                    start.value = s.toISOString().slice(0, 10);
+                    end.value = e.toISOString().slice(0, 10);
+                }
+                var ss = document.getElementById('suppliers-start-date');
+                var se = document.getElementById('suppliers-end-date');
+                if (ss && se && !ss.value) {
+                    var s90 = new Date(e);
+                    s90.setDate(s90.getDate() - 90);
+                    ss.value = s90.toISOString().slice(0, 10);
+                    se.value = e.toISOString().slice(0, 10);
+                }
+                var p1s = document.getElementById('compare-period1-start');
+                var p1e = document.getElementById('compare-period1-end');
+                var p2s = document.getElementById('compare-period2-start');
+                var p2e = document.getElementById('compare-period2-end');
+                if (p1s && p1e && p2s && p2e && !p1s.value) {
+                    var base = new Date(e);
+                    base.setDate(base.getDate() - 28);
+                    p1s.value = base.toISOString().slice(0, 10);
+                    base.setDate(base.getDate() + 13);
+                    p1e.value = base.toISOString().slice(0, 10);
+                    base.setDate(base.getDate() + 1);
+                    p2s.value = base.toISOString().slice(0, 10);
+                    p2e.value = e.toISOString().slice(0, 10);
+                }
+            });
+
+            window.loadTrends = async function() {
+                var typeEl = document.getElementById('trends-period-type');
+                var periodsEl = document.getElementById('trends-periods');
+                var tbody = document.getElementById('trends-table-body');
+                var chartContainer = document.getElementById('trends-chart-container');
+                if (!typeEl || !periodsEl || !tbody) return;
+                var periodType = typeEl.value || 'weekly';
+                var periods = parseInt(periodsEl.value, 10) || 4;
+                tbody.innerHTML = '<tr><td colspan="6" class="text-center py-4"><div class="spinner-border spinner-border-sm text-info me-2"></div>Loading...</td></tr>';
+                try {
+                    var res = await window.apiService.getTrends(periodType, periods);
+                    var d = res.data || res;
+                    var list = Array.isArray(d.trends) ? d.trends : [];
+                    if (list.length === 0) {
+                        tbody.innerHTML = '<tr><td colspan="6" class="text-center text-muted py-4">No trends data. Add sales, purchases, and waste records.</td></tr>';
+                    } else {
+                        tbody.innerHTML = list.map(function(t) {
+                            var sales = t.sales != null ? t.sales : 0;
+                            var purchases = t.purchases != null ? t.purchases : 0;
+                            var waste = t.waste != null ? t.waste : 0;
+                            var profit = t.profit != null ? t.profit : (sales - purchases - waste);
+                            var fc = t.foodCostPercentage != null ? t.foodCostPercentage : 0;
+                            return '<tr><td>' + (t.period || '-') + '</td><td>$' + sales.toLocaleString(undefined, { minimumFractionDigits: 2 }) + '</td><td>$' + purchases.toLocaleString(undefined, { minimumFractionDigits: 2 }) + '</td><td>$' + waste.toLocaleString(undefined, { minimumFractionDigits: 2 }) + '</td><td>$' + profit.toLocaleString(undefined, { minimumFractionDigits: 2 }) + '</td><td>' + Number(fc).toFixed(1) + '%</td></tr>';
+                        }).join('');
+                    }
+                    if (chartContainer && list.length > 0 && typeof ApexCharts !== 'undefined') {
+                        var chartEl = document.getElementById('trends-chart');
+                        if (chartEl) {
+                            var existing = chartEl._chart;
+                            if (existing) existing.destroy();
+                            var opts = {
+                                chart: { type: 'line', height: 220, toolbar: { show: false } },
+                                series: [
+                                    { name: 'Sales', data: list.map(function(t) { return t.sales != null ? t.sales : 0; }) },
+                                    { name: 'Purchases', data: list.map(function(t) { return t.purchases != null ? t.purchases : 0; }) },
+                                    { name: 'Profit', data: list.map(function(t) { var s = t.sales != null ? t.sales : 0; var p = t.purchases != null ? t.purchases : 0; var w = t.waste != null ? t.waste : 0; return t.profit != null ? t.profit : (s - p - w); }) }
+                                ],
+                                xaxis: { categories: list.map(function(t) { return t.period || ''; }) },
+                                stroke: { curve: 'smooth', width: 2 },
+                                colors: ['#696cff', '#ffab00', '#71dd37']
+                            };
+                            var ch = new ApexCharts(chartEl, opts);
+                            ch.render();
+                            chartEl._chart = ch;
+                        }
+                    }
+                } catch (e) {
+                    tbody.innerHTML = '<tr><td colspan="6" class="text-center text-danger py-4">Failed to load: ' + (e.message || 'Unknown error') + '. Ensure the backend is running.</td></tr>';
+                }
+            };
+
+            window.loadSupplierRanking = async function() {
+                var startEl = document.getElementById('suppliers-start-date');
+                var endEl = document.getElementById('suppliers-end-date');
+                var tbody = document.getElementById('suppliers-table-body');
+                if (!startEl || !endEl || !tbody) return;
+                var start = startEl.value || new Date(Date.now() - 90 * 86400000).toISOString().slice(0, 10);
+                var end = endEl.value || new Date().toISOString().slice(0, 10);
+                startEl.value = start;
+                endEl.value = end;
+                tbody.innerHTML = '<tr><td colspan="8" class="text-center py-4"><div class="spinner-border spinner-border-sm text-warning me-2"></div>Loading...</td></tr>';
+                try {
+                    var res = await window.apiService.getSupplierRanking(start, end);
+                    var d = res.data || res;
+                    var list = Array.isArray(d.suppliers) ? d.suppliers : [];
+                    if (list.length === 0) {
+                        tbody.innerHTML = '<tr><td colspan="8" class="text-center text-muted py-4">No supplier data. Add purchase invoices.</td></tr>';
+                    } else {
+                        tbody.innerHTML = list.map(function(s, i) {
+                            return '<tr><td>' + (i + 1) + '</td><td>' + (s.vendor || '-') + '</td><td>' + (s.invoiceCount ?? '-') + '</td><td>$' + (s.totalSpent || 0).toLocaleString(undefined, { minimumFractionDigits: 2 }) + '</td><td>$' + (s.avgInvoiceAmount || 0).toLocaleString(undefined, { minimumFractionDigits: 2 }) + '</td><td>' + (s.percentageOfTotal != null ? Number(s.percentageOfTotal).toFixed(1) : '-') + '%</td><td>' + (s.firstPurchase || '-') + '</td><td>' + (s.lastPurchase || '-') + '</td></tr>';
+                        }).join('');
+                    }
+                } catch (e) {
+                    tbody.innerHTML = '<tr><td colspan="8" class="text-center text-danger py-4">Failed to load: ' + (e.message || 'Unknown error') + '.</td></tr>';
+                }
+            };
+
+            window.loadPeriodComparison = async function() {
+                var p1s = document.getElementById('compare-period1-start');
+                var p1e = document.getElementById('compare-period1-end');
+                var p2s = document.getElementById('compare-period2-start');
+                var p2e = document.getElementById('compare-period2-end');
+                var out = document.getElementById('comparison-results');
+                if (!p1s || !p1e || !p2s || !p2e || !out) return;
+                var s1 = p1s.value, e1 = p1e.value, s2 = p2s.value, e2 = p2e.value;
+                if (!s1 || !e1 || !s2 || !e2) {
+                    out.innerHTML = '<div class="alert alert-warning"><i class="ri-error-warning-line me-2"></i>Select all four dates (Period 1 and Period 2 start/end) then click Compare.</div>';
+                    return;
+                }
+                out.innerHTML = '<div class="text-center py-4"><div class="spinner-border text-success me-2"></div>Comparing...</div>';
+                try {
+                    var res = await window.apiService.comparePeriods(s1, e1, s2, e2);
+                    var d = res.data || res;
+                    var p1 = d.period1 || {}, p2 = d.period2 || {}, c = d.comparison || {};
+                    var fmt = function(n) { return n != null ? '$' + Number(n).toLocaleString(undefined, { minimumFractionDigits: 2 }) : '-'; };
+                    var pct = function(n) { return n != null ? Number(n).toFixed(1) + '%' : '-'; };
+                    var html = '<div class="row mb-4">';
+                    html += '<div class="col-md-6"><div class="card"><div class="card-body"><h6 class="text-primary">' + (p1.label || 'Period 1') + '</h6><table class="table table-sm mb-0"><tr><td>Sales</td><td class="text-end">' + fmt(p1.sales) + '</td></tr><tr><td>Purchases</td><td class="text-end">' + fmt(p1.purchases) + '</td></tr><tr><td>Waste</td><td class="text-end">' + fmt(p1.waste) + '</td></tr><tr><td>Profit</td><td class="text-end">' + fmt(p1.profit) + '</td></tr><tr><td>Food Cost %</td><td class="text-end">' + pct(p1.foodCostPercentage) + '</td></tr></table></div></div></div>';
+                    html += '<div class="col-md-6"><div class="card"><div class="card-body"><h6 class="text-success">' + (p2.label || 'Period 2') + '</h6><table class="table table-sm mb-0"><tr><td>Sales</td><td class="text-end">' + fmt(p2.sales) + '</td></tr><tr><td>Purchases</td><td class="text-end">' + fmt(p2.purchases) + '</td></tr><tr><td>Waste</td><td class="text-end">' + fmt(p2.waste) + '</td></tr><tr><td>Profit</td><td class="text-end">' + fmt(p2.profit) + '</td></tr><tr><td>Food Cost %</td><td class="text-end">' + pct(p2.foodCostPercentage) + '</td></tr></table></div></div></div></div>';
+                    html += '<div class="card"><div class="card-body"><h6>Change (Period 1 → Period 2)</h6><div class="row g-2">';
+                    html += '<div class="col-4 col-md-2"><span class="text-muted small">Sales</span><div class="fw-bold">' + pct(c.salesChange) + '</div></div><div class="col-4 col-md-2"><span class="text-muted small">Purchases</span><div class="fw-bold">' + pct(c.purchasesChange) + '</div></div><div class="col-4 col-md-2"><span class="text-muted small">Waste</span><div class="fw-bold">' + pct(c.wasteChange) + '</div></div><div class="col-4 col-md-2"><span class="text-muted small">Profit</span><div class="fw-bold">' + pct(c.profitChange) + '</div></div><div class="col-4 col-md-2"><span class="text-muted small">Food Cost</span><div class="fw-bold">' + pct(c.foodCostChange) + '</div></div></div></div></div>';
+                    out.innerHTML = html;
+                } catch (e) {
+                    out.innerHTML = '<div class="alert alert-danger">Failed to compare: ' + (e.message || 'Unknown error') + '.</div>';
+                }
+            };
+
+            window.loadAlerts = async function() {
+                var daysEl = document.getElementById('alerts-days');
+                var summaryEl = document.getElementById('alerts-summary');
+                var tbody = document.getElementById('alerts-table-body');
+                if (!daysEl || !tbody) return;
+                var days = parseInt(daysEl.value, 10) || 7;
+                tbody.innerHTML = '<tr><td colspan="8" class="text-center py-4"><div class="spinner-border spinner-border-sm text-danger me-2"></div>Loading...</td></tr>';
+                if (summaryEl) summaryEl.innerHTML = '';
+                try {
+                    var res = await window.apiService.getAlerts(days);
+                    var d = res.data || res;
+                    var list = Array.isArray(d.alerts) ? d.alerts : [];
+                    if (summaryEl) summaryEl.innerHTML = '<p class="mb-0 small text-muted">' + (d.count || list.length) + ' items expiring in the next ' + days + ' days.</p>';
+                    if (list.length === 0) {
+                        tbody.innerHTML = '<tr><td colspan="8" class="text-center text-muted py-4">No expiring items in the next ' + days + ' days.</td></tr>';
+                    } else {
+                        tbody.innerHTML = list.map(function(a) {
+                            var status = a.isExpired ? '<span class="badge bg-danger">Expired</span>' : (a.daysUntilExpiry <= 2 ? '<span class="badge bg-warning">Soon</span>' : '<span class="badge bg-secondary">OK</span>');
+                            var risk = a.valueAtRisk != null ? '$' + Number(a.valueAtRisk).toLocaleString(undefined, { minimumFractionDigits: 2 }) : '—';
+                            var rec = (a.recommendation || '—').replace(/"/g, '&quot;');
+                            return '<tr><td>' + (a.itemName || '-') + '</td><td>' + (a.quantity ?? '-') + '</td><td>' + (a.category || '-') + '</td><td>' + (a.expiryDate || '-') + '</td><td>' + (a.daysUntilExpiry ?? '-') + '</td><td>' + risk + '</td><td>' + status + '</td><td class="small" title="' + rec + '">' + (rec.length > 50 ? rec.slice(0, 47) + '…' : rec) + '</td></tr>';
+                        }).join('');
+                    }
+                } catch (e) {
+                    tbody.innerHTML = '<tr><td colspan="8" class="text-center text-danger py-4">Failed to load: ' + (e.message || 'Unknown error') + '.</td></tr>';
+                }
+            };
+        </script>
+    </body>
+</html>

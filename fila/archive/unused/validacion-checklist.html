@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validación manual — Cloudignite</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; max-width: 720px; margin: 0 auto; padding: 1rem 1.5rem; background: #f8f9fa; }
+    h1 { font-size: 1.35rem; margin-bottom: 0.25rem; }
+    .meta { color: #6c757d; font-size: 0.875rem; margin-bottom: 1.25rem; }
+    section { background: #fff; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+    h2 { font-size: 1rem; margin: 0 0 0.75rem; color: #212529; }
+    ul { list-style: none; padding: 0; margin: 0; }
+    li { padding: 0.35rem 0; border-bottom: 1px solid #eee; display: flex; align-items: flex-start; gap: 0.5rem; }
+    li:last-child { border-bottom: none; }
+    input[type="checkbox"] { margin-top: 0.2rem; flex-shrink: 0; }
+    label { flex: 1; cursor: pointer; font-size: 0.9rem; }
+    label.done { color: #198754; text-decoration: line-through; }
+    a { color: #0d6efd; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .links { margin-top: 0.5rem; font-size: 0.85rem; }
+    .summary { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; }
+    .badge { padding: 0.35rem 0.6rem; border-radius: 6px; font-size: 0.85rem; font-weight: 600; }
+    .badge-done { background: #d4edda; color: #155724; }
+    .badge-total { background: #e2e3e5; color: #383d41; }
+    .btn-clear { margin-top: 0.5rem; padding: 0.35rem 0.75rem; font-size: 0.85rem; cursor: pointer; border-radius: 6px; border: 1px solid #dee2e6; background: #fff; }
+    .btn-clear:hover { background: #f8f9fa; }
+  </style>
+</head>
+<body>
+  <h1>Validación manual — Cloudignite</h1>
+  <div class="meta">Marca cada ítem al completarlo. El estado se guarda en este navegador.</div>
+  <div class="summary">
+    <span class="badge badge-done" id="done-count">0</span>
+    <span class="badge badge-total" id="total-count">0</span>
+    <button type="button" class="btn-clear" id="btn-clear">Limpiar marcados</button>
+  </div>
+
+  <section>
+    <h2>📋 0. Preparación</h2>
+    <ul>
+      <li><input type="checkbox" id="v0-1"><label for="v0-1">Backend :8000 y frontend :3000 corriendo (<a href="http://localhost:3000" target="_blank">abrir</a>)</label></li>
+      <li><input type="checkbox" id="v0-2"><label for="v0-2">Usuario de prueba listo (admin@test.com / admin123 o registro)</label></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🔐 1. Autenticación</h2>
+    <ul>
+      <li><input type="checkbox" id="v1-1"><label for="v1-1">Registro en <a href="sign-up.html" target="_blank">sign-up.html</a> → redirección al dashboard</label></li>
+      <li><input type="checkbox" id="v1-2"><label for="v1-2">Login en <a href="sign-in.html" target="_blank">sign-in.html</a></label></li>
+      <li><input type="checkbox" id="v1-3"><label for="v1-3">Token y user en localStorage (DevTools → Application)</label></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📊 2. Dashboard</h2>
+    <ul>
+      <li><input type="checkbox" id="v2-1"><label for="v2-1">Métricas (Food Cost %, Waste %, Savings) en <a href="index.html" target="_blank">index.html</a></label></li>
+      <li><input type="checkbox" id="v2-2"><label for="v2-2">Action Items y Recently Captured Data</label></li>
+      <li><input type="checkbox" id="v2-3"><label for="v2-3">View breakdown → modal con cálculos</label></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📦 3. Inventario</h2>
+    <ul>
+      <li><input type="checkbox" id="v3-1"><label for="v3-1"><a href="products-list.html" target="_blank">Inventory Control</a> — tabla y botones View/Edit/Delete</label></li>
+      <li><input type="checkbox" id="v3-2"><label for="v3-2">Add item → Save → aparece en tabla</label></li>
+      <li><input type="checkbox" id="v3-3"><label for="v3-3">Edit y Delete funcionan</label></li>
+      <li><input type="checkbox" id="v3-4"><label for="v3-4"><a href="inventory-count.html" target="_blank">Weekly Count</a> — Submit Count → éxito</label></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🗑️ 4. Waste & 📄 5. Manual Data Entry</h2>
+    <ul>
+      <li><input type="checkbox" id="v4-1"><label for="v4-1"><a href="basic-elements.html" target="_blank">basic-elements.html</a> — Record Waste → Submit → éxito</label></li>
+      <li><input type="checkbox" id="v4-2"><label for="v4-2">Upload Invoice → mensaje éxito → Recently Captured Invoices</label></li>
+      <li><input type="checkbox" id="v4-3"><label for="v4-3">Upload POS Report → éxito</label></li>
+      <li><input type="checkbox" id="v4-4"><label for="v4-4"><a href="analytics.html" target="_blank">analytics.html</a> — Waste Analysis, periodos 7/30 días</label></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📱 6. Apps</h2>
+    <ul>
+      <li><input type="checkbox" id="v6-1"><label for="v6-1"><a href="to-do-list.html" target="_blank">To Do</a> — add, complete, edit, delete</label></li>
+      <li><input type="checkbox" id="v6-2"><label for="v6-2"><a href="calendar.html" target="_blank">Calendar</a> — add/view/edit/delete evento</label></li>
+      <li><input type="checkbox" id="v6-3"><label for="v6-3"><a href="contacts.html" target="_blank">Contacts</a> — CRUD</label></li>
+      <li><input type="checkbox" id="v6-4"><label for="v6-4">Chat, Email, Kanban, File Manager — cargan y operan</label></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🌐 7. Pages</h2>
+    <ul>
+      <li><input type="checkbox" id="v7-1"><label for="v7-1">E-Commerce, CRM, Project Management — cargan</label></li>
+      <li><input type="checkbox" id="v7-2"><label for="v7-2">LMS, Help Desk, HR — cargan</label></li>
+      <li><input type="checkbox" id="v7-3"><label for="v7-3">School, Hospital, Events, Social — sin errores</label></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🧪 8. Tests automáticos</h2>
+    <ul>
+      <li><input type="checkbox" id="v8-1"><label for="v8-1">npm run test:exhaustive-full pasa</label></li>
+      <li><input type="checkbox" id="v8-2"><label for="v8-2"><a href="reporte-pruebas.html" target="_blank">reporte-pruebas.html</a> — pruebas verdes</label></li>
+      <li><input type="checkbox" id="v8-3"><label for="v8-3">npm run test:db-integrity pasa</label></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🚨 9. Errores & ⚡ 10. Rendimiento</h2>
+    <ul>
+      <li><input type="checkbox" id="v9-1"><label for="v9-1">Login incorrecto → mensaje; sin login → redirección a sign-in</label></li>
+      <li><input type="checkbox" id="v9-2"><label for="v9-2">Dashboard y listas cargan en &lt; 3 s</label></li>
+      <li><input type="checkbox" id="v9-3"><label for="v9-3">Responsive: reducir ventana, sidebar/tablas se adaptan</label></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📊 11. Reportes & 🔧 12. Perfil</h2>
+    <ul>
+      <li><input type="checkbox" id="v11-1"><label for="v11-1"><a href="reports.html" target="_blank">reports.html</a> — Generate Monthly Report</label></li>
+      <li><input type="checkbox" id="v11-2"><label for="v11-2">Product Margins, Supplier Ranking</label></li>
+      <li><input type="checkbox" id="v11-3"><label for="v11-3">My Profile → Edit → Save → cambios persisten</label></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>✅ Checklist final</h2>
+    <ul>
+      <li><input type="checkbox" id="vf-1"><label for="vf-1">Login/Register, Dashboard, Inventario CRUD, Waste, Manual Data Entry OK</label></li>
+      <li><input type="checkbox" id="vf-2"><label for="vf-2">Apps y Pages operativos, reportes generan, tests pasan</label></li>
+      <li><input type="checkbox" id="vf-3"><label for="vf-3">Sin errores en consola, datos persisten</label></li>
+    </ul>
+  </section>
+
+  <div class="meta">
+    Guía completa: <strong>VALIDACION_MANUAL.md</strong> (raíz del proyecto) · 
+    Diagnóstico: <a href="diagnose-connection.html" target="_blank">diagnose-connection.html</a> · 
+    Reporte pruebas: <a href="reporte-pruebas.html" target="_blank">reporte-pruebas.html</a>
+  </div>
+
+  <script>
+    const KEY = 'cloudignite_validacion';
+    const inputs = document.querySelectorAll('input[type="checkbox"]');
+
+    function load() {
+      try {
+        const raw = localStorage.getItem(KEY);
+        const saved = raw ? JSON.parse(raw) : {};
+        inputs.forEach(cb => {
+          if (saved[cb.id]) cb.checked = true;
+        });
+      } catch (_) {}
+      updateSummary();
+    }
+
+    function save() {
+      const o = {};
+      inputs.forEach(cb => { if (cb.checked) o[cb.id] = true; });
+      try { localStorage.setItem(KEY, JSON.stringify(o)); } catch (_) {}
+      updateSummary();
+    }
+
+    function updateSummary() {
+      let n = 0;
+      inputs.forEach(cb => { if (cb.checked) n++; });
+      document.getElementById('done-count').textContent = n + ' marcados';
+      document.getElementById('total-count').textContent = inputs.length + ' total';
+      inputs.forEach(cb => {
+        const label = document.querySelector('label[for="' + cb.id + '"]');
+        if (label) label.classList.toggle('done', cb.checked);
+      });
+    }
+
+    function clearAll() {
+      inputs.forEach(cb => { cb.checked = false; });
+      try { localStorage.removeItem(KEY); } catch (_) {}
+      updateSummary();
+    }
+
+    inputs.forEach(cb => cb.addEventListener('change', save));
+    document.getElementById('btn-clear').addEventListener('click', clearAll);
+    load();
+  </script>
+</body>
+</html>

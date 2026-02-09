@@ -1,0 +1,1003 @@
+{
+  "idempotency_key": "tequilas_town_menu_001",
+  "batches": [
+    {
+      "objects": [
+        {
+          "type": "CATEGORY",
+          "id": "#CAT_APPETIZERS",
+          "category_data": {
+            "name": "APPETIZERS"
+          }
+        },
+        {
+          "type": "CATEGORY",
+          "id": "#CAT_SO_MEXICAN",
+          "category_data": {
+            "name": "SO MEXICAN"
+          }
+        },
+        {
+          "type": "CATEGORY",
+          "id": "#CAT_SOUP_SALAD",
+          "category_data": {
+            "name": "SOUPS & SALADS"
+          }
+        },
+        {
+          "type": "CATEGORY",
+          "id": "#CAT_TEXMEX_BOWLS",
+          "category_data": {
+            "name": "TEX MEX / BOWLS"
+          }
+        },
+        {
+          "type": "CATEGORY",
+          "id": "#CAT_STREET_TACOS",
+          "category_data": {
+            "name": "STREET STYLE TACOS"
+          }
+        },
+        {
+          "type": "CATEGORY",
+          "id": "#CAT_SPECIALS",
+          "category_data": {
+            "name": "HOUSE SPECIALS"
+          }
+        },
+        {
+          "type": "CATEGORY",
+          "id": "#CAT_SEAFOOD",
+          "category_data": {
+            "name": "SEAFOOD"
+          }
+        },
+        {
+          "type": "CATEGORY",
+          "id": "#CAT_PARRILLADA",
+          "category_data": {
+            "name": "PARRILLADA"
+          }
+        },
+        {
+          "type": "CATEGORY",
+          "id": "#CAT_KIDS",
+          "category_data": {
+            "name": "LITTLE AMIGOS"
+          }
+        },
+        {
+          "type": "CATEGORY",
+          "id": "#CAT_DESSERTS",
+          "category_data": {
+            "name": "DESSERTS"
+          }
+        },
+        {
+          "type": "CATEGORY",
+          "id": "#CAT_SIDES",
+          "category_data": {
+            "name": "SIDES"
+          }
+        },
+        {
+          "type": "CATEGORY",
+          "id": "#CAT_DRINKS",
+          "category_data": {
+            "name": "DRINKS"
+          }
+        }
+      ]
+    },
+    {
+      "objects": [
+        {
+          "type": "ITEM",
+          "id": "#ITEM_EMPANADAS",
+          "item_data": {
+            "name": "EMPANADAS",
+            "description": "Half-moon shaped pastries with choice of shredded beef, chicken or queso fresco",
+            "category_id": "#CAT_APPETIZERS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_EMPANADA_BEEF",
+                "item_variation_data": {
+                  "name": "Shredded Beef",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 995,
+                    "currency": "USD"
+                  },
+                  "sku": "APP-EMP-BEEF"
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_EMPANADA_CHICKEN",
+                "item_variation_data": {
+                  "name": "Shredded Chicken",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 995,
+                    "currency": "USD"
+                  },
+                  "sku": "APP-EMP-CHKN"
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_EMPANADA_CHEESE",
+                "item_variation_data": {
+                  "name": "Queso Fresco",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 895,
+                    "currency": "USD"
+                  },
+                  "sku": "APP-EMP-QF"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_PLATANO_MACHO",
+          "item_data": {
+            "name": "PLÁTANO MACHO CON QUESO FRESCO",
+            "description": "Fried green plantains with avocado cilantro sauce and queso fresco",
+            "category_id": "#CAT_APPETIZERS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_PLATANO_REG",
+                "item_variation_data": {
+                  "name": "Regular",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1095,
+                    "currency": "USD"
+                  },
+                  "sku": "APP-PLT-REG"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_NACHOS_MACHO",
+          "item_data": {
+            "name": "NACHOS MACHO SUPREMO",
+            "description": "Choice of shredded chicken or ground beef, beans, lettuce, tomato, sour cream and guacamole",
+            "category_id": "#CAT_APPETIZERS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_NACHOS_CHICKEN",
+                "item_variation_data": {
+                  "name": "With Shredded Chicken",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1450,
+                    "currency": "USD"
+                  },
+                  "sku": "APP-NAC-CHKN"
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_NACHOS_BEEF",
+                "item_variation_data": {
+                  "name": "With Ground Beef",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1450,
+                    "currency": "USD"
+                  },
+                  "sku": "APP-NAC-BEEF"
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_NACHOS_MEATLESS",
+                "item_variation_data": {
+                  "name": "Meatless",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1250,
+                    "currency": "USD"
+                  },
+                  "sku": "APP-NAC-VEG"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_TABLE_GUAC",
+          "item_data": {
+            "name": "TABLE-SIDE GUACAMOLE",
+            "description": "Fresh avocados prepared at your table with your preferred ingredients",
+            "category_id": "#CAT_APPETIZERS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_GUAC_SMALL",
+                "item_variation_data": {
+                  "name": "Small (2-3 people)",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 995,
+                    "currency": "USD"
+                  },
+                  "sku": "APP-GUC-SML"
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_GUAC_LARGE",
+                "item_variation_data": {
+                  "name": "Large (4-6 people)",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1595,
+                    "currency": "USD"
+                  },
+                  "sku": "APP-GUC-LRG"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "objects": [
+        {
+          "type": "ITEM",
+          "id": "#ITEM_TORTAS",
+          "item_data": {
+            "name": "TORTAS",
+            "description": "Mexican-style sandwich with refried beans, lettuce, avocado, Monterrey Jack",
+            "category_id": "#CAT_SO_MEXICAN",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_TORTA_CARNITAS",
+                "item_variation_data": {
+                  "name": "Pork Carnitas",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1295,
+                    "currency": "USD"
+                  },
+                  "sku": "MEX-TOR-CAR"
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_TORTA_STEAK",
+                "item_variation_data": {
+                  "name": "Asada Steak",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1395,
+                    "currency": "USD"
+                  },
+                  "sku": "MEX-TOR-STK"
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_TORTA_CHICKEN",
+                "item_variation_data": {
+                  "name": "Grilled Chicken",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1295,
+                    "currency": "USD"
+                  },
+                  "sku": "MEX-TOR-CHK"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_SOPES",
+          "item_data": {
+            "name": "SOPES",
+            "description": "Two thick corn masa sopes with refried beans, lettuce, pico, avocado, crema, queso fresco",
+            "category_id": "#CAT_SO_MEXICAN",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_SOPES_CHICKEN",
+                "item_variation_data": {
+                  "name": "Grilled Chicken",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1250,
+                    "currency": "USD"
+                  },
+                  "sku": "MEX-SOP-CHK"
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_SOPES_STEAK",
+                "item_variation_data": {
+                  "name": "Asada Steak",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1350,
+                    "currency": "USD"
+                  },
+                  "sku": "MEX-SOP-STK"
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_SOPES_CARNITAS",
+                "item_variation_data": {
+                  "name": "Pork Carnitas",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1250,
+                    "currency": "USD"
+                  },
+                  "sku": "MEX-SOP-CAR"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "objects": [
+        {
+          "type": "ITEM",
+          "id": "#ITEM_SOPA_AZTECA",
+          "item_data": {
+            "name": "SOPA AZTECA",
+            "description": "Chicken stock with vegetables and rice, served with avocado, pico d' gallo and lime",
+            "category_id": "#CAT_SOUP_SALAD",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_SOUP_CUP",
+                "item_variation_data": {
+                  "name": "Cup",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 695,
+                    "currency": "USD"
+                  },
+                  "sku": "SLD-SAZ-CUP"
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_SOUP_BOWL",
+                "item_variation_data": {
+                  "name": "Bowl",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 995,
+                    "currency": "USD"
+                  },
+                  "sku": "SLD-SAZ-BWL"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_CAESAR_SALAD",
+          "item_data": {
+            "name": "MEXICAN CÉSAR SALAD",
+            "description": "Mexican twist on Caesar with tortilla croutons",
+            "category_id": "#CAT_SOUP_SALAD",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_SALAD_BASE",
+                "item_variation_data": {
+                  "name": "Base Salad",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1095,
+                    "currency": "USD"
+                  },
+                  "sku": "SLD-CAE-BAS"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "objects": [
+        {
+          "type": "ITEM",
+          "id": "#ITEM_QUESADILLAS",
+          "item_data": {
+            "name": "QUESADILLAS",
+            "description": "Shredded chicken or beef between grilled tortillas with Monterrey Jack cheese",
+            "category_id": "#CAT_TEXMEX_BOWLS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_QUESADILLA_CHICKEN",
+                "item_variation_data": {
+                  "name": "Chicken",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1195,
+                    "currency": "USD"
+                  },
+                  "sku": "TEX-QUE-CHK"
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_QUESADILLA_BEEF",
+                "item_variation_data": {
+                  "name": "Beef",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1195,
+                    "currency": "USD"
+                  },
+                  "sku": "TEX-QUE-BEEF"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_CALIFORNIA_BURRITO",
+          "item_data": {
+            "name": "CALIFORNIA BURRITO",
+            "description": "Loaded with grilled chicken or steak, beans, rice, lettuce, sour cream, pico, cheese",
+            "category_id": "#CAT_TEXMEX_BOWLS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_BURRITO_CHICKEN",
+                "item_variation_data": {
+                  "name": "Grilled Chicken",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1395,
+                    "currency": "USD"
+                  },
+                  "sku": "TEX-BUR-CHK"
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_BURRITO_STEAK",
+                "item_variation_data": {
+                  "name": "Asada Steak",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1495,
+                    "currency": "USD"
+                  },
+                  "sku": "TEX-BUR-STK"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "objects": [
+        {
+          "type": "ITEM",
+          "id": "#ITEM_TACOS_CAMARON",
+          "item_data": {
+            "name": "TACOS DE CAMARÓN",
+            "description": "Shrimp, cabbage slaw, radishes, cilantro and pickled onions",
+            "category_id": "#CAT_STREET_TACOS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_TACOS_3",
+                "item_variation_data": {
+                  "name": "3 Tacos",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1495,
+                    "currency": "USD"
+                  },
+                  "sku": "TAC-CAM-3"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_TACOS_PASTOR",
+          "item_data": {
+            "name": "TACOS AL PASTOR",
+            "description": "Guajillo chile marinated pork, onion, cilantro and grilled pineapple",
+            "category_id": "#CAT_STREET_TACOS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_TACOS_3_PASTOR",
+                "item_variation_data": {
+                  "name": "3 Tacos",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1295,
+                    "currency": "USD"
+                  },
+                  "sku": "TAC-PAS-3"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_TACOS_CASA",
+          "item_data": {
+            "name": "TACOS DE LA CASA",
+            "description": "Three tacos with house-made hot salsa",
+            "category_id": "#CAT_STREET_TACOS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_TACO_1",
+                "item_variation_data": {
+                  "name": "1 Taco",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 495,
+                    "currency": "USD"
+                  },
+                  "sku": "TAC-CAS-1"
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_TACOS_2",
+                "item_variation_data": {
+                  "name": "2 Tacos",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 895,
+                    "currency": "USD"
+                  },
+                  "sku": "TAC-CAS-2"
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_TACOS_3_CASA",
+                "item_variation_data": {
+                  "name": "3 Tacos",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1195,
+                    "currency": "USD"
+                  },
+                  "sku": "TAC-CAS-3"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "objects": [
+        {
+          "type": "ITEM",
+          "id": "#ITEM_MOLE_POBLANO",
+          "item_data": {
+            "name": "MOLE POBLANO",
+            "description": "Homemade mole sauce smothered chicken with sesame seeds",
+            "category_id": "#CAT_SPECIALS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_MOLE_REG",
+                "item_variation_data": {
+                  "name": "Regular",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1695,
+                    "currency": "USD"
+                  },
+                  "sku": "SPC-MOL-REG"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_CHILE_RELLENO",
+          "item_data": {
+            "name": "CHILE RELLENO",
+            "description": "Roasted poblano pepper stuffed with queso fresco and ranchero sauce",
+            "category_id": "#CAT_SPECIALS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_RELLENO_CHEESE",
+                "item_variation_data": {
+                  "name": "Queso Fresco",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1395,
+                    "currency": "USD"
+                  },
+                  "sku": "SPC-REL-QF"
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_RELLENO_CHICKEN",
+                "item_variation_data": {
+                  "name": "With Shredded Chicken",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1595,
+                    "currency": "USD"
+                  },
+                  "sku": "SPC-REL-CHK"
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_RELLENO_CARNITAS",
+                "item_variation_data": {
+                  "name": "With Carnitas",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1595,
+                    "currency": "USD"
+                  },
+                  "sku": "SPC-REL-CAR"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "objects": [
+        {
+          "type": "ITEM",
+          "id": "#ITEM_CAMARONES_DIABLA",
+          "item_data": {
+            "name": "CAMARÓNES A LA DIABLA",
+            "description": "Deviled spicy shrimp in garlic and chipotle butter",
+            "category_id": "#CAT_SEAFOOD",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_CAMARONES_REG",
+                "item_variation_data": {
+                  "name": "Regular",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1895,
+                    "currency": "USD"
+                  },
+                  "sku": "SEA-CAM-DIA"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "objects": [
+        {
+          "type": "ITEM",
+          "id": "#ITEM_FAJITAS",
+          "item_data": {
+            "name": "FAJITAS",
+            "description": "Adobo marinated strips grilled with onions, peppers, tomatoes. Served with tortillas, rice, beans, guacamole",
+            "category_id": "#CAT_PARRILLADA",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_FAJITA_VEG",
+                "item_variation_data": {
+                  "name": "Vegetarian",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1495,
+                    "currency": "USD"
+                  },
+                  "sku": "PAR-FAJ-VEG"
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_FAJITA_CHICKEN",
+                "item_variation_data": {
+                  "name": "Chicken",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1695,
+                    "currency": "USD"
+                  },
+                  "sku": "PAR-FAJ-CHK"
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_FAJITA_STEAK",
+                "item_variation_data": {
+                  "name": "Steak",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1895,
+                    "currency": "USD"
+                  },
+                  "sku": "PAR-FAJ-STK"
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_FAJITA_SHRIMP",
+                "item_variation_data": {
+                  "name": "Shrimp",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1995,
+                    "currency": "USD"
+                  },
+                  "sku": "PAR-FAJ-SHR"
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_FAJITA_TWO",
+                "item_variation_data": {
+                  "name": "Two Meats",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 2195,
+                    "currency": "USD"
+                  },
+                  "sku": "PAR-FAJ-2"
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_FAJITA_ALL",
+                "item_variation_data": {
+                  "name": "All Meats",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 2495,
+                    "currency": "USD"
+                  },
+                  "sku": "PAR-FAJ-ALL"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "objects": [
+        {
+          "type": "ITEM",
+          "id": "#ITEM_KIDS_TACO",
+          "item_data": {
+            "name": "KIDS TACO",
+            "description": "Perfect size for little amigos",
+            "category_id": "#CAT_KIDS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_KID_TACO_CHICKEN",
+                "item_variation_data": {
+                  "name": "Chicken",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 595,
+                    "currency": "USD"
+                  },
+                  "sku": "KID-TAC-CHK"
+                }
+              },
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_KID_TACO_BEEF",
+                "item_variation_data": {
+                  "name": "Beef",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 595,
+                    "currency": "USD"
+                  },
+                  "sku": "KID-TAC-BEEF"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "objects": [
+        {
+          "type": "ITEM",
+          "id": "#ITEM_FLAN",
+          "item_data": {
+            "name": "FLAN",
+            "description": "Homemade baked caramel-vanilla custard",
+            "category_id": "#CAT_DESSERTS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_FLAN_REG",
+                "item_variation_data": {
+                  "name": "Regular",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 695,
+                    "currency": "USD"
+                  },
+                  "sku": "DES-FLN-REG"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_CHURROS",
+          "item_data": {
+            "name": "CHURROS CON CHOCOLATE",
+            "description": "Baked cinnamon sugar churros with Abuelita hot chocolate",
+            "category_id": "#CAT_DESSERTS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_CHURROS_REG",
+                "item_variation_data": {
+                  "name": "Regular",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 795,
+                    "currency": "USD"
+                  },
+                  "sku": "DES-CHU-REG"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "objects": [
+        {
+          "type": "ITEM",
+          "id": "#ITEM_GUAC_DIP",
+          "item_data": {
+            "name": "GUAC DIP SALAD",
+            "description": "Side of fresh guacamole",
+            "category_id": "#CAT_SIDES",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_GUAC_SIDE",
+                "item_variation_data": {
+                  "name": "Regular",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 495,
+                    "currency": "USD"
+                  },
+                  "sku": "SID-GUC-REG"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_RICE_BEANS",
+          "item_data": {
+            "name": "RICE & BEANS",
+            "description": "Side of Mexican rice and refried or black beans",
+            "category_id": "#CAT_SIDES",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_RICE_BEANS_REG",
+                "item_variation_data": {
+                  "name": "Regular",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 395,
+                    "currency": "USD"
+                  },
+                  "sku": "SID-RIC-BEA"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "objects": [
+        {
+          "type": "ITEM",
+          "id": "#ITEM_HORCHATA",
+          "item_data": {
+            "name": "HORCHATA",
+            "description": "Sweet cinnamon-rice milk",
+            "category_id": "#CAT_DRINKS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_HORCHATA_REG",
+                "item_variation_data": {
+                  "name": "Regular",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 395,
+                    "currency": "USD"
+                  },
+                  "sku": "DRK-HOR-REG"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_MEX_COKE",
+          "item_data": {
+            "name": "MEXICAN COCA-COLA",
+            "description": "Glass bottle with real sugar",
+            "category_id": "#CAT_DRINKS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_COKE_BOTTLE",
+                "item_variation_data": {
+                  "name": "Bottle",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 350,
+                    "currency": "USD"
+                  },
+                  "sku": "DRK-COK-BOT"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
