@@ -26,7 +26,14 @@ router.get('/executive-summary', authenticate, tenantFilter, asyncHandler(async 
 router.get('/metrics', authenticate, tenantFilter, asyncHandler(async (req, res) => {
   const tenantId = req.tenantId;
   const periodType = (req.query.period || 'weekly').toLowerCase();
-  const metrics = await analyticsService.getDashboardMetrics(tenantId, periodType);
+  let metrics = await analyticsService.getDashboardMetrics(tenantId, periodType);
+  const requiredDefaults = {
+    lossSummary: metrics.lossSummary ?? { theoreticalCost: 0, actualCost: 0, lossAmount: 0, lossPercent: 0 },
+    savingsBreakdown: metrics.savingsBreakdown ?? { totalPotentialSavings: 0, isLoss: false, calculation: {}, items: [], summary: {} },
+    foodCostDisplay: metrics.foodCostDisplay ?? { value: 0, confidence: 'none', message: '—', tooltip: '' },
+    wasteDisplay: metrics.wasteDisplay ?? { value: 0, confidence: 'none', message: '—', tooltip: '' }
+  };
+  metrics = { ...requiredDefaults, ...metrics };
   const response = formatSuccessResponse(metrics);
   res.json(response);
 }));

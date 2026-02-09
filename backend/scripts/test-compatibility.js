@@ -53,11 +53,11 @@ function ok(name, cond, msg = '') {
 function normalizeArrayResponse(res, key) {
   if (!res || res.status !== 200) return null;
   const envelope = res.data;
-  const payload = envelope?.data ?? envelope;
-  if (!payload) return null;
+  if (!envelope || typeof envelope !== 'object') return null;
+  const payload = envelope.data !== undefined ? envelope.data : envelope;
   if (Array.isArray(payload)) return payload;
-  if (payload[key] && Array.isArray(payload[key])) return payload[key];
-  if (typeof payload === 'object') {
+  if (payload && typeof payload === 'object') {
+    if (payload[key] && Array.isArray(payload[key])) return payload[key];
     for (const k of ['invoices', 'reports', 'wasteRecords', 'items']) {
       if (Array.isArray(payload[k])) return payload[k];
     }
@@ -132,14 +132,14 @@ async function run() {
   console.log('\n4. GET /dashboard/metrics — required fields');
   try {
     const r = await request('GET', '/api/dashboard/metrics', null, token);
-    const m = r.data?.data ?? r.data;
-    const hasLoss = m && 'lossSummary' in m;
-    const hasBreakdown = m && 'savingsBreakdown' in m;
-    const hasFoodDisplay = m && 'foodCostDisplay' in m;
-    const hasWasteDisplay = m && 'wasteDisplay' in m;
+    const m = (r.data && (r.data.data !== undefined ? r.data.data : r.data)) || null;
+    const hasLoss = m && typeof m === 'object' && 'lossSummary' in m;
+    const hasBreakdown = m && typeof m === 'object' && 'savingsBreakdown' in m;
+    const hasFoodDisplay = m && typeof m === 'object' && 'foodCostDisplay' in m;
+    const hasWasteDisplay = m && typeof m === 'object' && 'wasteDisplay' in m;
     const pass = r.status === 200 && hasLoss && hasBreakdown && hasFoodDisplay && hasWasteDisplay;
     if (ok('Dashboard metrics has required fields', pass,
-      pass ? '' : `missing: lossSummary=${hasLoss} savingsBreakdown=${hasBreakdown} foodCostDisplay=${hasFoodDisplay} wasteDisplay=${hasWasteDisplay}`)) passed++; else failed++;
+      pass ? '' : `status=${r.status} missing: lossSummary=${hasLoss} savingsBreakdown=${hasBreakdown} foodCostDisplay=${hasFoodDisplay} wasteDisplay=${hasWasteDisplay}`)) passed++; else failed++;
   } catch (e) {
     console.log(`  ❌ Dashboard metrics: ${e.message}`);
     failed++;

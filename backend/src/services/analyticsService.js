@@ -73,6 +73,16 @@ class AnalyticsService {
         }
       } catch (err) {
         console.error('Period savings breakdown failed:', err);
+        // Ensure savingsBreakdown is always an object, not null
+        if (!savingsBreakdown) {
+          savingsBreakdown = {
+            totalPotentialSavings: !pl.isProfitable ? Math.abs(pl.grossProfit) : 0,
+            isLoss: !pl.isProfitable,
+            calculation: { isLoss: !pl.isProfitable, difference: periodDifference, label: period.label },
+            items: [],
+            summary: { wasteIssues: 0, foodCostIssues: 0, varianceIssues: 0, inventoryIssues: 0 }
+          };
+        }
       }
       return {
         ...pl,
@@ -126,7 +136,13 @@ class AnalyticsService {
         wastePercentOfFoodCost: pl.wastePercentOfFoodCost,
         targetWastePercentOfFoodCost: pl.targetWastePercentOfFoodCost,
         lossDefinitions: {},
-        savingsBreakdown,
+        savingsBreakdown: savingsBreakdown || {
+          totalPotentialSavings: !pl.isProfitable ? Math.abs(pl.grossProfit) : 0,
+          isLoss: !pl.isProfitable,
+          calculation: { isLoss: !pl.isProfitable, difference: periodDifference, label: period.label },
+          items: [],
+          summary: { wasteIssues: 0, foodCostIssues: 0, varianceIssues: 0, inventoryIssues: 0 }
+        },
         lossByCategory,
         biggestLossSource: lossByCategory.length > 0 ? { category: lossByCategory[0].name, total_waste: lossByCategory[0].value } : null,
         savingsDisplay: pl.isProfitable ? { value: 0, label: 'Under Target — No Loss to Fix', tooltip: 'On track this period.', actionLabel: null } : { value: Math.abs(pl.grossProfit), label: 'Actual Loss This Period', tooltip: 'Loss for ' + period.label, actionLabel: 'Fix Losses →' }

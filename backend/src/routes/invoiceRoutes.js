@@ -130,7 +130,6 @@ router.get('/', authenticate, tenantFilter, asyncHandler(async (req, res) => {
   const paginationMeta = formatPaginatedResponse([], total, pagination).pagination;
   const response = formatSuccessResponse(invoices, { pagination: paginationMeta });
   response.invoices = invoices;
-  response.pagination = paginationMeta;
   res.json(response);
 }));
 

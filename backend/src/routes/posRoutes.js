@@ -106,7 +106,6 @@ router.get('/reports', authenticate, tenantFilter, asyncHandler(async (req, res)
   const paginationMeta = formatPaginatedResponse([], total, pagination).pagination;
   const response = formatSuccessResponse(reports, { pagination: paginationMeta });
   response.reports = reports;
-  response.pagination = paginationMeta;
   res.json(response);
 }));
 
