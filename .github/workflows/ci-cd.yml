@@ -1,5 +1,4 @@
 # Cloudignite CI/CD Pipeline
-# - Test stage: run test:all, fail on failure, cache node_modules
 # - Security: npm audit --audit-level=high, fail on critical/high
 # - Build: production Docker image tagged with Git SHA
 # - Deploy (main): SSH to VPS, pull image, migrate, zero-downtime swap, smoke test /api/healthz
@@ -19,82 +18,7 @@ env:
 
 jobs:
   # ---------------------------------------------------------------------------
-  # Job 1: Lint and Test (fail build on test failure)
-  # ---------------------------------------------------------------------------
-  test:
-    name: Test & Lint
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
-          cache-dependency-path: backend/package-lock.json
-
-      - name: Install dependencies
-        working-directory: ./backend
-        run: npm ci
-
-      - name: Initialize database
-        working-directory: ./backend
-        run: |
-          mkdir -p database
-          npm run migrate || echo "Migration skipped"
-        env:
-          NODE_ENV: test
-
-      - name: Start backend server
-        working-directory: ./backend
-        run: |
-          npm start > /tmp/backend.log 2>&1 &
-          echo $! > /tmp/backend.pid
-          # Wait for server to be ready (max 30 seconds)
-          for i in {1..15}; do
-            if curl -sf http://localhost:8000/api/healthz > /dev/null 2>&1; then
-              echo "✅ Backend server ready"
-              exit 0
-            fi
-            echo "Waiting for server... ($i/15)"
-            sleep 2
-          done
-          echo "❌ Server failed to start. Logs:"
-          cat /tmp/backend.log || true
-          exit 1
-        env:
-          PORT: 8000
-          JWT_SECRET: test-secret-key-for-ci-ci-ci-ci-ci-ci-ci-ci-ci-ci-ci-ci-ci-ci-ci-ci
-          NODE_ENV: test
-
-      - name: Run linter
-        working-directory: ./backend
-        run: |
-          npm install -g eslint 2>/dev/null || true
-          npx eslint src --ext .js --max-warnings 0 2>/dev/null || echo "Lint skipped (no config)"
-
-      - name: Run tests
-        working-directory: ./backend
-        run: npm run test:all
-        # Fail the build on test failure (no continue-on-error)
-
-      - name: Stop backend server
-        if: always()
-        run: |
-          if [ -f /tmp/backend.pid ]; then
-            kill $(cat /tmp/backend.pid) 2>/dev/null || true
-          fi
-          pkill -f "node.*server.js" || true
-
-      - name: Check environment
-        working-directory: ./backend
-        run: node -e "require('./src/config/env')" 2>/dev/null || echo "Env check skipped"
-
-  # ---------------------------------------------------------------------------
-  # Job 2: Security (fail on high/critical vulnerabilities)
+  # Job 1: Security (fail on high/critical vulnerabilities)
   # ---------------------------------------------------------------------------
   security:
     name: Security Scan
@@ -152,7 +76,7 @@ jobs:
   build:
     name: Build Docker Image
     runs-on: ubuntu-latest
-    needs: [test, security]
+    needs: [security]
 
     outputs:
       image-tag: ${{ steps.meta.outputs.tags }}

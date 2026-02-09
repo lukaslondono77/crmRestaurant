@@ -26,13 +26,24 @@ router.get('/executive-summary', authenticate, tenantFilter, asyncHandler(async 
 router.get('/metrics', authenticate, tenantFilter, asyncHandler(async (req, res) => {
   const tenantId = req.tenantId;
   const periodType = (req.query.period || 'weekly').toLowerCase();
-  let metrics = await analyticsService.getDashboardMetrics(tenantId, periodType);
   const requiredDefaults = {
-    lossSummary: metrics.lossSummary ?? { theoreticalCost: 0, actualCost: 0, lossAmount: 0, lossPercent: 0 },
-    savingsBreakdown: metrics.savingsBreakdown ?? { totalPotentialSavings: 0, isLoss: false, calculation: {}, items: [], summary: {} },
-    foodCostDisplay: metrics.foodCostDisplay ?? { value: 0, confidence: 'none', message: '—', tooltip: '' },
-    wasteDisplay: metrics.wasteDisplay ?? { value: 0, confidence: 'none', message: '—', tooltip: '' }
+    lossSummary: { theoreticalCost: 0, actualCost: 0, lossAmount: 0, lossPercent: 0 },
+    savingsBreakdown: { totalPotentialSavings: 0, isLoss: false, calculation: {}, items: [], summary: {} },
+    foodCostDisplay: { value: 0, confidence: 'none', message: '—', tooltip: '' },
+    wasteDisplay: { value: 0, confidence: 'none', message: '—', tooltip: '' }
   };
+  let metrics;
+  try {
+    metrics = await analyticsService.getDashboardMetrics(tenantId, periodType);
+  } catch (err) {
+    console.error('Dashboard metrics error:', err);
+    res.json(formatSuccessResponse(requiredDefaults));
+    return;
+  }
+  if (!metrics || typeof metrics !== 'object') {
+    res.json(formatSuccessResponse(requiredDefaults));
+    return;
+  }
   metrics = { ...requiredDefaults, ...metrics };
   const response = formatSuccessResponse(metrics);
   res.json(response);

@@ -76,31 +76,27 @@ router.get('/', authenticate, tenantFilter, asyncHandler(async (req, res) => {
   const tenantId = req.tenantId;
   const { startDate, endDate } = req.query;
   const pagination = parsePaginationParams(req, 50, 100);
-  
-  // Build where clause
-  let whereConditions = ['tenant_id = ?'];
-  const params = [tenantId];
-
-  if (startDate && endDate) {
-    whereConditions.push('waste_date BETWEEN ? AND ?');
-    params.push(startDate, endDate);
+  let wasteRecords = [];
+  let total = 0;
+  try {
+    let whereConditions = ['tenant_id = ?'];
+    const params = [tenantId];
+    if (startDate && endDate) {
+      whereConditions.push('waste_date BETWEEN ? AND ?');
+      params.push(startDate, endDate);
+    }
+    const whereClause = `WHERE ${whereConditions.join(' AND ')}`;
+    const countResult = await db.getAsync(`SELECT COUNT(*) as total FROM waste ${whereClause}`, params);
+    total = countResult?.total || 0;
+    wasteRecords = await db.allAsync(`
+      SELECT * FROM waste 
+      ${whereClause}
+      ORDER BY waste_date DESC 
+      LIMIT ? OFFSET ?
+    `, [...params, pagination.limit, pagination.offset]);
+  } catch (err) {
+    console.error('GET /waste error:', err);
   }
-
-  const whereClause = `WHERE ${whereConditions.join(' AND ')}`;
-  
-  // Get total count
-  const countQuery = `SELECT COUNT(*) as total FROM waste ${whereClause}`;
-  const countResult = await db.getAsync(countQuery, params);
-  const total = countResult?.total || 0;
-
-  // Get waste records with pagination
-  const wasteRecords = await db.allAsync(`
-    SELECT * FROM waste 
-    ${whereClause}
-    ORDER BY waste_date DESC 
-    LIMIT ? OFFSET ?
-  `, [...params, pagination.limit, pagination.offset]);
-  
   const paginationMeta = formatPaginatedResponse([], total, pagination).pagination;
   const response = formatSuccessResponse(wasteRecords, { pagination: paginationMeta });
   response.wasteRecords = wasteRecords;

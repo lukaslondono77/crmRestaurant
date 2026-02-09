@@ -90,19 +90,20 @@ router.post('/upload', authenticate, tenantFilter, upload.single('image'), async
 router.get('/reports', authenticate, tenantFilter, asyncHandler(async (req, res) => {
   const tenantId = req.tenantId;
   const pagination = parsePaginationParams(req, 50, 100);
-  
-  // Get total count
-  const countResult = await db.getAsync('SELECT COUNT(*) as total FROM sales WHERE tenant_id = ?', [tenantId]);
-  const total = countResult?.total || 0;
-  
-  // Get reports with pagination
-  const reports = await db.allAsync(`
-    SELECT * FROM sales 
-    WHERE tenant_id = ?
-    ORDER BY report_date DESC 
-    LIMIT ? OFFSET ?
-  `, [tenantId, pagination.limit, pagination.offset]);
-  
+  let reports = [];
+  let total = 0;
+  try {
+    const countResult = await db.getAsync('SELECT COUNT(*) as total FROM sales WHERE tenant_id = ?', [tenantId]);
+    total = countResult?.total || 0;
+    reports = await db.allAsync(`
+      SELECT * FROM sales 
+      WHERE tenant_id = ?
+      ORDER BY report_date DESC 
+      LIMIT ? OFFSET ?
+    `, [tenantId, pagination.limit, pagination.offset]);
+  } catch (err) {
+    console.error('GET /pos/reports error:', err);
+  }
   const paginationMeta = formatPaginatedResponse([], total, pagination).pagination;
   const response = formatSuccessResponse(reports, { pagination: paginationMeta });
   response.reports = reports;

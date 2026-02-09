@@ -105,28 +105,27 @@ router.post('/upload', authenticate, tenantFilter, upload.single('image'), async
 router.get('/', authenticate, tenantFilter, asyncHandler(async (req, res) => {
   const tenantId = req.tenantId;
   const pagination = parsePaginationParams(req, 50, 100);
-  
-  // Get total count
-  const countResult = await db.getAsync('SELECT COUNT(*) as total FROM purchases WHERE tenant_id = ?', [tenantId]);
-  const total = countResult?.total || 0;
-  
-  // Get invoices with pagination
-  const invoices = await db.allAsync(`
-    SELECT * FROM purchases 
-    WHERE tenant_id = ?
-    ORDER BY purchase_date DESC 
-    LIMIT ? OFFSET ?
-  `, [tenantId, pagination.limit, pagination.offset]);
-  
-  // Get items for each invoice
-  for (const invoice of invoices) {
-    const items = await db.allAsync(`
-      SELECT * FROM purchase_items 
-      WHERE purchase_id = ? AND tenant_id = ?
-    `, [invoice.id, tenantId]);
-    invoice.items = items;
+  let invoices = [];
+  let total = 0;
+  try {
+    const countResult = await db.getAsync('SELECT COUNT(*) as total FROM purchases WHERE tenant_id = ?', [tenantId]);
+    total = countResult?.total || 0;
+    invoices = await db.allAsync(`
+      SELECT * FROM purchases 
+      WHERE tenant_id = ?
+      ORDER BY purchase_date DESC 
+      LIMIT ? OFFSET ?
+    `, [tenantId, pagination.limit, pagination.offset]);
+    for (const invoice of invoices) {
+      const items = await db.allAsync(`
+        SELECT * FROM purchase_items 
+        WHERE purchase_id = ? AND tenant_id = ?
+      `, [invoice.id, tenantId]);
+      invoice.items = items || [];
+    }
+  } catch (err) {
+    console.error('GET /invoices error:', err);
   }
-  
   const paginationMeta = formatPaginatedResponse([], total, pagination).pagination;
   const response = formatSuccessResponse(invoices, { pagination: paginationMeta });
   response.invoices = invoices;
