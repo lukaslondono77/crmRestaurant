@@ -1,0 +1,26 @@
+# Dependencies - built fresh in container
+backend/node_modules
+node_modules
+
+# Git and IDE
+.git
+.gitignore
+.cursor
+.vscode
+*.md
+
+# Local env and secrets
+.env
+.env.local
+backend/.env
+
+# Database and uploads - use volumes instead
+backend/database/*.db
+backend/database/backups
+backend/uploads
+backend/logs
+
+# Test and dev
+**/__tests__
+**/*.test.js
+**/*.spec.js

@@ -1,0 +1,2056 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Links Of CSS File -->
+		<link rel="stylesheet" href="../assets/css/sidebar-menu.css">
+		<link rel="stylesheet" href="../assets/css/simplebar.css">
+		<link rel="stylesheet" href="../assets/css/prism.css">
+        <link rel="stylesheet" href="../assets/css/quill.snow.css">
+        <link rel="stylesheet" href="../assets/css/remixicon.css">
+        <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="../assets/css/jsvectormap.min.css">
+		<link rel="stylesheet" href="../assets/css/style.css">
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="../assets/images/favicon.png">
+        
+		<!-- Title -->
+		<title>Weekly Inventory Count - Cloudignite Cost Control</title>
+    </head>
+    <body class="bg-body-bg">
+        
+        <!-- Start Preloader Area -->
+        <div class="preloader" id="preloader">
+            <div class="preloader">
+                <div class="waviy position-relative">
+                    <span class="d-inline-block">C</span>
+                    <span class="d-inline-block">l</span>
+                    <span class="d-inline-block">o</span>
+                    <span class="d-inline-block">u</span>
+                    <span class="d-inline-block">d</span>
+                    <span class="d-inline-block">i</span>
+                    <span class="d-inline-block">g</span>
+                    <span class="d-inline-block">n</span>
+                    <span class="d-inline-block">i</span>
+                    <span class="d-inline-block">t</span>
+                    <span class="d-inline-block">e</span>
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader Area -->
+
+        <!-- Start Sidebar Area -->
+        <div class="sidebar-area" id="sidebar-area">
+            <div class="logo position-relative d-flex align-items-center justify-content-between">
+                <a href="index.html" class="d-block text-decoration-none position-relative">
+                    <img src="../assets/images/logo-icon.png" alt="logo-icon">
+                    <span class="logo-text text-secondary fw-semibold">Cloudignite</span>
+                </a> 
+                <button class="sidebar-burger-menu-close bg-transparent py-3 border-0 opacity-0 z-n1 position-absolute top-50 end-0 translate-middle-y" id="sidebar-burger-menu-close">
+                    <span class="border-1 d-block for-dark-burger" style="border-bottom: 1px solid #475569; height: 1px; width: 25px; transform: rotate(45deg);"></span>
+                    <span class="border-1 d-block for-dark-burger" style="border-bottom: 1px solid #475569; height: 1px; width: 25px; transform: rotate(-45deg);"></span>
+                </button>
+                <button class="sidebar-burger-menu bg-transparent p-0 border-0" id="sidebar-burger-menu">
+                    <span class="border-1 d-block for-dark-burger" style="border-bottom: 1px solid #475569; height: 1px; width: 25px;"></span>
+                    <span class="border-1 d-block for-dark-burger" style="border-bottom: 1px solid #475569; height: 1px; width: 25px; margin: 6px 0;"></span>
+                    <span class="border-1 d-block for-dark-burger" style="border-bottom: 1px solid #475569; height: 1px; width: 25px;"></span>
+                </button>
+            </div>
+
+            <aside id="layout-menu" class="layout-menu menu-vertical menu active" data-simplebar>
+                <ul class="menu-inner">
+                    <li class="menu-title small text-uppercase">
+                        <span class="menu-title-text">MAIN</span>
+                    </li>
+                    <li class="menu-item open">
+                        <a href="index.html" class="menu-link">
+                            <span class="material-symbols-outlined menu-icon">dashboard</span>
+                            <span class="title">Loss Summary</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="products-list.html" class="menu-link">
+                            <span class="material-symbols-outlined menu-icon">inventory_2</span>
+                            <span class="title">Inventory Control</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="inventory-count.html" class="menu-link active">
+                            <span class="material-symbols-outlined menu-icon">fact_check</span>
+                            <span class="title">Weekly Count</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="analytics.html" class="menu-link">
+                            <span class="material-symbols-outlined menu-icon">delete</span>
+                            <span class="title">Waste Tracking</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="reports.html" class="menu-link">
+                            <span class="material-symbols-outlined menu-icon">groups</span>
+                            <span class="title">Labor Cost Analysis</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="products-list.html" class="menu-link">
+                            <span class="material-symbols-outlined menu-icon">restaurant_menu</span>
+                            <span class="title">Menu Profitability</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="invoices.html" class="menu-link">
+                            <span class="material-symbols-outlined menu-icon">local_shipping</span>
+                            <span class="title">Suppliers & Invoices</span>
+                        </a>
+                    </li>
+
+<li class="menu-item">
+                        <a href="analytics.html" class="menu-link">
+                            <span class="material-symbols-outlined menu-icon">task_alt</span>
+                            <span class="title">Action Items</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="manual-data-entry.html" class="menu-link">
+                            <span class="material-symbols-outlined menu-icon">edit_note</span>
+                            <span class="title">Manual Data Entry</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="reports.html" class="menu-link">
+                            <span class="material-symbols-outlined menu-icon">assessment</span>
+                            <span class="title">Reports & Exports</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="alerts.html" class="menu-link">
+                            <span class="material-symbols-outlined menu-icon">notifications</span>
+                            <span class="title">Alerts</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-title small text-uppercase">
+                        <span class="menu-title-text">SETTINGS</span>
+                    </li>
+
+                        <a href="javascript:void(0);" class="menu-link menu-toggle active">
+                            <span class="material-symbols-outlined menu-icon">settings</span>
+                            <span class="title">Settings</span>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="account-settings.html" class="menu-link">
+                                    Account Settings
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="change-password.html" class="menu-link">
+                                    Change Password
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="settings.html" class="menu-link">
+                                    Restaurant Settings
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="my-profile.html" class="menu-link">
+                            <span class="material-symbols-outlined menu-icon">account_circle</span>
+                            <span class="title">My Profile</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="#" class="menu-link" onclick="if(window.authService) { window.authService.logout(); } return false;">
+                            <span class="material-symbols-outlined menu-icon">logout</span>
+                            <span class="title">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+        <!-- End Sidebar Area -->
+
+        <!-- Start Main Content Area -->
+        <div class="container-fluid">
+            <div class="main-content d-flex flex-column">
+                <!-- Start Header Area -->
+                <header class="header-area bg-white mb-4 rounded-10 border border-white" id="header-area">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="left-header-content">
+                                <ul class="d-flex align-items-center ps-0 mb-0 list-unstyled justify-content-center justify-content-md-start">
+                                    <li class="d-xl-none">
+                                        <button class="header-burger-menu bg-transparent p-0 border-0 position-relative top-3" id="header-burger-menu">
+                                            <span class="border-1 d-block for-dark-burger" style="border-bottom: 1px solid #475569; height: 1px; width: 25px;"></span>
+                                            <span class="border-1 d-block for-dark-burger" style="border-bottom: 1px solid #475569; height: 1px; width: 25px; margin: 6px 0;"></span>
+                                            <span class="border-1 d-block for-dark-burger" style="border-bottom: 1px solid #475569; height: 1px; width: 25px;"></span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <form class="src-form position-relative">
+                                            <input type="text" class="form-control" placeholder="Search here...">
+                                            <div class="src-btn position-absolute top-50 start-0 translate-middle-y bg-transparent p-0 border-0">
+                                                <span class="material-symbols-outlined">search</span>
+                                            </div>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="right-header-content mt-3 mt-md-0">
+                                <ul class="d-flex align-items-center justify-content-center justify-content-md-end ps-0 mb-0 list-unstyled">
+                                    <li class="header-right-item language-item">
+                                        <div class="dropdown notifications language">
+                                            <button class="btn btn-secondary dropdown-toggle border-0 p-0 position-relative" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="material-symbols-outlined" style="font-size: 19px;">translate</span>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-lg p-0 border-0 dropdown-menu-end">
+                                                <span class="fw-medium fs-16 text-secondary d-block title" style="padding-top: 20px; padding-bottom: 20px;">Choose Language</span>
+                                                <div class="max-h-275" data-simplebar>
+                                                    <div class="notification-menu">
+                                                        <a href="javascript:void(0);" class="dropdown-item language-option" data-lang="en" data-lang-code="en">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="flex-shrink-0">
+                                                                    <img src="../assets/images/usa.png" class="wh-30 rounded-circle" alt="usa">
+                                                                </div>
+                                                                <div class="flex-grow-1 ms-10">
+                                                                    <span class="text-secondary fw-medium fs-15">English</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="notification-menu">
+                                                        <a href="javascript:void(0);" class="dropdown-item language-option" data-lang="en-AU" data-lang-code="en">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="flex-shrink-0">
+                                                                    <img src="../assets/images/australia.png" class="wh-30 rounded-circle" alt="australia">
+                                                                </div>
+                                                                <div class="flex-grow-1 ms-10">
+                                                                    <span class="text-secondary fw-medium fs-15">Australia</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="notification-menu">
+                                                        <a href="javascript:void(0);" class="dropdown-item language-option" data-lang="es" data-lang-code="es">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="flex-shrink-0">
+                                                                    <img src="../assets/images/spain.png" class="wh-30 rounded-circle" alt="spain">
+                                                                </div>
+                                                                <div class="flex-grow-1 ms-10">
+                                                                    <span class="text-secondary fw-medium fs-15">Spanish</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="notification-menu">
+                                                        <a href="javascript:void(0);" class="dropdown-item language-option" data-lang="fr" data-lang-code="fr">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="flex-shrink-0">
+                                                                    <img src="../assets/images/france.png" class="wh-30 rounded-circle" alt="portugal">
+                                                                </div>
+                                                                <div class="flex-grow-1 ms-10">
+                                                                    <span class="text-secondary fw-medium fs-15">France</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="notification-menu mb-0">
+                                                        <a href="javascript:void(0);" class="dropdown-item language-option" data-lang="de" data-lang-code="de">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="flex-shrink-0">
+                                                                    <img src="../assets/images/germany.png" class="wh-30 rounded-circle" alt="Germany">
+                                                                </div>
+                                                                <div class="flex-grow-1 ms-10">
+                                                                    <span class="text-secondary fw-medium fs-15">German</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header-right-item light-dark-item">
+                                        <div class="light-dark">
+                                            <button class="switch-toggle dark-btn p-0 bg-transparent lh-0 border-0" id="switch-toggle">
+                                                <span class="dark"><i class="material-symbols-outlined">dark_mode</i></span> 
+                                                <span class="light"><i class="material-symbols-outlined">light_mode</i></span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="header-right-item calendar-item">
+                                        <div class="dropdown notifications">
+                                            <a href="blank-page.html" class="btn btn-secondary border-0 p-0 position-relative">
+                                                <span class="material-symbols-outlined" style="font-size: 19px;">calendar_today</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="header-right-item messages-item">
+                                        <div class="dropdown notifications noti messages">
+                                            <button class="btn btn-secondary border-0 p-0 position-relative" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="material-symbols-outlined">mail</span>
+                                                <span class="count bg-primary">5</span>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-lg p-0 border-0 p-0 dropdown-menu-end">
+                                                <div class="d-flex justify-content-between align-items-center title">
+                                                    <span class="fw-medium fs-16 text-secondary">Messages <span class="fw-normal text-body fs-16">(03)</span></span>
+                                                    <button class="p-0 m-0 bg-transparent border-0 fs-15 text-primary fw-medium">Mark all as read</button>
+                                                </div> 
+
+                                                <div style="max-height: 300px;" data-simplebar>
+                                                    <div class="notification-menu unseen">
+                                                        <a href="blank-page.html" class="dropdown-item">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="flex-shrink-0">
+                                                                    <img src="../assets/images/user1.jpg" class="rounded-circle" style="width: 44px; height: 44px;" alt="images">
+                                                                </div>
+                                                                <div class="flex-grow-1 ms-10">
+                                                                    <p class="fs-16 fw-medium text-secondary mb-2">Jacob Liwiski <span class="fs-14 fw-normal text-body ms-2">35 min ago</span></p>
+                                                                    <span class="fs-14-5 fw-medium d-inline-block" style="line-height: 1.4;">Hey Victor! Could you please...</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="notification-menu unseen">
+                                                        <a href="blank-page.html" class="dropdown-item">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="flex-shrink-0">
+                                                                    <img src="../assets/images/user2.jpg" class="rounded-circle" style="width: 44px; height: 44px;" alt="images">
+                                                                </div>
+                                                                <div class="flex-grow-1 ms-10">
+                                                                    <p class="fs-16 fw-medium text-secondary mb-2">Angela Carter <span class="fs-14 fw-normal text-body ms-2">1 day ago</span></p>
+                                                                    <span class="fs-14-5 fw-medium d-inline-block" style="line-height: 1.4;">How are you Angela? Would you please...</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="notification-menu">
+                                                        <a href="blank-page.html" class="dropdown-item">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="flex-shrink-0">
+                                                                    <img src="../assets/images/user3.jpg" class="rounded-circle" style="width: 44px; height: 44px;" alt="images">
+                                                                </div>
+                                                                <div class="flex-grow-1 ms-10">
+                                                                    <p class="fs-16 fw-medium text-secondary mb-2">Brad Traversy <span class="fs-14 fw-normal text-body ms-2">2 days ago</span></p>
+                                                                    <span class="fs-14-5 fw-medium d-inline-block" style="line-height: 1.4;">Hey Brad Traversy! Could you please...</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <a href="blank-page.html" class="dropdown-item text-center text-primary d-block view-all fw-medium rounded-bottom-3">
+                                                    <span>See All Messages</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header-right-item">
+                                        <div class="dropdown notifications noti">
+                                            <button class="btn btn-secondary border-0 p-0 position-relative" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="material-symbols-outlined">notifications</span>
+                                                <span class="count">3</span>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-lg p-0 border-0 p-0 dropdown-menu-end">
+                                                <div class="d-flex justify-content-between align-items-center title">
+                                                    <span class="fw-medium fs-16 text-secondary">Notifications <span class="fw-normal text-body fs-16">(03)</span></span>
+                                                    <button class="p-0 m-0 bg-transparent border-0 fs-15 text-primary fw-medium">Clear All</button>
+                                                </div> 
+
+                                                <div style="max-height: 300px;" data-simplebar>
+                                                    <div class="notification-menu unseen">
+                                                        <a href="notifications.html" class="dropdown-item">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="flex-shrink-0">
+                                                                    <i class="material-symbols-outlined text-primary">sms</i>
+                                                                </div>
+                                                                <div class="flex-grow-1 ms-3">
+                                                                    <p class="fs-16 fw-medium text-secondary">You have requested to withdrawal</p>
+                                                                    <span class="fs-14 fw-medium">2 hrs ago</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="notification-menu unseen">
+                                                        <a href="notifications.html" class="dropdown-item">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="flex-shrink-0">
+                                                                    <i class="material-symbols-outlined text-info">person</i>
+                                                                </div>
+                                                                <div class="flex-grow-1 ms-3">
+                                                                    <p class="fs-16 fw-medium text-secondary">A new user added in Cloudignite</p>
+                                                                    <span class="fs-14 fw-medium">3 hrs ago</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="notification-menu">
+                                                        <a href="notifications.html" class="dropdown-item">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="flex-shrink-0">
+                                                                    <i class="material-symbols-outlined text-success">mark_email_unread</i>
+                                                                </div>
+                                                                <div class="flex-grow-1 ms-3">
+                                                                    <p class="fs-16 fw-medium text-secondary">You have requested to withdrawal</p>
+                                                                    <span class="fs-14 fw-medium">1 day ago</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <a href="notifications.html" class="dropdown-item text-center text-primary d-block view-all fw-medium rounded-bottom-3">
+                                                    <span>See All Notifications </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header-right-item">
+                                        <div class="dropdown admin-profile">
+                                            <div class="d-xxl-flex align-items-center bg-transparent border-0 text-start p-0 cursor dropdown-toggle" data-bs-toggle="dropdown">
+                                                <div class="flex-shrink-0 position-relative">
+                                                    <img class="rounded-circle admin-img-width-for-mobile" style="width: 40px; height: 40px;" src="../assets/images/admin.png" alt="admin">
+                                                    <span class="d-block bg-success-60 border border-2 border-white rounded-circle position-absolute end-0 bottom-0" style="width: 11px; height: 11px;"></span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="dropdown-menu border-0 bg-white dropdown-menu-end">
+                                                <div class="d-flex align-items-center info">
+                                                    <div class="flex-shrink-0">
+                                                        <img class="rounded-circle admin-img-width-for-mobile" style="width: 40px; height: 40px;" src="../assets/images/admin.png" alt="admin">
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-10">
+                                                        <h3 class="fw-medium fs-17 mb-0 user-name">Loading...</h3>
+                                                        <span class="fs-15 fw-medium user-role">Loading...</span>
+                                                    </div>
+                                                </div>
+                                                <ul class="admin-link mb-0 list-unstyled">
+                                                    <li>
+                                                        <a class="dropdown-item admin-item-link d-flex align-items-center text-body" href="my-profile.html">
+                                                            <i class="material-symbols-outlined">person</i>
+                                                            <span class="ms-2">My Profile</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item admin-item-link d-flex align-items-center text-body" href="settings.html">
+                                                            <i class="material-symbols-outlined">settings</i>
+                                                            <span class="ms-2">Settings</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item admin-item-link d-flex align-items-center text-body" href="alerts.html">
+                                                            <i class="material-symbols-outlined">info</i>
+                                                            <span class="ms-2">Support</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item admin-item-link d-flex align-items-center text-body" href="#" onclick="if(window.authService) { window.authService.logout(); } return false;">
+                                                            <i class="material-symbols-outlined">logout</i>
+                                                            <span class="ms-2">Logout</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <!-- End Header Area -->
+
+                <div class="main-content-container overflow-hidden">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4 mt-1">
+                                <h3 class="mb-0">Weekly Inventory Count</h3>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb align-items-center mb-0 lh-1">
+                                        <li class="breadcrumb-item"><a href="index.html" class="d-flex align-items-center text-decoration-none"><i class="ri-home-8-line fs-15 text-primary me-1"></i><span class="text-body fs-14 hover">Dashboard</span></a></li>
+                                        <li class="breadcrumb-item active" aria-current="page"><span class="text-secondary">Weekly Count</span></li>
+                                    </ol>
+                                </nav>
+                            </div>
+                            <div class="alert alert-info border-0 mb-4">
+                                <strong>Why weekly counts?</strong> Actual Food Cost = (Begin + Purchases &minus; End) / Food Sales. This form records your <strong>ending inventory</strong> for the week. Use it every week for accurate cost control.
+                            </div>
+                            <div class="card bg-white p-20 rounded-10 border border-white mb-4">
+                                <form id="weekly-count-form">
+                                    <div class="mb-4">
+                                        <label class="form-label fw-medium">Week ending (count date)</label>
+                                        <input type="date" id="count-date" class="form-control" required>
+                                    </div>
+                                    <div id="count-items-container" class="mb-4"></div>
+                                    <button type="submit" class="btn btn-primary" id="submit-count-btn"><i class="ri-save-line me-1"></i> Save count</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="flex-grow-1"></div>
+
+                <!-- Start Footer Area -->
+                <footer class="footer-area bg-white text-center rounded-10 rounded-bottom-0">
+                    <p class="fs-16 text-body">© Cloudignite</p>
+                </footer>
+                <!-- End Footer Area -->
+            </div>
+        </div>
+        <!-- Start Main Content Area -->
+
+        <!-- Start Theme Setting Area -->
+        <button class="btn btn-primary theme-settings-btn p-0 position-fixed z-2 text-center rounded-circle" style="bottom: 24px; right: 24px; width: 56px; height: 56px; line-height: 54px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+            <i class="text-white ri-settings-3-fill fs-28" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Click On Theme Settings"></i>
+        </button>
+
+        <!-- Start Theme Setting Area -->
+        <div class="offcanvas offcanvas-end bg-white border-0" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel" style="box-shadow: 0 4px 20px #2f8fe812 !important; max-width: 300px;">
+            <div class="offcanvas-header bg-light p-20">
+                <h5 class="offcanvas-title fs-18 fw-medium" id="offcanvasScrollingLabel">Configuration Panel</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body p-0 overflow-hidden">
+                <div class="last-child-none" style="max-height: 858px;" data-simplebar>
+                    <div class="p-20 border-bottom child">
+                        <h4 class="fs-15 fw-medium mb-12">RTL Mode</h4>
+                        <div class="rtl-btn">
+                            <label id="switch">
+                                <input type="checkbox" onchange="toggleTheme()" class="toggle-switch rtl-switch" id="slider">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="p-20 border-bottom child">
+                        <h4 class="fs-15 fw-medium mb-12">Only Sidebar Dark</h4>
+                        <div class="sidebar-light-dark" id="sidebar-light-dark">
+                            <input type="checkbox" class="toggle-switch sidebar-dark-switch">
+                        </div>
+                    </div>
+                    <div class="p-20 border-bottom child">
+                        <h4 class="fs-15 fw-medium mb-12">Only Header Dark</h4>
+                        <div class="header-light-dark" id="header-light-dark">
+                            <input type="checkbox" class="toggle-switch header-dark-switch">
+                        </div>
+                    </div>
+                    <div class="p-20 border-bottom child">
+                        <h4 class="fs-15 fw-medium mb-12">Right Sidebar</h4>
+                        <div class="right-sidebar" id="right-sidebar">
+                            <input type="checkbox" class="toggle-switch right-sidebar-switch">
+                        </div>
+                    </div>
+                    <div class="p-20 border-bottom child">
+                        <h4 class="fs-15 fw-medium mb-12">Hide Sidebar</h4>
+                        <div class="icon-sidebar" id="icon-sidebar">
+                            <input type="checkbox" class="toggle-switch icon-sidebar-switch">
+                        </div>
+                    </div>
+                    <div class="p-20 border-bottom child">
+                        <h4 class="fs-15 fw-medium mb-12">Bordered Card</h4>
+                        <div class="card-border" id="card-border">
+                            <input type="checkbox" class="toggle-switch border-switch">
+                        </div>
+                    </div>
+                    <div class="p-20 border-bottom child">
+                        <h4 class="fs-15 fw-medium mb-12">Card Border Radius</h4>
+                        <div class="card-radius-square" id="card-radius-square">
+                            <input type="checkbox" class="toggle-switch border-radius-switch">
+                        </div>
+                    </div>
+                    
+                    <div class="p-20 border-bottom child">
+                        <a href="#" class="btn btn-primary text-white">
+                            Cloudignite
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Theme Setting Area -->
+     
+        <!-- Link Of JS File -->
+        <script src="../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/sidebar-menu.js"></script>
+        <script src="../assets/js/quill.min.js"></script>
+        <script src="../assets/js/data-table.js"></script>
+        <script src="../assets/js/prism.js"></script>
+        <script src="../assets/js/clipboard.min.js"></script>
+        <script src="../assets/js/simplebar.min.js"></script>
+        <script src="../assets/js/apexcharts.min.js"></script>
+        <script src="../assets/js/echarts.min.js"></script>
+        <script src="../assets/js/swiper-bundle.min.js"></script>
+        <script src="../assets/js/fullcalendar.main.js"></script>
+        <script src="../assets/js/jsvectormap.min.js"></script>
+        <script src="../assets/js/world-merc.js"></script>
+        <script src="../assets/js/custom/apexcharts.js"></script>
+        <script src="../assets/js/custom/echarts.js"></script>
+        <script src="../assets/js/custom/maps.js"></script>
+        <script src="../assets/js/config.js"></script>
+        <script src="../assets/js/custom/custom.js"></script>
+        <script src="../assets/js/auth/authService.js"></script>
+        <script src="../assets/js/api/apiService.js"></script>
+        <script src="../assets/js/sidebar/sidebarService.js"></script>
+        
+        
+        <!-- Authentication Check -->
+        <script>
+            // Verify authentication on page load
+            document.addEventListener('DOMContentLoaded', function() {
+                if (window.authService) {
+                    if (!window.authService.isAuthenticated()) {
+                        window.location.href = 'sign-in.html';
+                        return;
+                    }
+                    
+                    // Optionally refresh user info
+                    window.authService.getCurrentUserInfo().catch(err => {
+                        console.warn('Could not refresh user info:', err);
+                    });
+                }
+            });
+        </script>
+        <!-- Weekly Inventory Count (inventory-count page only) -->
+        <script>
+            (function() {
+                const form = document.getElementById('weekly-count-form');
+                const container = document.getElementById('count-items-container');
+                const dateInput = document.getElementById('count-date');
+                const submitBtn = document.getElementById('submit-count-btn');
+                if (!form || !container) return;
+
+                function weekEnd(d) {
+                    d = new Date(d);
+                    d.setDate(d.getDate() - d.getDay());
+                    return d.toISOString().slice(0, 10);
+                }
+
+                async function loadItems() {
+                    try {
+                        const r = await window.apiService.getInventoryCountItems();
+                        const items = (r.data && r.data.items) ? r.data.items : (r.items || []);
+                        if (items.length === 0) {
+                            container.innerHTML = '<div class="alert alert-warning mb-0">No items to count yet. Add inventory or upload invoices in <a href="manual-data-entry.html">Manual Data Entry</a> first.</div>';
+                            return;
+                        }
+                        container.innerHTML = '<p class="text-muted mb-2">Enter quantity on hand for each item. Use decimals if needed (e.g. 2.5).</p>' + items.map(function(it, i) {
+                            return '<div class="row align-items-center mb-2"><div class="col-md-5"><label class="form-label mb-0 small">' + (it.itemName || it.item_name) + (it.category ? ' <span class="text-muted">(' + it.category + ')</span>' : '') + '</label></div><div class="col-md-3"><input type="number" step="any" min="0" class="form-control form-control-sm count-qty" data-item="' + (it.itemName || it.item_name) + '" data-category="' + (it.category || '') + '" data-unit-price="' + (it.unitPrice != null ? it.unitPrice : '') + '" placeholder="0" value="0"></div></div>';
+                        }).join('');
+                    } catch (e) {
+                        container.innerHTML = '<div class="alert alert-danger mb-0">Could not load items. ' + (e.message || '') + '</div>';
+                    }
+                }
+
+                if (!dateInput.value) {
+                    const sun = weekEnd(new Date());
+                    dateInput.value = sun;
+                }
+
+                form.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    if (!submitBtn) return;
+                    submitBtn.disabled = true;
+                    submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-1"></span> Saving...';
+                    try {
+                        const inputs = container.querySelectorAll('.count-qty');
+                        const items = [];
+                        inputs.forEach(function(inp) {
+                            const qty = parseFloat(inp.value);
+                            if (isNaN(qty)) return;
+                            items.push({ itemName: inp.dataset.item, quantity: qty, category: inp.dataset.category || null, unitPrice: inp.dataset.unitPrice ? parseFloat(inp.dataset.unitPrice) : null });
+                        });
+                        await window.apiService.submitInventoryCount({ countDate: dateInput.value, items: items });
+                        submitBtn.innerHTML = '<i class="ri-check-line me-1"></i> Saved';
+                        submitBtn.classList.remove('btn-primary');
+                        submitBtn.classList.add('btn-success');
+                    } catch (err) {
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = '<i class="ri-save-line me-1"></i> Save count';
+                        alert('Failed to save: ' + (err.message || 'Unknown error'));
+                    }
+                });
+
+                loadItems();
+            })();
+        </script>
+        <script>
+            // Initialize database with data if empty (dashboard only)
+            (async function() {
+                if (document.getElementById('weekly-count-form')) return;
+                try {
+                    // Check if we need to initialize data
+                    const metricsResponse = await window.apiService.getDashboardMetrics();
+                    const metrics = metricsResponse.data || metricsResponse; // Support both formats
+                    // If metrics show no data, initialize
+                    if (metrics.weeklyLoss === 0 && metrics.foodCostPercentage === 0) {
+                        console.log('📊 Initializing database with sample data...');
+                        try {
+                            const base = (window.apiService && window.apiService.API_BASE_URL) || (window.APP_CONFIG && window.APP_CONFIG.API_BASE_URL) || 'http://localhost:8000/api';
+                            const headers = { 'Content-Type': 'application/json' };
+                            const token = window.authService && window.authService.getToken();
+                            if (token) headers['Authorization'] = 'Bearer ' + token;
+                            const initResult = await fetch(base + '/seed/initialize', { method: 'POST', headers });
+                            const result = await initResult.json();
+                            if (result.success) {
+                                console.log('✅ Database initialized:', result.results);
+                                setTimeout(() => window.location.reload(), 2000);
+                            } else console.warn('Seed failed:', result.error || result.message);
+                        } catch (initError) {
+                            console.warn('Could not initialize database:', initError);
+                        }
+                    }
+                } catch (error) {
+                    console.log('📊 Initializing database...');
+                    try {
+                        const base = (window.apiService && window.apiService.API_BASE_URL) || (window.APP_CONFIG && window.APP_CONFIG.API_BASE_URL) || 'http://localhost:8000/api';
+                        const headers = { 'Content-Type': 'application/json' };
+                        const token = window.authService && window.authService.getToken();
+                        if (token) headers['Authorization'] = 'Bearer ' + token;
+                        const initResult = await fetch(base + '/seed/initialize', { method: 'POST', headers });
+                        const result = await initResult.json();
+                        if (result.success) {
+                            console.log('✅ Database initialized:', result.results);
+                            setTimeout(() => window.location.reload(), 2000);
+                        } else console.warn('Seed failed:', result.error || result.message);
+                    } catch (initError) {
+                        console.warn('Could not initialize database:', initError);
+                    }
+                }
+            })();
+
+            // Load Dashboard Metrics (dashboard only)
+            (async function() {
+                if (document.getElementById('weekly-count-form')) return;
+                try {
+                    const metricsResponse = await window.apiService.getDashboardMetrics();
+                    const metrics = metricsResponse.data || metricsResponse; // Support both formats
+                    
+                    // Update Weekly Loss
+                    const weeklyLossEls = document.querySelectorAll('h2');
+                    weeklyLossEls.forEach(el => {
+                        if (el.textContent.includes('$2,847')) {
+                            el.textContent = '$' + metrics.weeklyLoss.toLocaleString();
+                        }
+                    });
+                    
+                    // Update Food Cost %
+                    const foodCost = metrics.foodCostPercentage ?? 34.2;
+                    weeklyLossEls.forEach(el => {
+                        if (el.textContent.includes('34.2%')) {
+                            el.textContent = foodCost + '%';
+                        }
+                    });
+                    
+                    // Update Monthly Loss
+                    weeklyLossEls.forEach(el => {
+                        if (el.textContent.includes('$11,388')) {
+                            el.textContent = '$' + metrics.monthlyLoss.toLocaleString();
+                        }
+                    });
+                    
+                    // Update Waste %
+                    const wastePct = metrics.wastePercentage ?? 8.5;
+                    weeklyLossEls.forEach(el => {
+                        if (el.textContent.includes('8.5%')) {
+                            el.textContent = wastePct + '%';
+                        }
+                    });
+                    
+                    // Loss Overview
+                    const lw = document.getElementById('loss-overview-weekly');
+                    const lm = document.getElementById('loss-overview-monthly');
+                    const lwaste = document.getElementById('loss-overview-waste');
+                    const lwasteBar = document.getElementById('loss-overview-waste-bar');
+                    const lwasteTarget = document.getElementById('loss-overview-waste-target');
+                    if (lw) lw.textContent = '$' + (metrics.weeklyLoss ?? 0).toLocaleString();
+                    if (lm) lm.textContent = '$' + (metrics.monthlyLoss ?? 0).toLocaleString();
+                    if (lwaste) lwaste.textContent = wastePct + '%';
+                    if (lwasteBar) {
+                        lwasteBar.style.width = Math.min(100, wastePct) + '%';
+                    }
+                    if (lwasteTarget) {
+                        lwasteTarget.textContent = 'Target waste: 5% (currently ' + wastePct + '%)';
+                    }
+                    
+                    // Labor Cost %
+                    const laborCost = metrics.laborCostPercentage ?? 32.8;
+                    const laborVal = document.getElementById('labor-cost-value');
+                    const laborBadge = document.getElementById('labor-cost-badge');
+                    if (laborVal) laborVal.textContent = laborCost + '%';
+                    if (laborBadge) laborBadge.textContent = laborCost > 30 ? 'High' : 'OK';
+                    
+                    // Prime Cost: Food % + Labor % (target 55–65%); use API when available
+                    const primeCost = metrics.primeCost ?? (foodCost + laborCost);
+                    const primeEl = document.getElementById('prime-cost-value');
+                    const primeBadge = document.getElementById('prime-cost-badge');
+                    const primeStatus = document.getElementById('prime-cost-status');
+                    if (primeEl) primeEl.textContent = primeCost.toFixed(1) + '%';
+                    if (primeBadge) {
+                        primeBadge.textContent = 'Food ' + foodCost + '% + Labor ' + laborCost + '%';
+                        primeBadge.className = 'badge ' + (primeCost <= 65 ? 'bg-success' : 'bg-danger');
+                    }
+                    if (primeStatus) {
+                        if (primeCost <= 65) {
+                            primeStatus.textContent = 'Within target (55–65%).';
+                        } else {
+                            primeStatus.textContent = 'Above target. Reduce food or labor cost to improve profitability.';
+                        }
+                    }
+                    
+                    // Update Biggest Loss Source
+                    if (metrics.biggestLossSource) {
+                        const lossSourceEl = document.querySelector('.text-danger');
+                        if (lossSourceEl && lossSourceEl.textContent.includes('Food Waste')) {
+                            lossSourceEl.textContent = metrics.biggestLossSource.category || 'Food Waste';
+                        }
+                        
+                        weeklyLossEls.forEach(el => {
+                            if (el.textContent.includes('$4,856')) {
+                                el.textContent = '$' + metrics.biggestLossSource.total_waste.toLocaleString();
+                            }
+                        });
+                    }
+                    
+                    // Update "If Fixed" monthly savings
+                    const monthlySavingsEl = document.getElementById('monthly-savings-amount');
+                    const monthlySavingsBadge = document.getElementById('monthly-savings-badge');
+                    if (monthlySavingsEl && metrics.ifFixedMonthlySavings !== undefined) {
+                        monthlySavingsEl.textContent = '$' + metrics.ifFixedMonthlySavings.toLocaleString();
+                        // Update badge with abbreviated format
+                        if (monthlySavingsBadge) {
+                            const savingsK = (metrics.ifFixedMonthlySavings / 1000).toFixed(1);
+                            monthlySavingsBadge.textContent = '$' + savingsK + 'K';
+                        }
+                    }
+                    
+        } catch (error) {
+            console.warn('⚠️ Dashboard metrics unavailable:', error.message);
+            console.info('ℹ️ This is normal if the backend is not running. The dashboard will show default values.');
+            // Dashboard will show default values if API fails - this is fine for demo purposes
+        }
+            })();
+
+            // Load Highest Cost Inventory Items (from invoices/purchase items, or inventory as fallback)
+            (async function() {
+                const tbody = document.getElementById('inventory-items-table-body');
+                if (!tbody) return;
+                
+                function renderTopItems(topItems) {
+                    if (topItems.length > 0) {
+                        tbody.innerHTML = topItems.map((item, index) => `
+                            <tr ${index === topItems.length - 1 ? 'class="last-child-border-none"' : ''}>
+                                <td class="text-body fw-medium">${String(index + 1).padStart(2, '0')}.</td>
+                                <td class="ps-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <div class="text-primary text-center rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; background-color: #dbeafd;">
+                                                <i class="ri-box-3-line fs-24 text-primary"></i>
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1 ms-12">
+                                            <h3 class="fw-normal mb-0">${item.name}</h3>
+                                            <span class="fs-14 text-body fw-normal">Qty: ${(item.quantity || 0).toFixed(1)}</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-end">
+                                    <span class="fw-medium text-danger">$${(item.totalCost || 0).toFixed(2)}</span>
+                                </td>
+                            </tr>
+                        `).join('');
+                        return true;
+                    }
+                    return false;
+                }
+                
+                try {
+                    const invoicesResponse = await window.apiService.getInvoices();
+                    const data = invoicesResponse.data || invoicesResponse;
+                    const invoices = Array.isArray(data?.invoices) ? data.invoices : (Array.isArray(data) ? data : []);
+                    const itemsMap = {};
+                    
+                    // Group items by name and sum costs from purchase_items
+                    invoices.forEach(inv => {
+                        const itemList = inv.items || inv.purchase_items || [];
+                        if (Array.isArray(itemList) && itemList.length > 0) {
+                            itemList.forEach(item => {
+                                const key = (item.item_name || item.itemName || 'Unknown').trim();
+                                if (!key) return;
+                                if (!itemsMap[key]) {
+                                    itemsMap[key] = { name: key, totalCost: 0, quantity: 0, unitPrice: item.unit_price || item.unitPrice || 0 };
+                                }
+                                const total = item.total_price ?? item.totalPrice ?? (item.unit_price || item.unitPrice || 0) * (item.quantity || 1);
+                                itemsMap[key].totalCost += Number(total);
+                                itemsMap[key].quantity += Number(item.quantity || 1);
+                            });
+                        }
+                    });
+                    
+                    let topItems = Object.values(itemsMap)
+                        .sort((a, b) => b.totalCost - a.totalCost)
+                        .slice(0, 6);
+                    
+                    if (renderTopItems(topItems)) return;
+                    
+                    // Fallback: use inventory API (highest cost = quantity * unit_price)
+                    try {
+                        const invResponse = await window.apiService.getInventory({ limit: 100 });
+                        const invData = invResponse.data || invResponse;
+                        const list = Array.isArray(invData?.items) ? invData.items : (Array.isArray(invData) ? invData : []);
+                        const fromInventory = list
+                            .map(i => ({
+                                name: i.itemName || i.item_name || 'Unknown',
+                                totalCost: Number(i.totalValue ?? (i.quantity || 0) * (i.unitPrice || i.unit_price || 0)),
+                                quantity: Number(i.quantity || 0)
+                            }))
+                            .filter(i => i.totalCost > 0)
+                            .sort((a, b) => b.totalCost - a.totalCost)
+                            .slice(0, 6);
+                        
+                        if (renderTopItems(fromInventory)) return;
+                    } catch (invErr) {
+                        console.warn('Inventory fallback failed:', invErr);
+                    }
+                    
+                    tbody.innerHTML = '<tr><td colspan="3" class="text-center py-4"><div class="text-muted mb-3">No inventory data available.</div><p class="fs-14 mb-2">To start saving, we need your inventory.</p><a href="manual-data-entry.html" class="btn btn-sm btn-primary">5‑minute setup: upload 3 invoices</a><p class="fs-13 text-muted mt-2 mb-0">Manual Data Entry → Invoice upload</p></td></tr>';
+                } catch (error) {
+                    console.warn('Error loading inventory items:', error);
+                    tbody.innerHTML = '<tr><td colspan="3" class="text-center py-4"><div class="text-muted mb-3">No inventory data available.</div><p class="fs-14 mb-2">To start saving, we need your inventory.</p><a href="manual-data-entry.html" class="btn btn-sm btn-primary">5‑minute setup: upload 3 invoices</a><p class="fs-13 text-muted mt-2 mb-0">Manual Data Entry → Invoice upload</p></td></tr>';
+                }
+            })();
+
+            // Load Top Suppliers (dashboard only)
+            (async function() {
+                if (document.getElementById('weekly-count-form')) return;
+                try {
+                    const startDate = new Date();
+                    startDate.setMonth(startDate.getMonth() - 3);
+                    const endDate = new Date();
+                    
+                    const suppliersResponse = await window.apiService.getSupplierRanking(
+                        startDate.toISOString().split('T')[0],
+                        endDate.toISOString().split('T')[0]
+                    );
+                    const suppliers = suppliersResponse.data || suppliersResponse; // Support both formats
+                    
+                    const list = document.getElementById('top-suppliers-list');
+                    if (list && suppliers.suppliers && suppliers.suppliers.length > 0) {
+                        const topSuppliers = suppliers.suppliers.slice(0, 6);
+                        list.innerHTML = topSuppliers.map(supplier => `
+                            <li class="d-flex align-items-center justify-content-between gap-2 mb-9 p-2 rounded" style="background-color: #f8f9fa;">
+                                <div class="d-flex align-items-center gap-2">
+                                    <div class="text-primary text-center rounded-circle d-flex align-items-center justify-content-center" style="width: 30px; height: 30px; background-color: #dbeafd;">
+                                        <i class="ri-store-line fs-16 text-primary"></i>
+                                    </div>
+                                    <span class="fs-15 fw-medium">${supplier.vendor}</span>
+                                </div>
+                                <div class="text-end">
+                                    <span class="fs-15 fw-bold text-danger">$${supplier.totalSpent.toFixed(2)}</span>
+                                    <span class="fs-12 text-secondary d-block">${supplier.percentageOfTotal.toFixed(1)}%</span>
+                                </div>
+                            </li>
+                        `).join('');
+                    } else if (list) {
+                        list.innerHTML = '<li class="text-center text-muted py-4">No supplier data available.</li>';
+                    }
+                } catch (error) {
+                    console.warn('Error loading suppliers:', error);
+                }
+            })();
+
+            // Load Recent Cost Issues (dashboard only)
+            (async function() {
+                if (document.getElementById('weekly-count-form')) return;
+                try {
+                    const [wasteResponse, invoicesResponse] = await Promise.all([
+                        window.apiService.getWasteRecords(),
+                        window.apiService.getInvoices()
+                    ]);
+                    const wasteRaw = wasteResponse.data?.wasteRecords || wasteResponse.data || wasteResponse;
+                    const invRaw = invoicesResponse.data?.invoices || invoicesResponse.data || invoicesResponse;
+                    const wasteRecords = Array.isArray(wasteRaw) ? wasteRaw : [];
+                    const invoices = Array.isArray(invRaw) ? invRaw : [];
+                    
+                    const issues = [];
+                    
+                    // Add waste issues
+                    wasteRecords.slice(0, 3).forEach(waste => {
+                        issues.push({
+                            id: `WASTE-${waste.id}`,
+                            category: 'Waste',
+                            date: waste.waste_date,
+                            lossAmount: waste.cost_value,
+                            impact: 'High',
+                            status: 'Active'
+                        });
+                    });
+                    
+                    // Add high cost invoices as issues
+                    const highCostInvoices = invoices
+                        .filter(inv => inv.total_amount > 500)
+                        .slice(0, 2);
+                    
+                    highCostInvoices.forEach(inv => {
+                        issues.push({
+                            id: `INV-${inv.id}`,
+                            category: 'Purchase',
+                            date: inv.purchase_date,
+                            lossAmount: inv.total_amount,
+                            impact: 'Medium',
+                            status: 'Recorded'
+                        });
+                    });
+                    
+                    issues.sort((a, b) => new Date(b.date) - new Date(a.date));
+                    
+                    const tbody = document.getElementById('cost-issues-table-body');
+                    if (tbody && issues.length > 0) {
+                        tbody.innerHTML = issues.map(issue => {
+                            const date = new Date(issue.date);
+                            const statusClass = issue.status === 'Active' ? 'warning' : issue.status === 'Recorded' ? 'success' : 'primary';
+                            const statusText = issue.status === 'Active' ? 'Active' : issue.status === 'Recorded' ? 'Recorded' : 'Pending';
+                            
+                            return `
+                                <tr>
+                                    <td class="text-body">${issue.id}</td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0">
+                                                <div class="text-${statusClass} text-center rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; background-color: ${statusClass === 'warning' ? '#fff4e8' : statusClass === 'success' ? '#e0f8ea' : '#dbeafd'};">
+                                                    <i class="material-symbols-outlined fs-20">${issue.category === 'Waste' ? 'delete' : 'local_shipping'}</i>
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ms-12">
+                                                <h3 class="fw-medium mb-0 fs-16">${issue.category}</h3>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-body">${date.toLocaleDateString()}</td>
+                                    <td class="text-danger fw-medium">$${issue.lossAmount.toFixed(2)}</td>
+                                    <td class="text-body">${issue.impact}</td>
+                                    <td>
+                                        <span class="text-${statusClass} bg-${statusClass} bg-opacity-10 fs-15 fw-normal d-inline-block default-badge">${statusText}</span>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-end" style="gap: 12px;">
+                                            <button class="bg-transparent p-0 border-0" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="View">
+                                                <i class="material-symbols-outlined fs-16 fw-normal text-primary">visibility</i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            `;
+                        }).join('');
+                    } else if (tbody) {
+                        tbody.innerHTML = '<tr><td colspan="7" class="text-center text-muted py-4">No cost issues found.</td></tr>';
+                    }
+                } catch (error) {
+                    console.warn('Error loading cost issues:', error);
+                }
+            })();
+
+            // Load Recently Captured Data (POS reports, invoices, waste) – same as Manual Data Entry (dashboard only)
+            (async function() {
+                if (document.getElementById('weekly-count-form')) return;
+                try {
+                    const [posReportsResponse, invoicesResponse, wasteRecordsResponse] = await Promise.all([
+                        window.apiService.getPOSReports(),
+                        window.apiService.getInvoices(),
+                        window.apiService.getWasteRecords()
+                    ]);
+                    
+                    const posReports = posReportsResponse?.data?.reports || posReportsResponse?.data || posReportsResponse || [];
+                    const invoices = invoicesResponse?.data?.invoices || invoicesResponse?.data || invoicesResponse || [];
+                    const wasteRecords = wasteRecordsResponse?.data?.wasteRecords || wasteRecordsResponse?.data || wasteRecordsResponse || [];
+                    
+                    const posArray = Array.isArray(posReports) ? posReports : [];
+                    const invArray = Array.isArray(invoices) ? invoices : [];
+                    const wasteArray = Array.isArray(wasteRecords) ? wasteRecords : [];
+                    
+                    const rows = [];
+                    
+                    invArray.forEach(inv => {
+                        rows.push({
+                            type: 'Receipt',
+                            typeBadge: 'primary',
+                            date: inv.purchase_date,
+                            description: `${inv.vendor || 'Vendor'} - ${inv.invoice_number || 'N/A'}`,
+                            amount: inv.total_amount,
+                            status: 'Processed'
+                        });
+                    });
+                    
+                    posArray.forEach(pos => {
+                        rows.push({
+                            type: 'POS Report',
+                            typeBadge: 'info',
+                            date: pos.report_date,
+                            description: 'Daily Sales Report',
+                            amount: pos.total_sales,
+                            status: 'Processed'
+                        });
+                    });
+                    
+                    wasteArray.forEach(w => {
+                        rows.push({
+                            type: 'Waste',
+                            typeBadge: 'danger',
+                            date: w.waste_date,
+                            description: `${w.item_name || 'Item'}${w.reason ? ' - ' + w.reason : ''}`,
+                            amount: w.cost_value,
+                            status: 'Recorded'
+                        });
+                    });
+                    
+                    rows.sort((a, b) => new Date(b.date) - new Date(a.date));
+                    
+                    const tbody = document.getElementById('cost-transactions-table-body');
+                    const showingEl = document.getElementById('recent-captures-showing');
+                    
+                    if (tbody) {
+                        if (rows.length > 0) {
+                            tbody.innerHTML = rows.map(r => {
+                                const d = new Date(r.date);
+                                return `
+                                    <tr>
+                                        <td><span class="badge bg-${r.typeBadge}">${r.type}</span></td>
+                                        <td class="text-body">${d.toLocaleDateString()}</td>
+                                        <td class="text-body">${r.description}</td>
+                                        <td class="fw-medium">$${Number(r.amount).toFixed(2)}</td>
+                                        <td><span class="badge bg-success">${r.status}</span></td>
+                                        <td><a href="manual-data-entry.html" class="text-primary"><i class="ri-eye-line"></i></a></td>
+                                    </tr>
+                                `;
+                            }).join('');
+                        } else {
+                            tbody.innerHTML = '<tr><td colspan="6" class="text-center py-4"><div class="text-muted mb-2">No captured data yet.</div><a href="manual-data-entry.html" class="btn btn-sm btn-primary">Upload invoices, POS reports, or record waste</a><p class="fs-13 text-muted mt-2 mb-0">Manual Data Entry</p></td></tr>';
+                        }
+                        if (showingEl) showingEl.textContent = `Showing ${rows.length} entr${rows.length === 1 ? 'y' : 'ies'}`;
+                    }
+                } catch (error) {
+                    console.warn('Error loading recent captures:', error);
+                    const tbody = document.getElementById('cost-transactions-table-body');
+                    if (tbody) tbody.innerHTML = '<tr><td colspan="6" class="text-center py-4"><div class="text-muted mb-2">No captured data yet.</div><a href="manual-data-entry.html" class="btn btn-sm btn-primary">Upload invoices, POS reports, or record waste</a><p class="fs-13 text-muted mt-2 mb-0">Manual Data Entry</p></td></tr>';
+                }
+            })();
+
+            // Load and display savings breakdown when button is clicked or modal opens
+            async function loadSavingsBreakdown() {
+                const modalBody = document.getElementById('savings-breakdown-content');
+                if (!modalBody) {
+                    console.error('Modal body not found');
+                    return;
+                }
+                
+                // Show loading state
+                modalBody.innerHTML = `
+                    <div class="text-center py-4">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <p class="mt-2 text-muted">Loading breakdown...</p>
+                    </div>
+                `;
+                
+                try {
+                    console.log('Loading dashboard metrics...');
+                    const metricsResponse = await window.apiService.getDashboardMetrics();
+                    const metrics = metricsResponse.data || metricsResponse;
+                    
+                        console.log('Metrics response:', metrics); // Debug log
+                        
+                        if (metrics && metrics.savingsBreakdown) {
+                            const breakdown = metrics.savingsBreakdown;
+                            
+                            console.log('Breakdown data:', breakdown); // Debug log
+                            console.log('Calculation data:', breakdown.calculation); // Debug log
+                            console.log('Has calculation?', !!breakdown.calculation); // Debug log
+                            
+                            if (modalBody) {
+                            let html = `
+                                <div class="mb-4">
+                                    <h5 class="mb-3">Total Potential Monthly Savings: <span class="text-success fw-bold">$${breakdown.totalPotentialSavings.toLocaleString()}</span></h5>
+                                    <div class="row mb-3">
+                                        <div class="col-md-3">
+                                            <div class="text-center p-3 bg-danger bg-opacity-10 rounded">
+                                                <div class="fs-24 fw-bold text-danger">${breakdown.summary?.wasteIssues || 0}</div>
+                                                <div class="fs-12 text-muted">Waste Issues</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="text-center p-3 bg-warning bg-opacity-10 rounded">
+                                                <div class="fs-24 fw-bold text-warning">${breakdown.summary?.foodCostIssues || 0}</div>
+                                                <div class="fs-12 text-muted">Food Cost Issues</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="text-center p-3 bg-info bg-opacity-10 rounded">
+                                                <div class="fs-24 fw-bold text-info">${breakdown.summary?.varianceIssues || 0}</div>
+                                                <div class="fs-12 text-muted">Variance Issues</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="text-center p-3 bg-secondary bg-opacity-10 rounded">
+                                                <div class="fs-24 fw-bold text-secondary">${breakdown.summary?.inventoryIssues || 0}</div>
+                                                <div class="fs-12 text-muted">Inventory Issues</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                            `;
+                            
+                            // Always show calculation breakdown first (before list-group)
+                            const calc = breakdown.calculation;
+                            if (calc) {
+                                console.log('Building calculation HTML...'); // Debug log
+                                
+                                // Step-by-step calculation
+                                let stepsHtml = '';
+                                if (calc.stepByStep && calc.stepByStep.length > 0) {
+                                    stepsHtml = calc.stepByStep.map(step => `
+                                        <div class="card mb-2 border-start border-3 border-primary">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-start">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px; font-weight: bold;">${step.step}</div>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="mb-1">${step.title}</h6>
+                                                        <div class="fs-18 fw-bold text-primary mb-1">$${step.value.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</div>
+                                                        <p class="small text-muted mb-1">${step.description}</p>
+                                                        ${step.formula ? `<code class="small text-success d-block mt-1">${step.formula}</code>` : ''}
+                                                        ${step.count !== undefined ? `<span class="badge bg-light text-dark ms-2">${step.count} records</span>` : ''}
+                                                        ${step.source ? `<span class="badge bg-info ms-2">Source: ${step.source}</span>` : ''}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    `).join('');
+                                }
+                                
+                                // Purchases breakdown
+                                let purchasesHtml = '';
+                                if (calc.purchases && calc.purchases.length > 0) {
+                                    purchasesHtml = `
+                                        <div class="mt-4">
+                                            <h6 class="mb-2"><i class="material-symbols-outlined me-2 fs-18">shopping_cart</i>Individual Purchases (${calc.purchases.length} total) - These sum to Total Purchases</h6>
+                                            <div class="table-responsive" style="max-height: 300px; overflow-y: auto;">
+                                                <table class="table table-sm table-hover table-bordered">
+                                                    <thead class="table-light sticky-top">
+                                                        <tr>
+                                                            <th>Date</th>
+                                                            <th>Vendor</th>
+                                                            <th class="text-end">Amount</th>
+                                                            <th>Invoice #</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        ${calc.purchases.map(p => `
+                                                            <tr>
+                                                                <td>${new Date(p.date).toLocaleDateString()}</td>
+                                                                <td>${p.vendor}</td>
+                                                                <td class="text-end">$${p.amount.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</td>
+                                                                <td class="small text-muted">${p.invoice}</td>
+                                                            </tr>
+                                                        `).join('')}
+                                                    </tbody>
+                                                    <tfoot class="table-light fw-bold">
+                                                        <tr>
+                                                            <td colspan="2" class="text-end">Total Purchases:</td>
+                                                            <td class="text-end">$${calc.totalPurchases.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</td>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    `;
+                                }
+                                
+                                // Sales breakdown
+                                let salesHtml = '';
+                                if (calc.sales && calc.sales.length > 0) {
+                                    salesHtml = `
+                                        <div class="mt-4">
+                                            <h6 class="mb-2"><i class="material-symbols-outlined me-2 fs-18">point_of_sale</i>Individual Sales (${calc.sales.length} total) - These sum to Total Sales</h6>
+                                            <div class="table-responsive" style="max-height: 300px; overflow-y: auto;">
+                                                <table class="table table-sm table-hover table-bordered">
+                                                    <thead class="table-light sticky-top">
+                                                        <tr>
+                                                            <th>Date</th>
+                                                            <th class="text-end">Amount</th>
+                                                            <th>Source</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        ${calc.sales.map(s => `
+                                                            <tr>
+                                                                <td>${new Date(s.date).toLocaleDateString()}</td>
+                                                                <td class="text-end">$${s.amount.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</td>
+                                                                <td><span class="badge bg-success">${s.source}</span></td>
+                                                            </tr>
+                                                        `).join('')}
+                                                    </tbody>
+                                                    <tfoot class="table-light fw-bold">
+                                                        <tr>
+                                                            <td class="text-end">Total Sales:</td>
+                                                            <td class="text-end">$${calc.totalSales.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</td>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    `;
+                                }
+                                
+                                html += `
+                                    <div class="card mb-4">
+                                        <div class="card-header bg-primary text-white">
+                                            <h6 class="mb-0"><i class="material-symbols-outlined me-2">calculate</i>Calculation Breakdown - Where the Numbers Come From</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="mb-3">Step-by-Step Calculation:</h6>
+                                            ${stepsHtml}
+                                            
+                                            <hr class="my-4">
+                                            
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="card bg-light">
+                                                        <div class="card-body">
+                                                            <h6 class="text-muted mb-3">Summary</h6>
+                                                            <div class="mb-2">
+                                                                <span class="text-muted small d-block">Total Sales:</span>
+                                                                <strong class="fs-16">$${calc.totalSales.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</strong>
+                                                            </div>
+                                                            <div class="mb-2">
+                                                                <span class="text-muted small d-block">Expected Purchases (35%):</span>
+                                                                <strong class="fs-16 text-info">$${calc.expectedPurchases.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</strong>
+                                                            </div>
+                                                            <div class="mb-2">
+                                                                <span class="text-muted small d-block">Actual Purchases:</span>
+                                                                <strong class="fs-16">$${calc.totalPurchases.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</strong>
+                                                            </div>
+                                                            <hr>
+                                                            <div>
+                                                                <span class="text-muted small d-block">Monthly Loss:</span>
+                                                                <strong class="fs-20 text-danger">$${Math.abs(calc.monthlyLoss).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</strong>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card bg-light">
+                                                        <div class="card-body">
+                                                            <h6 class="text-muted mb-3">Metrics</h6>
+                                                            <div class="mb-2">
+                                                                <span class="text-muted small d-block">Target Margin:</span>
+                                                                <strong class="fs-16">${calc.targetMargin}%</strong>
+                                                            </div>
+                                                            <div class="mb-2">
+                                                                <span class="text-muted small d-block">Target Food Cost:</span>
+                                                                <strong class="fs-16">35%</strong>
+                                                            </div>
+                                                            <div class="mb-2">
+                                                                <span class="text-muted small d-block">Actual Food Cost:</span>
+                                                                <strong class="fs-16 ${calc.actualFoodCost > 35 ? 'text-danger' : 'text-success'}">${calc.actualFoodCost.toFixed(2)}%</strong>
+                                                            </div>
+                                                            <hr>
+                                                            <div>
+                                                                <span class="text-muted small d-block">Difference:</span>
+                                                                <strong class="fs-16 text-danger">$${calc.difference.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</strong>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            ${purchasesHtml}
+                                            ${salesHtml}
+                                        </div>
+                                    </div>
+                                `;
+                            } else {
+                                // Fallback: Calculate from available metrics data
+                                console.warn('Calculation object missing, calculating from metrics');
+                                const monthlyLoss = metrics.monthlyLoss || metrics.ifFixedMonthlySavings || breakdown.totalPotentialSavings || 0;
+                                
+                                // Try to get sales and purchases from food cost calculation
+                                // We need to make an API call to get food cost data
+                                try {
+                                    const today = new Date();
+                                    const monthStart = new Date(today.getFullYear(), today.getMonth(), 1);
+                                    const startDate = monthStart.toISOString().split('T')[0];
+                                    const endDate = today.toISOString().split('T')[0];
+                                    
+                                    // Get food cost data which includes purchases and sales
+                                    const foodCostResponse = await fetch(`${window.apiService.API_BASE_URL || 'http://localhost:8000/api'}/analytics/food-cost?startDate=${startDate}&endDate=${endDate}`, {
+                                        headers: {
+                                            'Authorization': `Bearer ${window.authService?.getToken() || ''}`,
+                                            'Content-Type': 'application/json'
+                                        }
+                                    });
+                                    
+                                    if (foodCostResponse.ok) {
+                                        const foodCostData = await foodCostResponse.json();
+                                        const fcData = foodCostData.data || foodCostData;
+                                        const totalSales = fcData.totalSales || 0;
+                                        const totalPurchases = fcData.totalPurchases || 0;
+                                        const expectedPurchases = totalSales * 0.35;
+                                        const actualFoodCost = fcData.foodCost || 0;
+                                        
+                                        html += `
+                                            <div class="card mb-4">
+                                                <div class="card-header bg-primary text-white">
+                                                    <h6 class="mb-0"><i class="material-symbols-outlined me-2">calculate</i>Calculation Breakdown - Where the Numbers Come From</h6>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h6 class="mb-3">Step-by-Step Calculation:</h6>
+                                                    <div class="card mb-2 border-start border-3 border-primary">
+                                                        <div class="card-body">
+                                                            <div class="d-flex align-items-start">
+                                                                <div class="flex-shrink-0 me-3">
+                                                                    <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px; font-weight: bold;">1</div>
+                                                                </div>
+                                                                <div class="flex-grow-1">
+                                                                    <h6 class="mb-1">Total Sales</h6>
+                                                                    <div class="fs-18 fw-bold text-primary mb-1">$${totalSales.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</div>
+                                                                    <p class="small text-muted mb-1">Sum of all sales records this month</p>
+                                                                    <span class="badge bg-info">Source: sales table</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card mb-2 border-start border-3 border-info">
+                                                        <div class="card-body">
+                                                            <div class="d-flex align-items-start">
+                                                                <div class="flex-shrink-0 me-3">
+                                                                    <div class="bg-info text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px; font-weight: bold;">2</div>
+                                                                </div>
+                                                                <div class="flex-grow-1">
+                                                                    <h6 class="mb-1">Target Food Cost (35%)</h6>
+                                                                    <div class="fs-18 fw-bold text-info mb-1">$${expectedPurchases.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</div>
+                                                                    <p class="small text-muted mb-1">Expected purchases to maintain 65% margin</p>
+                                                                    <code class="small text-success d-block mt-1">$${totalSales.toLocaleString()} × 0.35 = $${expectedPurchases.toLocaleString()}</code>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card mb-2 border-start border-3 border-warning">
+                                                        <div class="card-body">
+                                                            <div class="d-flex align-items-start">
+                                                                <div class="flex-shrink-0 me-3">
+                                                                    <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px; font-weight: bold;">3</div>
+                                                                </div>
+                                                                <div class="flex-grow-1">
+                                                                    <h6 class="mb-1">Actual Purchases</h6>
+                                                                    <div class="fs-18 fw-bold text-warning mb-1">$${totalPurchases.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</div>
+                                                                    <p class="small text-muted mb-1">Sum of all purchase records this month</p>
+                                                                    <span class="badge bg-info">Source: purchases table</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card mb-2 border-start border-3 border-danger">
+                                                        <div class="card-body">
+                                                            <div class="d-flex align-items-start">
+                                                                <div class="flex-shrink-0 me-3">
+                                                                    <div class="bg-danger text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px; font-weight: bold;">4</div>
+                                                                </div>
+                                                                <div class="flex-grow-1">
+                                                                    <h6 class="mb-1">Monthly Loss</h6>
+                                                                    <div class="fs-18 fw-bold text-danger mb-1">$${Math.abs(monthlyLoss).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</div>
+                                                                    <p class="small text-muted mb-1">Difference between actual and expected purchases</p>
+                                                                    <code class="small text-danger d-block mt-1">$${totalPurchases.toLocaleString()} - $${expectedPurchases.toLocaleString()} = $${Math.abs(monthlyLoss).toLocaleString()}</code>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <hr class="my-4">
+                                                    
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="card bg-light">
+                                                                <div class="card-body">
+                                                                    <h6 class="text-muted mb-3">Summary</h6>
+                                                                    <div class="mb-2">
+                                                                        <span class="text-muted small d-block">Total Sales:</span>
+                                                                        <strong class="fs-16">$${totalSales.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</strong>
+                                                                    </div>
+                                                                    <div class="mb-2">
+                                                                        <span class="text-muted small d-block">Expected Purchases (35%):</span>
+                                                                        <strong class="fs-16 text-info">$${expectedPurchases.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</strong>
+                                                                    </div>
+                                                                    <div class="mb-2">
+                                                                        <span class="text-muted small d-block">Actual Purchases:</span>
+                                                                        <strong class="fs-16">$${totalPurchases.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</strong>
+                                                                    </div>
+                                                                    <hr>
+                                                                    <div>
+                                                                        <span class="text-muted small d-block">Monthly Loss:</span>
+                                                                        <strong class="fs-20 text-danger">$${Math.abs(monthlyLoss).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="card bg-light">
+                                                                <div class="card-body">
+                                                                    <h6 class="text-muted mb-3">Metrics</h6>
+                                                                    <div class="mb-2">
+                                                                        <span class="text-muted small d-block">Target Margin:</span>
+                                                                        <strong class="fs-16">65%</strong>
+                                                                    </div>
+                                                                    <div class="mb-2">
+                                                                        <span class="text-muted small d-block">Target Food Cost:</span>
+                                                                        <strong class="fs-16">35%</strong>
+                                                                    </div>
+                                                                    <div class="mb-2">
+                                                                        <span class="text-muted small d-block">Actual Food Cost:</span>
+                                                                        <strong class="fs-16 ${actualFoodCost > 35 ? 'text-danger' : 'text-success'}">${actualFoodCost.toFixed(2)}%</strong>
+                                                                    </div>
+                                                                    <hr>
+                                                                    <div>
+                                                                        <span class="text-muted small d-block">Difference:</span>
+                                                                        <strong class="fs-16 text-danger">$${Math.abs(totalPurchases - expectedPurchases).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        `;
+                                    } else {
+                                        throw new Error('Failed to fetch food cost data');
+                                    }
+                                } catch (error) {
+                                    console.error('Error fetching food cost data:', error);
+                                    // Ultimate fallback with just the monthly loss
+                                    html += `
+                                        <div class="card mb-4">
+                                            <div class="card-header bg-primary text-white">
+                                                <h6 class="mb-0"><i class="material-symbols-outlined me-2">calculate</i>Calculation Breakdown</h6>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="alert alert-warning">
+                                                    <small>Unable to load detailed calculation. Monthly Loss: <strong>$${Math.abs(monthlyLoss).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</strong></small>
+                                                </div>
+                                                <p class="text-muted small">Monthly Loss = Actual Purchases - (Sales × 35% food cost target)</p>
+                                            </div>
+                                        </div>
+                                    `;
+                                }
+                            }
+                            
+                            // Show specific issues if any
+                            html += '<hr><h6 class="mb-3">Detailed Breakdown:</h6><div class="list-group">';
+                            if (breakdown.items && breakdown.items.length > 0) {
+                                breakdown.items.forEach((item, index) => {
+                                    const priorityColor = item.priority === 'High' ? 'danger' : item.priority === 'Medium' ? 'warning' : 'secondary';
+                                    const categoryIcon = item.category === 'Waste' ? 'delete' : item.category === 'Food Cost' ? 'restaurant' : item.category === 'Variance' ? 'compare_arrows' : 'inventory';
+                                    
+                                    html += `
+                                        <div class="list-group-item mb-3 border rounded">
+                                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                                <div class="flex-grow-1">
+                                                    <div class="d-flex align-items-center gap-2 mb-2">
+                                                        <span class="badge bg-${priorityColor}">${item.priority}</span>
+                                                        <span class="badge bg-light text-dark">${item.category}</span>
+                                                        <i class="material-symbols-outlined fs-18">${categoryIcon}</i>
+                                                    </div>
+                                                    <h6 class="mb-1">${item.issue}</h6>
+                                                    <p class="text-muted mb-2 fs-14">${item.recommendation}</p>
+                                                </div>
+                                                <div class="text-end">
+                                                    <div class="fs-18 fw-bold text-danger">$${item.monthlyImpact.toLocaleString()}</div>
+                                                    <div class="fs-12 text-muted">Monthly Impact</div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-2">
+                                                <button class="btn btn-sm btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#actionItems${index}" aria-expanded="false">
+                                                    <i class="material-symbols-outlined fs-14">expand_more</i> View Action Items
+                                                </button>
+                                                <div class="collapse mt-2" id="actionItems${index}">
+                                                    <div class="card card-body bg-light">
+                                                        <ul class="mb-0 ps-3">
+                                                            ${item.actionItems.map(action => `<li class="mb-1">${action}</li>`).join('')}
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    `;
+                                });
+                            } else {
+                                html += '<div class="alert alert-info mt-3"><i class="material-symbols-outlined me-2">info</i>No specific issues identified. Your cost control is within target ranges.</div>';
+                            }
+                            
+                            html += '</div>';
+                            modalBody.innerHTML = html;
+                        } else {
+                            modalBody.innerHTML = '<div class="alert alert-warning">Breakdown data not available in metrics response.</div>';
+                        }
+                    } else {
+                        // No breakdown available - show calculation details
+                        const calculation = metrics.savingsBreakdown?.calculation;
+                        const monthlyLossAmount = metrics.monthlyLoss || metrics.ifFixedMonthlySavings || 0;
+                        
+                        console.log('No items found, showing calculation:', calculation); // Debug log
+                        console.log('Full breakdown:', metrics.savingsBreakdown); // Debug log
+                        
+                        let calculationHtml = '';
+                        
+                        // Always show calculation if breakdown exists, even if stepByStep is missing
+                        if (calculation) {
+                            // Step-by-step calculation
+                            let stepsHtml = '';
+                            
+                            // If stepByStep exists, use it; otherwise create it from available data
+                            if (calculation.stepByStep && calculation.stepByStep.length > 0) {
+                                stepsHtml = calculation.stepByStep.map(step => `
+                                    <div class="card mb-2 border-start border-3 border-primary">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-start">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px; font-weight: bold;">${step.step}</div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-1">${step.title}</h6>
+                                                    <div class="fs-18 fw-bold text-primary mb-1">$${step.value.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</div>
+                                                    <p class="small text-muted mb-1">${step.description}</p>
+                                                    ${step.formula ? `<code class="small text-success">${step.formula}</code>` : ''}
+                                                    ${step.count !== undefined ? `<span class="badge bg-light text-dark ms-2">${step.count} records</span>` : ''}
+                                                    ${step.source ? `<span class="badge bg-info ms-2">Source: ${step.source}</span>` : ''}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                `).join('');
+                            } else {
+                                // Fallback: Create step-by-step from available calculation data
+                                const expectedPurchases = calculation.expectedPurchases || (calculation.totalSales * 0.35);
+                                stepsHtml = `
+                                    <div class="card mb-2 border-start border-3 border-primary">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-start">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px; font-weight: bold;">1</div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-1">Total Sales</h6>
+                                                    <div class="fs-18 fw-bold text-primary mb-1">$${calculation.totalSales.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</div>
+                                                    <p class="small text-muted mb-1">Sum of all sales records</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-2 border-start border-3 border-info">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-start">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="bg-info text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px; font-weight: bold;">2</div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-1">Target Food Cost (35%)</h6>
+                                                    <div class="fs-18 fw-bold text-info mb-1">$${expectedPurchases.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</div>
+                                                    <p class="small text-muted mb-1">Expected purchases to maintain 65% margin</p>
+                                                    <code class="small text-success">$${calculation.totalSales.toLocaleString()} × 0.35 = $${expectedPurchases.toLocaleString()}</code>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-2 border-start border-3 border-warning">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-start">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px; font-weight: bold;">3</div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-1">Actual Purchases</h6>
+                                                    <div class="fs-18 fw-bold text-warning mb-1">$${calculation.totalPurchases.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</div>
+                                                    <p class="small text-muted mb-1">Sum of all purchase records</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-2 border-start border-3 border-danger">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-start">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="bg-danger text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px; font-weight: bold;">4</div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-1">Monthly Loss</h6>
+                                                    <div class="fs-18 fw-bold text-danger mb-1">$${Math.abs(calculation.monthlyLoss || monthlyLossAmount).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</div>
+                                                    <p class="small text-muted mb-1">Difference between actual and expected purchases</p>
+                                                    <code class="small text-danger">$${calculation.totalPurchases.toLocaleString()} - $${expectedPurchases.toLocaleString()} = $${Math.abs(calculation.monthlyLoss || monthlyLossAmount).toLocaleString()}</code>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                `;
+                            }
+                            
+                            // Purchases breakdown
+                            let purchasesHtml = '';
+                            if (calculation.purchases && calculation.purchases.length > 0) {
+                                const topPurchases = calculation.purchases.slice(0, 10);
+                                purchasesHtml = `
+                                    <div class="mt-3">
+                                        <h6 class="mb-2"><i class="material-symbols-outlined me-2 fs-18">shopping_cart</i>Purchase Details (${calculation.purchases.length} total)</h6>
+                                        <div class="table-responsive" style="max-height: 200px; overflow-y: auto;">
+                                            <table class="table table-sm table-hover">
+                                                <thead class="table-light sticky-top">
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <th>Vendor</th>
+                                                        <th class="text-end">Amount</th>
+                                                        <th>Invoice</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    ${topPurchases.map(p => `
+                                                        <tr>
+                                                            <td>${new Date(p.date).toLocaleDateString()}</td>
+                                                            <td>${p.vendor}</td>
+                                                            <td class="text-end">$${p.amount.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</td>
+                                                            <td class="small text-muted">${p.invoice}</td>
+                                                        </tr>
+                                                    `).join('')}
+                                                </tbody>
+                                                <tfoot class="table-light">
+                                                    <tr>
+                                                        <td colspan="2" class="fw-bold">Total Purchases:</td>
+                                                        <td class="text-end fw-bold">$${calculation.totalPurchases.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                        ${calculation.purchases.length > 10 ? `<p class="small text-muted mt-2">Showing top 10 of ${calculation.purchases.length} purchases</p>` : ''}
+                                    </div>
+                                `;
+                            }
+                            
+                            // Sales breakdown
+                            let salesHtml = '';
+                            if (calculation.sales && calculation.sales.length > 0) {
+                                const topSales = calculation.sales.slice(0, 10);
+                                salesHtml = `
+                                    <div class="mt-3">
+                                        <h6 class="mb-2"><i class="material-symbols-outlined me-2 fs-18">point_of_sale</i>Sales Details (${calculation.sales.length} total)</h6>
+                                        <div class="table-responsive" style="max-height: 200px; overflow-y: auto;">
+                                            <table class="table table-sm table-hover">
+                                                <thead class="table-light sticky-top">
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <th class="text-end">Amount</th>
+                                                        <th>Source</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    ${topSales.map(s => `
+                                                        <tr>
+                                                            <td>${new Date(s.date).toLocaleDateString()}</td>
+                                                            <td class="text-end">$${s.amount.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</td>
+                                                            <td><span class="badge bg-success">${s.source}</span></td>
+                                                        </tr>
+                                                    `).join('')}
+                                                </tbody>
+                                                <tfoot class="table-light">
+                                                    <tr>
+                                                        <td class="fw-bold">Total Sales:</td>
+                                                        <td class="text-end fw-bold">$${calculation.totalSales.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                        ${calculation.sales.length > 10 ? `<p class="small text-muted mt-2">Showing top 10 of ${calculation.sales.length} sales records</p>` : ''}
+                                    </div>
+                                `;
+                            }
+                            
+                            calculationHtml = `
+                                <div class="card mb-3">
+                                    <div class="card-header bg-light">
+                                        <h6 class="mb-0"><i class="material-symbols-outlined me-2">calculate</i>Detailed Monthly Loss Calculation</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="mb-3">Step-by-Step Calculation:</h6>
+                                        ${stepsHtml}
+                                        
+                                        <hr class="my-4">
+                                        
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="card bg-light">
+                                                    <div class="card-body">
+                                                        <h6 class="text-muted mb-2">Summary</h6>
+                                                        <div class="mb-2">
+                                                            <span class="text-muted small d-block">Total Sales:</span>
+                                                            <strong class="fs-16">$${calculation.totalSales.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</strong>
+                                                        </div>
+                                                        <div class="mb-2">
+                                                            <span class="text-muted small d-block">Expected Purchases (35%):</span>
+                                                            <strong class="fs-16 text-info">$${calculation.expectedPurchases.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</strong>
+                                                        </div>
+                                                        <div class="mb-2">
+                                                            <span class="text-muted small d-block">Actual Purchases:</span>
+                                                            <strong class="fs-16">$${calculation.totalPurchases.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</strong>
+                                                        </div>
+                                                        <hr>
+                                                        <div>
+                                                            <span class="text-muted small d-block">Monthly Loss:</span>
+                                                            <strong class="fs-20 text-danger">$${Math.abs(calculation.monthlyLoss).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="card bg-light">
+                                                    <div class="card-body">
+                                                        <h6 class="text-muted mb-2">Metrics</h6>
+                                                        <div class="mb-2">
+                                                            <span class="text-muted small d-block">Target Margin:</span>
+                                                            <strong class="fs-16">${calculation.targetMargin}%</strong>
+                                                        </div>
+                                                        <div class="mb-2">
+                                                            <span class="text-muted small d-block">Target Food Cost:</span>
+                                                            <strong class="fs-16">35%</strong>
+                                                        </div>
+                                                        <div class="mb-2">
+                                                            <span class="text-muted small d-block">Actual Food Cost:</span>
+                                                            <strong class="fs-16 ${calculation.actualFoodCost > 35 ? 'text-danger' : 'text-success'}">${calculation.actualFoodCost.toFixed(2)}%</strong>
+                                                        </div>
+                                                        <hr>
+                                                        <div>
+                                                            <span class="text-muted small d-block">Difference:</span>
+                                                            <strong class="fs-16 text-danger">$${calculation.difference.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        ${purchasesHtml}
+                                        ${salesHtml}
+                                    </div>
+                                </div>
+                            `;
+                        }
+                        
+                        modalBody.innerHTML = `
+                            ${calculationHtml}
+                            <div class="alert alert-info">
+                                <h6><i class="material-symbols-outlined me-2">info</i>No Specific Issues Identified</h6>
+                                <p class="mb-2">While you have a monthly loss of <strong>$${Math.abs(monthlyLossAmount).toLocaleString()}</strong>, no specific waste, variance, or food cost issues were detected above thresholds.</p>
+                                <hr>
+                                <p class="mb-2 small fw-bold">To identify specific areas for improvement:</p>
+                                <ul class="mb-0 small">
+                                    <li><strong>Enter waste records</strong> - Track food waste to identify specific items/categories with high waste</li>
+                                    <li><strong>Upload purchase invoices</strong> - Ensure all purchases are recorded for accurate cost analysis</li>
+                                    <li><strong>Sync sales data</strong> - Keep sales data up to date for accurate margin calculations</li>
+                                    <li><strong>Review food cost</strong> - If food cost exceeds 28%, specific recommendations will appear</li>
+                                </ul>
+                            </div>
+                        `;
+                    }
+                } catch (error) {
+                    console.error('Error loading savings breakdown:', error);
+                    modalBody.innerHTML = `
+                        <div class="alert alert-danger">
+                            <h6>Error loading breakdown</h6>
+                            <p class="mb-0">${error.message || 'Unable to load savings breakdown. Please try again later.'}</p>
+                        </div>
+                    `;
+                }
+            }
+            
+            // Set up event listeners (run immediately since script is at end of body)
+            (function setupBreakdownLoader() {
+                // Button click handler
+                const viewBreakdownBtn = document.getElementById('view-breakdown-btn');
+                if (viewBreakdownBtn) {
+                    viewBreakdownBtn.addEventListener('click', function(e) {
+                        // Don't prevent default - let Bootstrap handle modal opening
+                        // Load data after a short delay to ensure modal is visible
+                        setTimeout(loadSavingsBreakdown, 150);
+                    });
+                    console.log('✅ Breakdown button listener attached');
+                } else {
+                    console.warn('⚠️ Breakdown button not found');
+                }
+                
+                // Modal show event (backup)
+                const savingsBreakdownModal = document.getElementById('savingsBreakdownModal');
+                if (savingsBreakdownModal) {
+                    savingsBreakdownModal.addEventListener('show.bs.modal', function() {
+                        console.log('Modal show event triggered');
+                        loadSavingsBreakdown();
+                    });
+                    console.log('✅ Modal event listener attached');
+                } else {
+                    console.warn('⚠️ Modal not found');
+                }
+            })();
+
+            // Guided Fix: Top Loss Sources → "How to fix" modal
+            (function() {
+                const GUIDED_FIX = {
+                    waste: {
+                        title: 'Food Waste',
+                        savings: function(amt) { return 'Reducing waste from 8.5% to 5% on your current purchases would save about $' + Math.round(amt * 0.4).toLocaleString() + ' this month.'; },
+                        causes: ['Portion sizes too large', 'Improper storage or temps', 'Over-prepping / unused prep', 'Low-selling menu items', 'Spoilage (FIFO not followed)'],
+                        steps: ['Conduct a waste track for 3–7 days. Weigh and log everything thrown out (Waste Tracking).', 'Identify the source: spoiled ingredients (storage) vs plate returns (portion) vs trim (prep).', 'Correct storage, refine prep quantities, and review portion sizes.', 'Train staff on FIFO and proper handling.']
+                    },
+                    labor: {
+                        title: 'Labor Inefficiency',
+                        savings: function(amt) { return 'Scheduling ~2 fewer hours per day on slow shifts can save ~$' + Math.round(amt / 4).toLocaleString() + '/week. Labor cost ' + (amt > 3000 ? '>$3k' : '$' + amt) + ' this month.'; },
+                        causes: ['Overstaffing on slow days', 'Shifts not aligned to sales', 'Lack of cross-training', 'Inefficient scheduling'],
+                        steps: ['Use Labor Cost Analysis. Compare sales vs labor hours by day-part.', 'Right-size schedules: adjust start/end times, avoid overstaffing on slow weekdays.', 'Cross-train staff so you can run with fewer people without losing service.']
+                    },
+                    supplier: {
+                        title: 'Supplier Price Variance',
+                        savings: function(amt) { return 'This variance cost you about $' + amt.toLocaleString() + ' this month. Negotiate or switch suppliers to recover it.'; },
+                        causes: ['Price increases not negotiated', 'No comparison with other suppliers', 'Contract locked at higher rates'],
+                        steps: ['Confront the supplier about the increase (Suppliers & Invoices).', 'Get competitive quotes from 2–3 other suppliers.', 'Use the increase as leverage in negotiations.']
+                    },
+                    shrinkage: {
+                        title: 'Inventory Shrinkage',
+                        savings: function(amt) { return 'Shrinkage (theft/spoilage/error) is costing ~$' + amt.toLocaleString() + '/month. Weekly counts reduce it.'; },
+                        causes: ['No regular inventory counts', 'Theft or unrecorded waste', 'Receiving vs invoice errors', 'Inconsistent portioning'],
+                        steps: ['Start weekly inventory counts (Manual Data Entry or mobile count).', 'Reconcile counts to purchases and sales to find variance.', 'Tighten controls: lock storage, verify receiving, track waste.']
+                    },
+                    menu: {
+                        title: 'Low Margin Menu Items',
+                        savings: function(amt) { return 'These items cost you ~$' + amt.toLocaleString() + ' in margin. Reprice, reduce cost, or replace.'; },
+                        causes: ['Items priced too low', 'High-cost ingredients', 'Poor recipe costing'],
+                        steps: ['Open Menu Profitability. Identify the 5 low-margin (<20%) items.', 'For each: raise price, reduce cost (e.g. garnish), or replace with a higher-margin dish.', 'Promote high-margin stars through specials or server incentives.']
+                    },
+                    foodcost: {
+                        title: 'Food Cost %',
+                        savings: function(amt) { return 'Getting food cost from 34% down to 28% could save ~$' + amt.toLocaleString() + '/month. Use weekly inventory counts and better portioning.'; },
+                        causes: ['No weekly inventory counts', 'Over-portioning', 'Waste or shrinkage', 'Supplier price creep', 'Menu mix shifting to high-cost items'],
+                        steps: ['Do weekly inventory counts (Manual Data Entry or mobile). Formula: (Begin + Purchases - End) / Food Sales.', 'Review portion sizes and prep quantities. Reduce over-portioning.', 'Track waste and variance. Use Waste Tracking (Analytics).']
+                    }
+                };
+
+                function openGuidedFix(el) {
+                    var type = el.dataset.lossType;
+                    var amount = parseInt(el.dataset.amount, 10) || 0;
+                    var link = el.dataset.link || '#';
+                    var guide = GUIDED_FIX[type];
+                    if (!guide) return;
+                    document.getElementById('guided-fix-title').textContent = guide.title;
+                    document.getElementById('guided-fix-savings').textContent = guide.savings(amount);
+                    document.getElementById('guided-fix-causes').innerHTML = guide.causes.map(function(c) {
+                        return '<li class="list-group-item d-flex align-items-center"><span class="form-check-input me-2" style="margin-top:0"></span>' + c + '</li>';
+                    }).join('');
+                    document.getElementById('guided-fix-steps').innerHTML = guide.steps.map(function(s) {
+                        return '<li class="mb-2">' + s + '</li>';
+                    }).join('');
+                    var a = document.getElementById('guided-fix-link');
+                    a.href = link;
+                    var linkLabels = { waste: 'Waste Tracking', labor: 'Labor Cost Analysis', supplier: 'Suppliers & Invoices', shrinkage: 'Suppliers & Invoices', menu: 'Menu Profitability', foodcost: 'Analytics' };
+                    a.textContent = 'Open ' + (linkLabels[type] || 'Module') + ' →';
+                    var modal = new bootstrap.Modal(document.getElementById('guidedFixModal'));
+                    modal.show();
+                }
+
+                document.addEventListener('click', function(e) {
+                    var btn = e.target.closest('.guided-fix-btn');
+                    var row = e.target.closest('.guided-fix-row');
+                    var actionItem = e.target.closest('.action-item-fix');
+                    var tr = btn ? btn.closest('tr') : row;
+                    var el = tr || actionItem;
+                    if (!el) return;
+                    e.preventDefault();
+                    openGuidedFix(el);
+                });
+                document.querySelectorAll('.action-item-fix').forEach(function(li) {
+                    li.addEventListener('keydown', function(ev) {
+                        if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); openGuidedFix(li); }
+                    });
+                });
+            })();
+        </script>
+
+        <!-- Guided Fix Modal (from Top Loss Sources "How to fix") -->
+        <div class="modal fade" id="guidedFixModal" tabindex="-1" aria-labelledby="guidedFixModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="guidedFixModalLabel">
+                            <i class="material-symbols-outlined me-2">medical_services</i> How to Fix: <span id="guided-fix-title">—</span>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="guided-fix-body">
+                        <div class="alert alert-success">
+                            <strong id="guided-fix-savings">—</strong>
+                        </div>
+                        <h6 class="mb-2">Probable causes (checklist)</h6>
+                        <ul class="list-group list-group-flush mb-4" id="guided-fix-causes"></ul>
+                        <h6 class="mb-2">Actionable steps</h6>
+                        <ol class="mb-0" id="guided-fix-steps"></ol>
+                        <div class="mt-4">
+                            <a href="#" id="guided-fix-link" class="btn btn-primary">Open module →</a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Savings Breakdown Modal -->
+        <div class="modal fade" id="savingsBreakdownModal" tabindex="-1" aria-labelledby="savingsBreakdownModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="savingsBreakdownModalLabel">
+                            <i class="material-symbols-outlined me-2">savings</i> Monthly Savings Breakdown
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="savings-breakdown-content">
+                        <div class="text-center py-4">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                            <p class="mt-2 text-muted">Loading breakdown...</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

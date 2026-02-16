@@ -1,0 +1,668 @@
+{
+  "idempotency_key": "tequilas_town_inventory_001",
+  "batches": [
+    {
+      "objects": [
+        {
+          "type": "CATEGORY",
+          "id": "#CAT_SPICES_HERBS",
+          "category_data": {
+            "name": "SPICES & DRIED HERBS",
+            "description": "Especias y hierbas secas para cocina mexicana"
+          }
+        },
+        {
+          "type": "CATEGORY",
+          "id": "#CAT_DAIRY_CHEESE",
+          "category_data": {
+            "name": "DAIRY & CHEESE"
+          }
+        },
+        {
+          "type": "CATEGORY",
+          "id": "#CAT_MEAT_POULTRY",
+          "category_data": {
+            "name": "MEAT & POULTRY"
+          }
+        },
+        {
+          "type": "CATEGORY",
+          "id": "#CAT_SEAFOOD_RAW",
+          "category_data": {
+            "name": "SEAFOOD - RAW"
+          }
+        },
+        {
+          "type": "CATEGORY",
+          "id": "#CAT_VEGETABLES",
+          "category_data": {
+            "name": "VEGETABLES"
+          }
+        },
+        {
+          "type": "CATEGORY",
+          "id": "#CAT_TORTILLAS",
+          "category_data": {
+            "name": "TORTILLAS & WRAPS"
+          }
+        },
+        {
+          "type": "CATEGORY",
+          "id": "#CAT_BEVERAGES_WHOLESALE",
+          "category_data": {
+            "name": "BEVERAGES - WHOLESALE"
+          }
+        },
+        {
+          "type": "CATEGORY",
+          "id": "#CAT_PACKAGING",
+          "category_data": {
+            "name": "PACKAGING & SUPPLIES"
+          }
+        }
+      ]
+    },
+    {
+      "objects": [
+        {
+          "type": "ITEM",
+          "id": "#ITEM_CHILE_GUAJILLO",
+          "item_data": {
+            "name": "CHILE GUAJILLO DRIED",
+            "description": "Dried guajillo peppers for marinades and moles",
+            "category_id": "#CAT_SPICES_HERBS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_CHILE_GUAJILLO_LB",
+                "item_variation_data": {
+                  "name": "Per Pound",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1295,
+                    "currency": "USD"
+                  },
+                  "sku": "SPC-GUA-LB",
+                  "track_inventory": true,
+                  "inventory_alert_type": "LOW_QUANTITY",
+                  "inventory_alert_threshold": 2
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_CHILE_ANCHO",
+          "item_data": {
+            "name": "CHILE ANCHO",
+            "description": "Dried poblano peppers for moles and sauces",
+            "category_id": "#CAT_SPICES_HERBS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_CHILE_ANCHO_LB",
+                "item_variation_data": {
+                  "name": "Per Pound",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1450,
+                    "currency": "USD"
+                  },
+                  "sku": "SPC-ANC-LB",
+                  "track_inventory": true,
+                  "inventory_alert_type": "LOW_QUANTITY",
+                  "inventory_alert_threshold": 3
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_CHILE_CHIPOTLE",
+          "item_data": {
+            "name": "CHILE CHIPOTLE DRIED",
+            "description": "Smoked dried jalapeños",
+            "category_id": "#CAT_SPICES_HERBS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_CHIPOTLE_LB",
+                "item_variation_data": {
+                  "name": "Per Pound",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1850,
+                    "currency": "USD"
+                  },
+                  "sku": "SPC-CHI-LB",
+                  "track_inventory": true,
+                  "inventory_alert_type": "LOW_QUANTITY",
+                  "inventory_alert_threshold": 2
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_OREGANO_MEXICANO",
+          "item_data": {
+            "name": "OREGANO MEXICANO SECO",
+            "description": "Mexican dried oregano",
+            "category_id": "#CAT_SPICES_HERBS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_OREGANO_OZ",
+                "item_variation_data": {
+                  "name": "Per Ounce",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 495,
+                    "currency": "USD"
+                  },
+                  "sku": "SPC-ORE-OZ",
+                  "track_inventory": true,
+                  "inventory_alert_type": "LOW_QUANTITY",
+                  "inventory_alert_threshold": 8
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_EPAZOTE",
+          "item_data": {
+            "name": "EPAZOTE SECO",
+            "description": "Dried epazote herb for beans and quesadillas",
+            "category_id": "#CAT_SPICES_HERBS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_EPAZOTE_OZ",
+                "item_variation_data": {
+                  "name": "Per Ounce",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 695,
+                    "currency": "USD"
+                  },
+                  "sku": "SPC-EPA-OZ",
+                  "track_inventory": true,
+                  "inventory_alert_type": "LOW_QUANTITY",
+                  "inventory_alert_threshold": 4
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_COMINO_MOLIDO",
+          "item_data": {
+            "name": "COMINO MOLIDO (GROUND CUMIN)",
+            "description": "Ground cumin spice",
+            "category_id": "#CAT_SPICES_HERBS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_COMINO_LB",
+                "item_variation_data": {
+                  "name": "Per Pound",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 995,
+                    "currency": "USD"
+                  },
+                  "sku": "SPC-COM-LB",
+                  "track_inventory": true,
+                  "inventory_alert_type": "LOW_QUANTITY",
+                  "inventory_alert_threshold": 5
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_CANELA",
+          "item_data": {
+            "name": "CANELA EN RAJA (CINNAMON STICKS)",
+            "description": "Cinnamon sticks for horchata and moles",
+            "category_id": "#CAT_SPICES_HERBS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_CANELA_OZ",
+                "item_variation_data": {
+                  "name": "Per Ounce",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 895,
+                    "currency": "USD"
+                  },
+                  "sku": "SPC-CAN-OZ",
+                  "track_inventory": true,
+                  "inventory_alert_type": "LOW_QUANTITY",
+                  "inventory_alert_threshold": 10
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_AJO_SECO",
+          "item_data": {
+            "name": "AJOS SECOS (DRIED GARLIC)",
+            "description": "Dried garlic granules",
+            "category_id": "#CAT_SPICES_HERBS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_AJO_LB",
+                "item_variation_data": {
+                  "name": "Per Pound",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 795,
+                    "currency": "USD"
+                  },
+                  "sku": "SPC-AJO-LB",
+                  "track_inventory": true,
+                  "inventory_alert_type": "LOW_QUANTITY",
+                  "inventory_alert_threshold": 3
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_SEMILLAS_SESAMO",
+          "item_data": {
+            "name": "SEMILLAS DE SÉSAMO",
+            "description": "Sesame seeds for mole poblano",
+            "category_id": "#CAT_SPICES_HERBS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_SESAMO_LB",
+                "item_variation_data": {
+                  "name": "Per Pound",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 595,
+                    "currency": "USD"
+                  },
+                  "sku": "SPC-SES-LB",
+                  "track_inventory": true,
+                  "inventory_alert_type": "LOW_QUANTITY",
+                  "inventory_alert_threshold": 2
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_PEPITAS",
+          "item_data": {
+            "name": "PEPITAS DE CALABAZA",
+            "description": "Pumpkin seeds for salads and garnishes",
+            "category_id": "#CAT_SPICES_HERBS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_PEPITAS_LB",
+                "item_variation_data": {
+                  "name": "Per Pound",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 495,
+                    "currency": "USD"
+                  },
+                  "sku": "SPC-PEP-LB",
+                  "track_inventory": true,
+                  "inventory_alert_type": "LOW_QUANTITY",
+                  "inventory_alert_threshold": 4
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_CHIA_SEEDS",
+          "item_data": {
+            "name": "SEMILLAS DE CHÍA",
+            "description": "Chia seeds for salads and drinks",
+            "category_id": "#CAT_SPICES_HERBS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_CHIA_LB",
+                "item_variation_data": {
+                  "name": "Per Pound",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 895,
+                    "currency": "USD"
+                  },
+                  "sku": "SPC-CHI-LB",
+                  "track_inventory": true,
+                  "inventory_alert_type": "LOW_QUANTITY",
+                  "inventory_alert_threshold": 3
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_PIMIENTA_NEGRA",
+          "item_data": {
+            "name": "PIMIENTA NEGRA EN GRANO",
+            "description": "Black peppercorns",
+            "category_id": "#CAT_SPICES_HERBS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_PIMIENTA_LB",
+                "item_variation_data": {
+                  "name": "Per Pound",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1295,
+                    "currency": "USD"
+                  },
+                  "sku": "SPC-PIM-LB",
+                  "track_inventory": true,
+                  "inventory_alert_type": "LOW_QUANTITY",
+                  "inventory_alert_threshold": 6
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "objects": [
+        {
+          "type": "ITEM",
+          "id": "#ITEM_CARNE_ASADA",
+          "item_data": {
+            "name": "CARNE ASADA (SKIRT STEAK)",
+            "description": "Skirt steak for tacos and fajitas",
+            "category_id": "#CAT_MEAT_POULTRY",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_ASADA_LB",
+                "item_variation_data": {
+                  "name": "Per Pound",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 895,
+                    "currency": "USD"
+                  },
+                  "sku": "MEA-ASA-LB",
+                  "track_inventory": true,
+                  "inventory_alert_type": "LOW_QUANTITY",
+                  "inventory_alert_threshold": 15
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_POLLO_DESMENUZADO",
+          "item_data": {
+            "name": "POLLO DESMENUZADO",
+            "description": "Shredded chicken for tacos and enchiladas",
+            "category_id": "#CAT_MEAT_POULTRY",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_POLLO_LB",
+                "item_variation_data": {
+                  "name": "Per Pound",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 695,
+                    "currency": "USD"
+                  },
+                  "sku": "MEA-POL-LB",
+                  "track_inventory": true,
+                  "inventory_alert_type": "LOW_QUANTITY",
+                  "inventory_alert_threshold": 10
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_CARNITAS",
+          "item_data": {
+            "name": "CARNITAS DE CERDO",
+            "description": "Beer-marinated pork carnitas",
+            "category_id": "#CAT_MEAT_POULTRY",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_CARNITAS_LB",
+                "item_variation_data": {
+                  "name": "Per Pound",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 795,
+                    "currency": "USD"
+                  },
+                  "sku": "MEA-CAR-LB",
+                  "track_inventory": true,
+                  "inventory_alert_type": "LOW_QUANTITY",
+                  "inventory_alert_threshold": 8
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_CHORIZO",
+          "item_data": {
+            "name": "CHORIZO MEXICANO",
+            "description": "Mexican chorizo sausage",
+            "category_id": "#CAT_MEAT_POULTRY",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_CHORIZO_LB",
+                "item_variation_data": {
+                  "name": "Per Pound",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 895,
+                    "currency": "USD"
+                  },
+                  "sku": "MEA-CHO-LB",
+                  "track_inventory": true,
+                  "inventory_alert_type": "LOW_QUANTITY",
+                  "inventory_alert_threshold": 5
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_QUESO_FRESCO",
+          "item_data": {
+            "name": "QUESO FRESCO",
+            "description": "Fresh Mexican cheese",
+            "category_id": "#CAT_DAIRY_CHEESE",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_QUESO_FRESCO_LB",
+                "item_variation_data": {
+                  "name": "Per Pound",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 595,
+                    "currency": "USD"
+                  },
+                  "sku": "DRY-QFR-LB",
+                  "track_inventory": true,
+                  "inventory_alert_type": "LOW_QUANTITY",
+                  "inventory_alert_threshold": 8
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_QUESO_OAXACA",
+          "item_data": {
+            "name": "QUESO OAXACA",
+            "description": "String cheese for quesadillas",
+            "category_id": "#CAT_DAIRY_CHEESE",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_OAXACA_LB",
+                "item_variation_data": {
+                  "name": "Per Pound",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 695,
+                    "currency": "USD"
+                  },
+                  "sku": "DRY-QOA-LB",
+                  "track_inventory": true,
+                  "inventory_alert_type": "LOW_QUANTITY",
+                  "inventory_alert_threshold": 6
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_AGUACATES",
+          "item_data": {
+            "name": "AGUACATES HASS",
+            "description": "Avocados for guacamole",
+            "category_id": "#CAT_VEGETABLES",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_AGUACATE_CT",
+                "item_variation_data": {
+                  "name": "Per Case (24 count)",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 3595,
+                    "currency": "USD"
+                  },
+                  "sku": "VEG-AGU-CS",
+                  "track_inventory": true,
+                  "inventory_alert_type": "LOW_QUANTITY",
+                  "inventory_alert_threshold": 2
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_TORTILLAS_CORN",
+          "item_data": {
+            "name": "TORTILLAS DE MAÍZ",
+            "description": "Corn tortillas for tacos",
+            "category_id": "#CAT_TORTILLAS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_TORT_CORN_PACK",
+                "item_variation_data": {
+                  "name": "Pack of 50",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 395,
+                    "currency": "USD"
+                  },
+                  "sku": "TOR-COR-50",
+                  "track_inventory": true,
+                  "inventory_alert_type": "LOW_QUANTITY",
+                  "inventory_alert_threshold": 5
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_TORTILLAS_FLOUR",
+          "item_data": {
+            "name": "TORTILLAS DE HARINA",
+            "description": "Flour tortillas for burritos",
+            "category_id": "#CAT_TORTILLAS",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_TORT_FLOUR_PACK",
+                "item_variation_data": {
+                  "name": "Pack of 30",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 495,
+                    "currency": "USD"
+                  },
+                  "sku": "TOR-FLO-30",
+                  "track_inventory": true,
+                  "inventory_alert_type": "LOW_QUANTITY",
+                  "inventory_alert_threshold": 4
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "ITEM",
+          "id": "#ITEM_CAMARONES_RAW",
+          "item_data": {
+            "name": "CAMARONES CRUDOS (RAW SHRIMP)",
+            "description": "Raw shrimp for seafood dishes",
+            "category_id": "#CAT_SEAFOOD_RAW",
+            "variations": [
+              {
+                "type": "ITEM_VARIATION",
+                "id": "#VAR_CAMARONES_LB",
+                "item_variation_data": {
+                  "name": "Per Pound (21-25 count)",
+                  "pricing_type": "FIXED_PRICING",
+                  "price_money": {
+                    "amount": 1295,
+                    "currency": "USD"
+                  },
+                  "sku": "SEA-CAM-LB",
+                  "track_inventory": true,
+                  "inventory_alert_type": "LOW_QUANTITY",
+                  "inventory_alert_threshold": 12
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

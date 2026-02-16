@@ -1,0 +1,75 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: restaurant-cost-control-api
+    env_file:
+      - .env
+    ports:
+      - "${PORT:-8000}:8000"
+    environment:
+      - NODE_ENV=${NODE_ENV:-production}
+      - PORT=8000
+      - JWT_SECRET=${JWT_SECRET:-your-secure-secret-at-least-32-characters-long}
+      - ALLOWED_ORIGINS=${ALLOWED_ORIGINS:-http://localhost:8000,http://127.0.0.1:8000}
+      - DATABASE_PATH=/app/database/restaurant_cost.db
+    volumes:
+      - ./backend/database:/app/database
+      - ./backend/uploads:/app/uploads
+      - ./backend/logs:/app/logs
+    restart: unless-stopped
+    mem_limit: 1g
+    mem_reservation: 512m
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:8000/api/healthz', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 10s
+    networks:
+      - app-network
+    deploy:
+      resources:
+        limits:
+          cpus: '1.5'
+          memory: 1G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+
+  # Optional: Add monitoring stack
+  # prometheus:
+  #   image: prom/prometheus:latest
+  #   container_name: prometheus
+  #   volumes:
+  #     - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+  #     - prometheus-data:/prometheus
+  #   command:
+  #     - '--config.file=/etc/prometheus/prometheus.yml'
+  #   ports:
+  #     - "9090:9090"
+  #   networks:
+  #     - app-network
+
+  # grafana:
+  #   image: grafana/grafana:latest
+  #   container_name: grafana
+  #   volumes:
+  #     - grafana-data:/var/lib/grafana
+  #   ports:
+  #     - "3001:3000"
+  #   environment:
+  #     - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PASSWORD:-admin}
+  #   networks:
+  #     - app-network
+  #   depends_on:
+  #     - prometheus
+
+networks:
+  app-network:
+    driver: bridge
+
+# volumes:
+#   prometheus-data:
+#   grafana-data:

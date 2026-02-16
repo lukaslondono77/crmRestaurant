@@ -1,0 +1,116 @@
+{
+  "description": "Initial inventory quantities for Tequila's Town restaurant",
+  "location_id_placeholder": "YOUR_LOCATION_ID",
+  "inventory_counts": [
+    {
+      "catalog_object_id": "#ITEM_CHILE_GUAJILLO",
+      "quantity": "5",
+      "unit": "lb"
+    },
+    {
+      "catalog_object_id": "#ITEM_CHILE_ANCHO",
+      "quantity": "8",
+      "unit": "lb"
+    },
+    {
+      "catalog_object_id": "#ITEM_CHILE_CHIPOTLE",
+      "quantity": "3",
+      "unit": "lb"
+    },
+    {
+      "catalog_object_id": "#ITEM_OREGANO_MEXICANO",
+      "quantity": "24",
+      "unit": "oz"
+    },
+    {
+      "catalog_object_id": "#ITEM_EPAZOTE",
+      "quantity": "12",
+      "unit": "oz"
+    },
+    {
+      "catalog_object_id": "#ITEM_COMINO_MOLIDO",
+      "quantity": "10",
+      "unit": "lb"
+    },
+    {
+      "catalog_object_id": "#ITEM_CANELA",
+      "quantity": "32",
+      "unit": "oz"
+    },
+    {
+      "catalog_object_id": "#ITEM_AJO_SECO",
+      "quantity": "6",
+      "unit": "lb"
+    },
+    {
+      "catalog_object_id": "#ITEM_SEMILLAS_SESAMO",
+      "quantity": "4",
+      "unit": "lb"
+    },
+    {
+      "catalog_object_id": "#ITEM_PEPITAS",
+      "quantity": "8",
+      "unit": "lb"
+    },
+    {
+      "catalog_object_id": "#ITEM_CHIA_SEEDS",
+      "quantity": "6",
+      "unit": "lb"
+    },
+    {
+      "catalog_object_id": "#ITEM_PIMIENTA_NEGRA",
+      "quantity": "12",
+      "unit": "lb"
+    },
+    {
+      "catalog_object_id": "#ITEM_CARNE_ASADA",
+      "quantity": "25",
+      "unit": "lb"
+    },
+    {
+      "catalog_object_id": "#ITEM_POLLO_DESMENUZADO",
+      "quantity": "18",
+      "unit": "lb"
+    },
+    {
+      "catalog_object_id": "#ITEM_CARNITAS",
+      "quantity": "15",
+      "unit": "lb"
+    },
+    {
+      "catalog_object_id": "#ITEM_CHORIZO",
+      "quantity": "10",
+      "unit": "lb"
+    },
+    {
+      "catalog_object_id": "#ITEM_QUESO_FRESCO",
+      "quantity": "15",
+      "unit": "lb"
+    },
+    {
+      "catalog_object_id": "#ITEM_QUESO_OAXACA",
+      "quantity": "12",
+      "unit": "lb"
+    },
+    {
+      "catalog_object_id": "#ITEM_AGUACATES",
+      "quantity": "4",
+      "unit": "case"
+    },
+    {
+      "catalog_object_id": "#ITEM_TORTILLAS_CORN",
+      "quantity": "10",
+      "unit": "pack"
+    },
+    {
+      "catalog_object_id": "#ITEM_TORTILLAS_FLOUR",
+      "quantity": "8",
+      "unit": "pack"
+    },
+    {
+      "catalog_object_id": "#ITEM_CAMARONES_RAW",
+      "quantity": "20",
+      "unit": "lb"
+    }
+  ]
+}

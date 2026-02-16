@@ -1,0 +1,7 @@
+Respect repository architecture before suggesting changes.
+Never rewrite working code unless asked.
+Prefer modifying existing modules over creating new ones.
+No new dependencies without justification.
+Assume production deployment (Docker, .env).
+Follow backend/src patterns for routes and services.
+Use SQLite; do not suggest switching databases.

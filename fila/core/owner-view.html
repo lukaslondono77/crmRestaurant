@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../assets/css/sidebar-menu.css">
+    <link rel="stylesheet" href="../assets/css/simplebar.css">
+    <link rel="stylesheet" href="../assets/css/remixicon.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <title>Owner View - Cloudignite</title>
+</head>
+<body class="bg-body-bg">
+    <div class="preloader" id="preloader">
+        <div class="preloader"><div class="waviy position-relative"><span>Cloudignite</span></div></div>
+    </div>
+
+    <div class="sidebar-area" id="sidebar-area">
+        <div class="logo position-relative d-flex align-items-center justify-content-between">
+            <a href="index.html" class="d-block text-decoration-none position-relative">
+                <img src="../assets/images/logo-icon.png" alt="logo-icon">
+                <span class="logo-text text-secondary fw-semibold">Cloudignite</span>
+            </a>
+            <button class="sidebar-burger-menu bg-transparent p-0 border-0" id="sidebar-burger-menu">
+                <span class="border-1 d-block for-dark-burger" style="border-bottom: 1px solid #475569; height: 1px; width: 25px;"></span>
+                <span class="border-1 d-block for-dark-burger" style="border-bottom: 1px solid #475569; height: 1px; width: 25px; margin: 6px 0;"></span>
+                <span class="border-1 d-block for-dark-burger" style="border-bottom: 1px solid #475569; height: 1px; width: 25px;"></span>
+            </button>
+        </div>
+        <aside id="layout-menu" class="layout-menu menu-vertical menu active" data-simplebar>
+            <ul class="menu-inner">
+                <li class="menu-title small text-uppercase"><span class="menu-title-text">MAIN</span></li>
+                <li class="menu-item open">
+                    <a href="owner-view.html" class="menu-link active">
+                        <span class="material-symbols-outlined menu-icon">visibility</span>
+                        <span class="title">Owner View</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="index.html" class="menu-link">
+                        <span class="material-symbols-outlined menu-icon">dashboard</span>
+                        <span class="title">Loss Summary</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="analytics.html" class="menu-link">
+                        <span class="material-symbols-outlined menu-icon">delete</span>
+                        <span class="title">Waste Tracking</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="invoices.html" class="menu-link">
+                        <span class="material-symbols-outlined menu-icon">local_shipping</span>
+                        <span class="title">Suppliers & Invoices</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="index.html" class="menu-link" onclick="if(window.authService){window.authService.logout();} return false;">
+                        <span class="material-symbols-outlined menu-icon">logout</span>
+                        <span class="title">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <div class="container-fluid">
+        <div class="main-content d-flex flex-column">
+            <header class="header-area bg-white mb-4 rounded-10 border border-white" id="header-area">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h4 class="mb-0 text-secondary">Owner View</h4>
+                        <p class="mb-0 fs-14 text-body">Financial health at a glance</p>
+                    </div>
+                </div>
+            </header>
+
+            <div class="main-content-container overflow-hidden">
+                <div id="owner-view-loading" class="text-center py-5">
+                    <div class="spinner-border text-primary" role="status"></div>
+                    <p class="mt-2 text-body">Loading executive summary...</p>
+                </div>
+                <div id="owner-view-content" class="d-none">
+                    <div id="crisis-banner" class="alert mb-4 d-none" role="alert">
+                        <span class="material-symbols-outlined me-2"></span>
+                        <span id="crisis-message"></span>
+                    </div>
+                    <div class="card bg-white p-20 rounded-10 border border-white mb-4" id="priority-one-card">
+                        <h5 class="mb-2">Priority 1 Today</h5>
+                        <p id="priority-one-description" class="text-body mb-3"></p>
+                        <a id="priority-one-btn" href="#" class="btn btn-primary">Action</a>
+                        <span id="priority-one-savings" class="ms-2 fs-14 text-secondary"></span>
+                    </div>
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card bg-white p-20 rounded-10 border border-white h-100">
+                                <h6 class="text-uppercase small text-secondary mb-2">Daily Burn Rate</h6>
+                                <p id="card-burn-value" class="fs-24 fw-semibold mb-0"></p>
+                                <p id="card-burn-meta" class="fs-14 text-body mb-0"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card bg-white p-20 rounded-10 border border-white h-100">
+                                <h6 class="text-uppercase small text-secondary mb-2">Projected Monthly P&L</h6>
+                                <p id="card-pnl-value" class="fs-24 fw-semibold mb-0"></p>
+                                <p id="card-pnl-meta" class="fs-14 text-body mb-0"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card bg-white p-20 rounded-10 border border-white h-100">
+                                <h6 class="text-uppercase small text-secondary mb-2">Top Cost Driver</h6>
+                                <p id="card-driver-name" class="fs-24 fw-semibold mb-0"></p>
+                                <p id="card-driver-value" class="fs-14 text-body mb-0"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card bg-white p-20 rounded-10 border border-white h-100">
+                                <h6 class="text-uppercase small text-secondary mb-2">Food Cost vs Goal</h6>
+                                <p id="card-food-value" class="fs-24 fw-semibold mb-0"></p>
+                                <p id="card-food-delta" class="fs-14 text-body mb-0"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-secondary fs-14 mb-2">
+                        <span id="period-label"></span>
+                        &nbsp;·&nbsp;
+                        <a href="index.html" class="text-primary">View full dashboard →</a>
+                    </p>
+
+                    <div class="mt-4">
+                        <button class="btn btn-outline-secondary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#detailed-view-collapse" aria-expanded="false" aria-controls="detailed-view-collapse" id="detailed-view-toggle">
+                            <span class="material-symbols-outlined align-middle me-1" style="font-size: 18px;">expand_more</span>
+                            Show detailed view
+                        </button>
+                        <div class="collapse mt-3" id="detailed-view-collapse">
+                            <div class="card bg-white p-20 rounded-10 border border-white">
+                                <div id="detailed-view-loading" class="text-center py-4 d-none">
+                                    <div class="spinner-border spinner-border-sm text-primary"></div>
+                                    <span class="ms-2">Loading metrics...</span>
+                                </div>
+                                <div id="detailed-view-content" class="d-none">
+                                    <p id="detailed-view-error" class="text-danger d-none mb-0"></p>
+                                    <h6 class="text-secondary mb-3">Key metrics</h6>
+                                    <div class="row g-3 mb-4">
+                                        <div class="col-6 col-md-4 col-lg-2">
+                                            <div class="border rounded p-2 bg-light">
+                                                <div class="small text-secondary">Weekly loss/gain</div>
+                                                <div id="detail-weekly-loss" class="fw-semibold">—</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2">
+                                            <div class="border rounded p-2 bg-light">
+                                                <div class="small text-secondary">Monthly loss/gain</div>
+                                                <div id="detail-monthly-loss" class="fw-semibold">—</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2">
+                                            <div class="border rounded p-2 bg-light">
+                                                <div class="small text-secondary">Food cost %</div>
+                                                <div id="detail-food-cost" class="fw-semibold">—</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2">
+                                            <div class="border rounded p-2 bg-light">
+                                                <div class="small text-secondary">Prime cost %</div>
+                                                <div id="detail-prime-cost" class="fw-semibold">—</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2">
+                                            <div class="border rounded p-2 bg-light">
+                                                <div class="small text-secondary">Waste %</div>
+                                                <div id="detail-waste-pct" class="fw-semibold">—</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h6 class="text-secondary mb-2">Action items</h6>
+                                    <ul id="detail-action-items" class="list-unstyled mb-0"></ul>
+                                    <p class="mt-3 mb-0 fs-14">
+                                        <a href="index.html" class="text-primary">Open full dashboard for charts and breakdown →</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="owner-view-error" class="alert alert-danger d-none" role="alert"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/sidebar-menu.js"></script>
+    <script src="../assets/js/simplebar.min.js"></script>
+    <script src="../assets/js/config.js"></script>
+    <script src="../assets/js/custom/custom.js"></script>
+    <script src="../assets/js/auth/authService.js"></script>
+    <script src="../assets/js/api/apiService.js"></script>
+    <script>
+        let detailedViewLoaded = false;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.authService && !window.authService.isAuthenticated()) {
+                window.location.href = 'sign-in.html';
+                return;
+            }
+            if (sessionStorage.getItem('ownerViewEnabled') === 'false') {
+                window.location.href = 'index.html?owner-view=disabled';
+                return;
+            }
+            loadExecutiveSummary();
+
+            var collapseEl = document.getElementById('detailed-view-collapse');
+            var toggleBtn = document.getElementById('detailed-view-toggle');
+            if (collapseEl && toggleBtn) {
+                collapseEl.addEventListener('show.bs.collapse', function() {
+                    toggleBtn.innerHTML = '<span class="material-symbols-outlined align-middle me-1" style="font-size: 18px;">expand_less</span> Hide detailed view';
+                    if (!detailedViewLoaded) loadDetailedView();
+                });
+                collapseEl.addEventListener('hide.bs.collapse', function() {
+                    toggleBtn.innerHTML = '<span class="material-symbols-outlined align-middle me-1" style="font-size: 18px;">expand_more</span> Show detailed view';
+                });
+            }
+        });
+
+        async function loadExecutiveSummary() {
+            const loading = document.getElementById('owner-view-loading');
+            const content = document.getElementById('owner-view-content');
+            const errEl = document.getElementById('owner-view-error');
+            try {
+                const res = await window.apiService.getExecutiveSummary();
+                const d = (res && res.data) ? res.data : res;
+                loading.classList.add('d-none');
+                errEl.classList.add('d-none');
+                content.classList.remove('d-none');
+
+                if (d.crisisBanner && d.crisisBanner.visible) {
+                    const banner = document.getElementById('crisis-banner');
+                    banner.classList.remove('d-none');
+                    banner.className = 'alert mb-4 alert-' + (d.crisisBanner.severity === 'red' ? 'danger' : d.crisisBanner.severity === 'amber' ? 'warning' : 'secondary');
+                    document.getElementById('crisis-message').textContent = d.crisisBanner.message || '';
+                } else {
+                    document.getElementById('crisis-banner').classList.add('d-none');
+                }
+
+                const po = d.priorityOne || {};
+                document.getElementById('priority-one-description').textContent = po.description || 'No action needed.';
+                const btn = document.getElementById('priority-one-btn');
+                btn.textContent = po.actionLabel || 'View Dashboard';
+                btn.href = po.actionUrl || 'index.html';
+                if (po.potentialSavings > 0) {
+                    document.getElementById('priority-one-savings').textContent = 'Potential savings: $' + Number(po.potentialSavings).toLocaleString();
+                } else {
+                    document.getElementById('priority-one-savings').textContent = '';
+                }
+
+                const cards = d.cards || {};
+                const burn = cards.dailyBurnRate || {};
+                document.getElementById('card-burn-value').textContent = burn.value != null ? '$' + Number(burn.value).toLocaleString() : '—';
+                document.getElementById('card-burn-meta').textContent = (burn.periodDays ? burn.periodDays + ' days' : '') + (burn.label ? ' · ' + burn.label : '');
+
+                const pnl = cards.projectedMonthlyPandL || {};
+                const pnlVal = pnl.value != null ? pnl.value : 0;
+                const pnlEl = document.getElementById('card-pnl-value');
+                pnlEl.textContent = (pnl.isLoss ? '-' : '') + '$' + Math.abs(pnlVal).toLocaleString(undefined, { maximumFractionDigits: 0 });
+                pnlEl.className = 'fs-24 fw-semibold mb-0 ' + (pnl.isLoss ? 'text-danger' : 'text-success');
+                document.getElementById('card-pnl-meta').textContent = 'Projected';
+
+                const driver = cards.topCostDriver || {};
+                document.getElementById('card-driver-name').textContent = driver.name || '—';
+                document.getElementById('card-driver-value').textContent = driver.value != null ? '$' + Number(driver.value).toLocaleString() : '';
+
+                const food = cards.foodCostVsGoal || {};
+                document.getElementById('card-food-value').textContent = food.current != null ? food.current + '%' : '—';
+                document.getElementById('card-food-delta').textContent = food.overGoal && food.delta ? '+' + food.delta + '% over goal (' + (food.goal || 28) + '%)' : (food.goal ? 'Goal: ' + food.goal + '%' : '');
+
+                const period = d.period || {};
+                document.getElementById('period-label').textContent = period.label ? 'Period: ' + period.label : '';
+            } catch (e) {
+                if (e.status === 503 || e.code === 'FEATURE_DISABLED') {
+                    sessionStorage.setItem('ownerViewEnabled', 'false');
+                    window.location.href = 'index.html?owner-view=disabled';
+                    return;
+                }
+                loading.classList.add('d-none');
+                content.classList.add('d-none');
+                errEl.classList.remove('d-none');
+                errEl.textContent = e.message || 'Failed to load executive summary.';
+            }
+        }
+
+        async function loadDetailedView() {
+            var loadingEl = document.getElementById('detailed-view-loading');
+            var contentEl = document.getElementById('detailed-view-content');
+            if (!loadingEl || !contentEl) return;
+            loadingEl.classList.remove('d-none');
+            contentEl.classList.add('d-none');
+            try {
+                var [metricsRes, actionRes] = await Promise.all([
+                    window.apiService.getDashboardMetrics(),
+                    window.apiService.getActionItems()
+                ]);
+                var metrics = (metricsRes && metricsRes.data) ? metricsRes.data : metricsRes;
+                var actions = (actionRes && actionRes.data) ? actionRes.data : actionRes;
+                var items = (actions && actions.items) ? actions.items : [];
+
+                var wl = metrics.weeklyLossDisplay || {};
+                var ml = metrics.monthlyLossDisplay || {};
+                document.getElementById('detail-weekly-loss').textContent = (wl.value != null ? '$' + Number(wl.value).toLocaleString() : '—') + (wl.label ? ' (' + wl.label + ')' : '');
+                document.getElementById('detail-weekly-loss').className = 'fw-semibold ' + (wl.isLoss ? 'text-danger' : 'text-success');
+                document.getElementById('detail-monthly-loss').textContent = (ml.value != null ? '$' + Number(ml.value).toLocaleString() : '—') + (ml.label ? ' (' + ml.label + ')' : '');
+                document.getElementById('detail-monthly-loss').className = 'fw-semibold ' + (ml.isLoss ? 'text-danger' : 'text-success');
+
+                var fc = metrics.foodCostDisplay && metrics.foodCostDisplay.value != null ? metrics.foodCostDisplay.value : metrics.foodCostPercentage;
+                document.getElementById('detail-food-cost').textContent = fc != null ? fc + '%' : '—';
+                var pc = metrics.primeCostDisplay && metrics.primeCostDisplay.value != null ? metrics.primeCostDisplay.value : metrics.primeCost;
+                document.getElementById('detail-prime-cost').textContent = pc != null ? pc + '%' : '—';
+                document.getElementById('detail-prime-cost').className = 'fw-semibold ' + (metrics.primeCostDisplay && metrics.primeCostDisplay.isCritical ? 'text-danger' : '');
+                var wp = metrics.wasteDisplay && metrics.wasteDisplay.value != null ? metrics.wasteDisplay.value : metrics.wastePercentage;
+                document.getElementById('detail-waste-pct').textContent = wp != null ? wp + '%' : '—';
+
+                var listEl = document.getElementById('detail-action-items');
+                listEl.innerHTML = '';
+                if (items.length === 0) {
+                    listEl.innerHTML = '<li class="text-body">No action items.</li>';
+                } else {
+                    items.forEach(function(it) {
+                        var li = document.createElement('li');
+                        li.className = 'd-flex align-items-start gap-2 mb-2';
+                        li.innerHTML = '<span class="material-symbols-outlined text-warning mt-0" style="font-size: 18px;">' + (it.priority === 'high' ? 'warning' : 'info') + '</span>' +
+                            '<div><strong>' + (it.title || it.category) + '</strong><br><span class="fs-14 text-body">' + (it.description || '') + '</span><br><span class="fs-13 text-secondary">' + (it.action || '') + '</span></div>';
+                        listEl.appendChild(li);
+                    });
+                }
+                detailedViewLoaded = true;
+                loadingEl.classList.add('d-none');
+                contentEl.classList.remove('d-none');
+            } catch (e) {
+                loadingEl.classList.add('d-none');
+                var errP = document.getElementById('detailed-view-error');
+                if (errP) { errP.textContent = 'Could not load: ' + (e.message || 'Unknown error'); errP.classList.remove('d-none'); }
+                contentEl.classList.remove('d-none');
+            }
+        }
+    </script>
+</body>
+</html>

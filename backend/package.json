@@ -1,0 +1,53 @@
+{
+  "name": "restaurant-cost-control-api",
+  "version": "1.0.0",
+  "description": "Backend API for Restaurant Cost Control Platform",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "init-db": "node database/init.js",
+    "verify": "node scripts/verify-setup.js",
+    "migrate": "node scripts/run-migrations.js",
+    "backup": "node scripts/backup-database.js create",
+    "backup:list": "node scripts/backup-database.js list",
+    "backup:stats": "node scripts/backup-database.js stats",
+    "backup:clean": "node scripts/backup-database.js clean",
+    "deploy": "bash scripts/deploy-production.sh",
+    "apply-optimizations": "node scripts/apply-optimizations.js",
+    "test": "echo \"No tests specified yet\" && exit 0",
+    "test:endpoints": "node scripts/test-all-endpoints.js",
+    "test:compatibility": "node scripts/test-compatibility.js",
+    "test:auth": "node scripts/test-auth-flow.js",
+    "test:modules": "node scripts/test-all-modules.js",
+    "test:smoke-e2e": "node scripts/smoke-e2e.js",
+    "test:analytics": "node scripts/test-analytics-critical.js",
+    "test:all": "npm run test:auth && npm run test:compatibility && npm run test:modules && npm run test:analytics && npm run test:endpoints && npm run test:smoke-e2e",
+    "test:exhaustive": "node scripts/test-exhaustive.js",
+    "test:db-integrity": "node scripts/test-database-integrity.js",
+    "catalog:ui": "node scripts/catalog-ui-elements.js",
+    "test:exhaustive-full": "npm run test:db-integrity && npm run test:exhaustive && npm run catalog:ui",
+    "seed:modules": "node scripts/seed-all-modules.js",
+    "verify:deploy": "node scripts/verify-deployment.js",
+    "monitor": "node scripts/monitor-production.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "compression": "^1.8.1",
+    "cors": "^2.8.5",
+    "date-fns": "^2.30.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.5.1",
+    "express-validator": "^7.3.1",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^1.4.5-lts.1",
+    "pdf-parse": "^1.1.1",
+    "sqlite3": "^5.1.6",
+    "square": "^43.2.1",
+    "tesseract.js": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

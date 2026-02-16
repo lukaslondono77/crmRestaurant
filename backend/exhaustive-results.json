@@ -1,0 +1,239 @@
+{
+  "start": "2026-01-29T00:53:40.790Z",
+  "passed": 46,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Auth register",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/auth/me",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Todo CREATE",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Todo READ",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Todo UPDATE",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Todo DELETE",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Contact CREATE",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Contact READ",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Contact UPDATE",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Contact DELETE",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Calendar event CREATE",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Calendar event READ",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Calendar event UPDATE",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Calendar event DELETE",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "CRM Lead CREATE",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "CRM Lead READ",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "CRM Lead UPDATE",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "CRM Lead DELETE",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/dashboard/metrics",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/dashboard/action-items",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/dashboard/monthly-report",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/analytics/food-cost",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/analytics/waste-analysis",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/analytics/product-margins",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/analytics/trends",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/analytics/alerts",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/inventory",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/waste",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/invoices",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/pos/reports",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/todos",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/calendar/events",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/contacts",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/chat/conversations",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/emails",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/kanban/boards",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/files/folders",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/ecommerce/products",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/crm/leads",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/projects/projects",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/lms/courses",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/helpdesk/tickets",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/hr/employees",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/events/events",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/social/posts",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /api/users/profile",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "fixes": [],
+  "end": "2026-01-29T00:53:41.193Z"
+}

@@ -1,0 +1,180 @@
+{
+  "description": "Recipes (Bill of Materials) for Tequila's Town menu items",
+  "recipes": [
+    {
+      "recipe_name": "Mole Poblano (Serves 20)",
+      "menu_item_id": "#ITEM_MOLE_POBLANO",
+      "servings": 20,
+      "ingredients": [
+        {
+          "catalog_object_id": "#ITEM_CHILE_GUAJILLO",
+          "quantity": "0.5",
+          "unit": "lb",
+          "cost_per_unit": 12.95
+        },
+        {
+          "catalog_object_id": "#ITEM_CHILE_ANCHO",
+          "quantity": "0.5",
+          "unit": "lb",
+          "cost_per_unit": 14.50
+        },
+        {
+          "catalog_object_id": "#ITEM_SEMILLAS_SESAMO",
+          "quantity": "0.25",
+          "unit": "lb",
+          "cost_per_unit": 5.95
+        },
+        {
+          "catalog_object_id": "#ITEM_CANELA",
+          "quantity": "2",
+          "unit": "oz",
+          "cost_per_unit": 0.90
+        },
+        {
+          "catalog_object_id": "#ITEM_PIMIENTA_NEGRA",
+          "quantity": "0.1",
+          "unit": "lb",
+          "cost_per_unit": 12.95
+        },
+        {
+          "catalog_object_id": "#ITEM_POLLO_DESMENUZADO",
+          "quantity": "8",
+          "unit": "lb",
+          "cost_per_unit": 6.95
+        }
+      ],
+      "total_cost": 75.30,
+      "cost_per_serving": 3.77,
+      "menu_price": 16.95,
+      "profit_margin": 77.8
+    },
+    {
+      "recipe_name": "Tacos Al Pastor (3 tacos)",
+      "menu_item_id": "#ITEM_TACOS_PASTOR",
+      "servings": 1,
+      "ingredients": [
+        {
+          "catalog_object_id": "#ITEM_CHILE_GUAJILLO",
+          "quantity": "0.1",
+          "unit": "lb",
+          "cost_per_unit": 12.95
+        },
+        {
+          "catalog_object_id": "#ITEM_AJO_SECO",
+          "quantity": "0.05",
+          "unit": "lb",
+          "cost_per_unit": 7.95
+        },
+        {
+          "catalog_object_id": "#ITEM_CARNITAS",
+          "quantity": "0.5",
+          "unit": "lb",
+          "cost_per_unit": 7.95
+        },
+        {
+          "catalog_object_id": "#ITEM_TORTILLAS_CORN",
+          "quantity": "3",
+          "unit": "tortillas",
+          "cost_per_unit": 0.08
+        },
+        {
+          "catalog_object_id": "#ITEM_OREGANO_MEXICANO",
+          "quantity": "0.5",
+          "unit": "oz",
+          "cost_per_unit": 0.50
+        }
+      ],
+      "total_cost": 4.96,
+      "cost_per_serving": 4.96,
+      "menu_price": 12.95,
+      "profit_margin": 61.7
+    },
+    {
+      "recipe_name": "Nachos Macho Supremo (With Chicken)",
+      "menu_item_id": "#ITEM_NACHOS_MACHO",
+      "servings": 1,
+      "ingredients": [
+        {
+          "catalog_object_id": "#ITEM_POLLO_DESMENUZADO",
+          "quantity": "0.25",
+          "unit": "lb",
+          "cost_per_unit": 6.95
+        },
+        {
+          "catalog_object_id": "#ITEM_QUESO_OAXACA",
+          "quantity": "0.15",
+          "unit": "lb",
+          "cost_per_unit": 6.95
+        },
+        {
+          "catalog_object_id": "#ITEM_AGUACATES",
+          "quantity": "0.5",
+          "unit": "avocado",
+          "cost_per_unit": 1.50
+        }
+      ],
+      "total_cost": 5.47,
+      "cost_per_serving": 5.47,
+      "menu_price": 14.50,
+      "profit_margin": 62.3
+    },
+    {
+      "recipe_name": "Fajitas (Chicken)",
+      "menu_item_id": "#ITEM_FAJITAS",
+      "servings": 1,
+      "ingredients": [
+        {
+          "catalog_object_id": "#ITEM_POLLO_DESMENUZADO",
+          "quantity": "0.5",
+          "unit": "lb",
+          "cost_per_unit": 6.95
+        },
+        {
+          "catalog_object_id": "#ITEM_COMINO_MOLIDO",
+          "quantity": "0.05",
+          "unit": "lb",
+          "cost_per_unit": 9.95
+        },
+        {
+          "catalog_object_id": "#ITEM_TORTILLAS_FLOUR",
+          "quantity": "4",
+          "unit": "tortillas",
+          "cost_per_unit": 0.17
+        },
+        {
+          "catalog_object_id": "#ITEM_AGUACATES",
+          "quantity": "0.5",
+          "unit": "avocado",
+          "cost_per_unit": 1.50
+        }
+      ],
+      "total_cost": 7.11,
+      "cost_per_serving": 7.11,
+      "menu_price": 16.95,
+      "profit_margin": 58.1
+    },
+    {
+      "recipe_name": "Horchata (Regular)",
+      "menu_item_id": "#ITEM_HORCHATA",
+      "servings": 1,
+      "ingredients": [
+        {
+          "catalog_object_id": "#ITEM_CANELA",
+          "quantity": "0.5",
+          "unit": "oz",
+          "cost_per_unit": 0.90
+        },
+        {
+          "catalog_object_id": "#ITEM_CHIA_SEEDS",
+          "quantity": "0.1",
+          "unit": "oz",
+          "cost_per_unit": 0.56
+        }
+      ],
+      "total_cost": 0.60,
+      "cost_per_serving": 0.60,
+      "menu_price": 3.95,
+      "profit_margin": 84.8
+    }
+  ]
+}
